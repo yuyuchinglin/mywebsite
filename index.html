@@ -23,18 +23,15 @@
 			font-family: 'Raleway', sans-serif;
 		}
 
-		nav{
-			width: 100vw;
-			background: #333;
-		}
-
+		
 		.navbar {
 			color: #fff;
 		}
 
-		#about, #moments, #skills, #portfolio {
+		nav, #welcomepic, #about, #moments, #skills, #portfolio, #footer {
 			background: #333;
-			width: 100vw;
+			width: 100%;
+			overflow: hidden;
 		}
 
 
@@ -48,9 +45,8 @@
 		}
 
 		.welcomepic {
-		  width: 100vw;
 		  height: 57.5vw;
-		  background: url("img/yuchingpic.jpg") top left red;
+		  background: url("img/yuchingpic.jpg") top left;
 		  background-size: cover;
 		  position: relative;
 		}
@@ -84,7 +80,6 @@
 
 		  #footer {
     padding:60px 0;
-    width: 100%;
     text-align: center;
     background-color: #333;
     color: #ddd;
@@ -148,12 +143,35 @@
 	margin: auto;
 	background: transparent;
 	padding-top: 10px;
-
 }
+
 
 .intro {
-	padding: 25px 30px;
+	width:90%;
+	padding: 15px 5px;
+	color: #333;
+	background: rgba(196,160,70,1);
+	border-radius: 10px;
+	margin: 10px 0;
+
 }
+
+/*portfolio*/
+
+
+/*about*/
+
+.words {
+	color: #ddd;
+	line-height: 13px;
+	font-weight: bold;
+}
+
+.words a {
+	color: #c4a046;
+}
+
+
 
 
 
@@ -203,6 +221,33 @@
     	</div>
     </section>
 
+    <section id="about">
+    	<div class="topic">
+    		<h2>ABOUT ME</h2>
+    		<div class="under"></div>
+    	</div>
+    	<div class="col-12 words ml-md-4">
+		<p>I am Yu-Ching Lin.</p>
+  		<p>I live in <a href="https://en.wikipedia.org/wiki/Taipei">Taipei city</a>, the capital of Taiwan.</p>
+  		<p>I can speak Manderin, English and Taiwanese.</p>
+  		<p>I studied <a href="http://psychology.ncku.edu.tw/eng/">psychology</a> in <a href="http://web.ncku.edu.tw/bin/home.php?Lang=en">NCKU</a>.</p>
+  		<p>I learned how to measure humans’ behavior and analyze it.</p>
+  		<p>I was the outstanding graduate student in 2015.</p>
+  		<p>I have been to <a href="http://www.cognitivesciencesociety.org/conference/cogsci2017/">CogSci</a> to published my research in London in 2017.</p>
+  		<p>I was sponsored by <a href="https://www.most.gov.tw/?l=en">Ministry of Sicience and Technology (MOST)</a>.</p>
+  		
+  		<p>I have been trained for <a href="https://web.iii.org.tw/">Institute for Information Industry (III)</a> in Taiwan.</p>
+  		<p>I learned a lot of skills and software there.</p>
+  		<p>I can design and program websites all by myself.</p>
+  		<p>I enjoy it very much.</p>
+  		<p>I love to reading books and photo shooting in my leisure time.</p>
+  		<p>I always get some new perspectives while reading.</p>
+  		<p>I am seeking for a front-end engineer job.</p>
+  		<p>I have a more detailed <a href="#">résumé</a> if you're interested in.</p>		
+
+    	</div>
+    </section>
+
  
 
     <section id="portfolio">
@@ -210,36 +255,44 @@
     		<h2>PORTFOLIO</h2>
     		<div class="under"></div>
     	</div>
-
+	<div class="container-fluid">
     	<div class="port row">
-    		<div class="col-md-6 bg-success intro">
+    		
+    		<div class="col-12 col-md-6">
+    			<div class="intro float-md-right mx-auto">
     			<h5>NCKU LACD Lab (2018)</h5>
     			<img src="img/portfolio/LACD(thumb).png" alt="">
+    			</div>
     		</div>
-    		<div class="col-md-6 bg-warning intro">
+    		<div class="col-12 col-md-6">
+    			<div class="intro float-md-left mx-auto">
     			<h5>TSUVIMI (2015)</h5>
-    			<img src="img/portfolio/LACD(thumb).png" alt="">	
+    			<img src="img/portfolio/TSUVIMI(thumb).png" alt="">	
+    			</div>
     		</div>
-    		<div class="col-md-6 bg-warning intro">
+    		
+    		
+    		<div class="col-12 col-md-6">
+    			<div class="intro float-md-right mx-auto">
     			<h5>Personal Website (2017)</h5>
     			<img src="img/portfolio/LACD(thumb).png" alt="">
+    			</div>
     		</div>
-    		<div class="col-md-6 bg-success intro">
-    			<h5>Codepen</h5>
-    			<img src="img/portfolio/LACD(thumb).png" alt="">	
+    		<div class="col-12 col-md-6">
+    			<div class="intro float-md-left mx-auto">
+    			<h5>Seraph (2015)</h5>
+    			<img src="img/portfolio/Seraph(thumb).png" alt="">
+    			</div>
     		</div>
+    		
+    		
     	</div>
-    	
+    </div>	
 
 
     </section>
 
-    <section id="about">
-    	<div class="topic">
-    		<h2>ABOUT ME</h2>
-    		<div class="under"></div>
-    	</div>
-    </section>
+    
 
     <section id="moments">
     	<div class="topic">

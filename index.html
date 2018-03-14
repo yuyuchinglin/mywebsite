@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115360200-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-115360200-1');
+		</script>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>YUCHING's Website</title>
@@ -163,12 +173,16 @@
 
 /*about*/
 
+#about {
+		background: url('img/aboutpic2.png') top center no-repeat #333;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+}
+
 .words {
 	color: #ddd;
 	line-height: 1vmin;
 	/*font-weight: bold;*/
-	/*background: url('img/aboutpic2.png') top center no-repeat;
-	background-size: cover;*/
 	padding:10px 0;
 	
 }
@@ -198,6 +212,13 @@
 /*about*/
 
 /*contact*/
+/*
+#contact { 
+	background: url('img/contactbg.png') center center #333;
+	background-size: contain;
+	background-attachment: fixed;
+}*/
+
 .bsncard {
 	width: 400px;
 	height: 250px;
@@ -246,7 +267,7 @@
 	width: 340px;
 	height: 240px;
  }
-
+/*contact*/
 
 
 
@@ -311,21 +332,22 @@
 		  			<p>I can speak Manderin, English and Taiwanese.</p>
     			</div>
 				<div class="col-md-9 words">
-					<p>I studied <a href="http://psychology.ncku.edu.tw/eng/">psychology</a> in <a href="http://web.ncku.edu.tw/bin/home.php?Lang=en">NCKU</a>.</p>
+					<p>I studied <a target="_blank" href="http://psychology.ncku.edu.tw/eng/">psychology</a> in <a target="_blank" href="http://web.ncku.edu.tw/bin/home.php?Lang=en">NCKU</a>.</p>
 			  		<p>I learned how to measure humans’ behavior and analyze it.</p>
 			  		<p>I was the outstanding graduate student in 2015.</p>
-			  		<p>I have been to <a href="http://www.cognitivesciencesociety.org/conference/cogsci2017/">CogSci</a> to published my research in London in 2017.</p>
-			  		<p>I was sponsored by <a href="https://www.most.gov.tw/?l=en">Ministry of Sicience and Technology (MOST)</a>.</p>
+			  		<p>I had a thesis, <a target="_blank" href="thesis.pdf">The Study of the Familiarity Effect on Artifact Categorization</a>.</p>
+			  		<p>I have been to <a target="_blank" href="http://www.cognitivesciencesociety.org/conference/cogsci2017/">CogSci</a> to published my research in London in 2017.</p>
+			  		<p>I was sponsored by <a target="_blank" href="https://www.most.gov.tw/?l=en">Ministry of Sicience and Technology (MOST)</a>.</p>
 				</div>
 					<div class="col-md-9 words">
-						<p>I have been trained for <a href="https://web.iii.org.tw/">Institute for Information Industry (III)</a>.</p>
+						<p>I have been trained for <a target="_blank" href="https://web.iii.org.tw/">Institute for Information Industry (III)</a>.</p>
 				  		<p>I learned a lot of skills and software there.</p>
 				  		<p>I can design and program websites all by myself.</p>
 				  		<p>I enjoy it very much.</p>
 					</div>
 					<div class="col-md-9 words">
 						<p>I am seeking for a front-end engineer job.</p>
-		  				<p>I have a more detailed <a href="CV20180221(en).pdf">résumé</a> if you're interested in.</p>
+		  				<p>I have a more detailed <a target="_blank" href="CV20180221(en).pdf">résumé</a> if you're interested in.</p>
 					</div>
 				
     		</div>
@@ -534,7 +556,7 @@
 		</a> -->
 
 		<a href="http://unitegallery.net">
-		<img alt="Thank Shih-Ping for dry flowers. I liked it so much!"
+		<img alt="Thank Shih-Ping for the beautiful dry flowers. I liked it so much!"
 		     src="img/ig/20170623.jpg"
 		     data-image="img/ig/20170623.jpg"
 		     style="display:none">
@@ -793,15 +815,7 @@
 	
 	</script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115360200-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-115360200-1');
-		</script>
+	
 
 
 </body>

@@ -283,7 +283,7 @@
 .bsn-logo {
   width: 65px;
   height: 65px;
-  background: url('img/icon.png') center center no-repeat;
+  background: url('../img/icon.png') center center no-repeat;
   background-size: contain;
 }
 

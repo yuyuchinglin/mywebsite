@@ -180,29 +180,59 @@
 }*/
 
 .words {
+	width: 100vw;
 	min-width: 769px;
+	display: block;
 	color: #ddd;
 	line-height: 0.5rem;
 	/*font-weight: bold;*/
 	padding:10px 0;
 	
-}
-
-@media (max-width: 768px) { 
-.words {
-	min-width: 0;
-	text-align:justify;　
-	line-height: 1rem;
- }
-
- .words p {
- 	font-size: 0.5rem;
- }
+	
 }
 
 .words p {
 	font-size: 1rem;
 }
+
+.about-sm{
+	display: none;
+}
+
+@media (max-width: 768px) { 
+	.about-sm{
+		display: block;
+		padding: 0;
+		margin: 0 auto;
+		
+	}
+
+	.about-md{
+		display: none;
+	}
+
+	.col {
+		margin: 0 auto;
+	}
+
+.words {
+	display: block;
+		min-width: 0;
+		text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+
+	}
+	.words p {
+		line-height: 18px;
+		font-size: 15px;
+		margin: 4px;
+	}
+
+
+}
+
+
 
 .words a {
 	color: #c4a046;
@@ -275,7 +305,7 @@
 	padding: 0;
 }
 
-@media (max-width: 991px) { 
+@media (max-width: 768px) { 
 .bsncard {
 	width: 340px;
 	height: 240px;
@@ -338,7 +368,7 @@
     		<div class="under"></div>
     	</div>
     	<div class="container-fluid">
-    		<div class="col">
+    		<div class="col about-md">
     			<div class="col-md-9 words">
     				<p>I am Yu-Ching Lin.</p>
 		  			<p>I live in Taipei city, the capital of Taiwan.</p>
@@ -357,13 +387,31 @@
 				  		<p>I learned a lot of skills and software there.</p>
 				  		<p>I know how to design a typography website beautifully.</p>
 				  		<p>I like to code logically, too.</p>
-				  		<p>I love the Response Website Design, such as the portfolio below.</p>
+				  		<p>I love the Response Website Design, such as the <a class="page-scroll" href="#portfolio">portfolio</a> below.</p>
 				  		<p>I also like to learn new techniques on Udemy.</p>
 				  	
 					</div>
 					<div class="col-md-9 words">
 						<p>I am seeking for a front-end engineer job.</p>
 		  				<p>I have a more detailed <a target="_blank" href="CV20180221(en).pdf">résumé</a> if you're interested in.</p>
+					</div>
+				
+    		</div>
+
+
+    		<div class="col about-sm">
+    			<div class="col-12 words">
+    				<p>I am Yu-Ching Lin.</p><p>I live in Taipei city.</p><p>I can speak Manderin, English and Taiwanese.</p>
+    			</div>
+				<div class="col-12 words">
+					<p>I studied <a target="_blank" href="http://psychology.ncku.edu.tw/eng/">psychology</a> in <a target="_blank" href="http://web.ncku.edu.tw/bin/home.php?Lang=en">NCKU</a>. I learned how to measure humans’ behavior and analyze it. My thesis is <a target="_blank" href="thesis.pdf">The Study of the Familiarity Effect on Artifact Categorization</a>. I have been to <a target="_blank" href="http://www.cognitivesciencesociety.org/conference/cogsci2017/">CogSci</a> to published my research in London in 2017, which was sponsored by <a target="_blank" href="https://www.most.gov.tw/?l=en">Ministry of Sicience and Technology (MOST)</a>.</p>
+				</div>
+					<div class="col-12 words">
+						<p>I have been trained in <a target="_blank" href="https://web.iii.org.tw/">Institute for Information Industry (III)</a> for half year. I learned a lot of skills and software there. I know how to design a typography website beautifully, and I like coding very much, especially response website design, you can see it in <a class="page-scroll" href="#portfolio">my portfolio</a> below.</p>
+				  	
+					</div>
+					<div class="col-12 words">
+						<p>I am seeking for a web developer job.</p><p>I have a more detailed <a target="_blank" href="CV20180221(en).pdf">résumé</a> if you're interested in.</p>
 					</div>
 				
     		</div>

@@ -27,7 +27,7 @@
 
     .welcomepic {
       height: 57.5vw;
-      background: url("../img/yuchingpic.png") top left;
+      background: url("../img/yuchingpic.jpg") top left;
       background-size: cover;
       position: relative;
     }
@@ -44,7 +44,7 @@
     #welcomepic h1{
       display: block;
       width: 45vw;
-      font-size: 5vw;
+      font-size: 4vw;
       position: absolute;
       color: #c4a046;
       right: 0;
@@ -54,6 +54,7 @@
      bottom: 28%;
      padding: 3vw 0;
      text-shadow:0 0 40px #000;
+     line-height: 5vw;
     }
 
     #welcomepic h1{

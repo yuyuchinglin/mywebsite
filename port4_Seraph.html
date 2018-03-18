@@ -5,7 +5,7 @@
 
 	<meta charset="UTF-8">
 	
-	<title>LACD | YUCHING's Website</title>
+	<title>Seraph | YUCHING's Website</title>
 	<link rel="shortcut icon" href="img/favicon.png" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -34,17 +34,22 @@
 
   .list h4 {
     	color: #c4a046;
-		margin-left: 30px;
+        display: block;
+        
+        padding: 25px 0 5px 0;
+        padding-left: 15%;
+
 		
     }
 
     .list h4 img {
     	line-height: 50px;
+
     }
 
     .list{
     	display: block;
-   		width: 820px;
+   
     	margin:auto;
     	text-align: 0;
 
@@ -56,42 +61,18 @@
 
   
 
-    /*.list>div{
-		margin: 20px 0;
-    }*/
-    .web {
-    	min-width: 590px;
-    	float: left;
+   
 
-    }
-
-    .webnav{
-    	float: left;
-    }
-
-    .scroll{
- 		height: 400px;
-    	overflow: hidden;
-    	overflow-y:scroll;
-    	float: left;
-    }
+ 
 
     body {
     	background-color: #333;
     }
 
-    .mob{
-    	height: 400px;
-    	overflow: hidden;
-    	float: left;
-    	margin-left: 15px;
-    }
+  
 
     
 
-    .clearfix {
-    overflow: auto;
-	}
 
    /* .list img {
     	padding-bottom: 20px;
@@ -112,23 +93,38 @@ p {
 }
 
 .list {
-	
+
 	margin-bottom: 50px;
 }
 
-.web, .mob {
+.web {
 	margin-bottom: 20px;
+    text-align: center;
+
+
 }
+
+.web:last-child {
+   text-align: 0;
+   margin: auto;
+}
+
+
 
 .list h4 {
 	display: block;
 	margin: 40px 0;
 }
 
-.clear{
-	clear:both;
+.clear {
+    clear: both;
 }
- 
+
+.list p {
+    margin: 30px 0;
+}
+
+
 
 
 </style>
@@ -177,15 +173,16 @@ p {
 
 <section id="port">
     	<div class="topic">
-    		<h2>[ PORTFOLIO ]</h2><h2> NCKU LACDLab</h2>
+    		<h2>[ PORTFOLIO ]</h2><h2> Seraph Kids' Wear</h2>
     		<div class="under"></div>
     	</div>
 
     	<div class="webintro">
 			
-			<p>‣  內容由 成大心理系語言與認知發展實驗室 提供</p>
-			<p>‣  Logo、圖片、版型、程式 皆由 林于靖 發想及製作</p>
-			<p>‣  整體配色為 藍色(#03007b) 與 黃色(#faf712)</p>	
+            <p>‣  資策會專題（圖片皆來自美國大型購物網站）</p>
+            <p>‣  用Photoshop為商品去背，並設計男孩女孩之瀏覽頁選單</p>
+            <a target="_blank" href="img/portfolio/Seraph/web/girl.html">
+			<p>‣  以CSS使選單能夠隨著版型調整(RWD)</p>	</a>
 		<!-- 	
 			
 				
@@ -196,27 +193,36 @@ p {
 
     			<h4>
     				<img src="img/list.png" alt="">
-    				 Front Page
+    				 Layout Design 1 -Girls
     			</h4>
 
 
-    			<div class="web clearfix">
-    				<div class="webnav">
-    				<img src="img/portfolio/LACD/frontnav.png" alt="" style="">
-    				</div>
-    				<div class="scroll">
-    				<img src="img/portfolio/LACD/front.png" alt="" style="">
+    			<!-- <div class="web clearfix">
+    				<div class="website">
+                        
+    				<img src="img/portfolio/Seraph/girl.jpg" alt="" style="width:800px">
+                    </a>
     				</div>
     				
-    			</div>
+    				
+    			</div> -->
     			
+					<!-- <div class="clear"></div> -->
 
-					<div class="mob">
-    			<img src="img/portfolio/LACDfront_m0.png" onmouseover="this.src='img/portfolio/LACDfront_m1.png';" onmouseout="this.src='img/portfolio/LACDfront_m0.png';" alt="" style="">
-					</div>
-					<div class="clear"></div>
+                <div class="web clearfix">
+                    <a target="_blank" href="img/portfolio/Seraph/web/girl.html">
+                     <div class="website" style="display: inline-block;">
+                    <img src="img/portfolio/Seraph/girl.jpg" alt="" style="height:400px">
+                    </div>
 
-					<p>‣‣ 電腦版的導覽列固定在左側，手機及平板的導覽列則設計在上方（滑鼠移至手機版可看效果）</p>
+                    <div class="website" style="display: inline-block;">
+                    <img src="img/portfolio/Seraph/girlnav.png" alt="" style="height:400px;padding-left: 10px;">
+                     </div>
+                 </a>
+
+                     <div class="clear"></div>
+
+					<p>‣‣ 點選圖片 可看電腦版的hover效果，以及縮小版型的RWD效果</p>
     		</div>
 
     		
@@ -227,143 +233,47 @@ p {
 
     			<h4>
     				<img src="img/list.png" alt="">
-    				 Professor Page
+    				 Layout Design 1 -Boys
     			</h4>
 
 
     			<div class="web clearfix">
-    				<div class="webnav">
-    				<img src="img/portfolio/LACD/profnav.png" alt="" style="">
-    				</div>
-    				<div class="scroll">
-    				<img src="img/portfolio/LACD/prof.png" alt="" style="">
-    				</div>
+    				<div class="website">
+    				<img src="img/portfolio/Seraph/boy.jpg" alt="" style="width:800px">
     				
     			</div>
-    			
-
-					<div class="mob">
-    			<img src="img/portfolio/LACD/prof_m.png" alt="" style="">
-					</div>
+    		
 					<div class="clear"></div>
     		</div>
 
 
 
-    		<div class="list members clearfix">
+    		<div class="list prof clearfix">
 
-    			<h4>
-    				<img src="img/list.png" alt="" >
-    				 Members Page
-    			</h4>
+                <h4>
+                    <img src="img/list.png" alt="">
+                     Layout Design 2
+                </h4>
 
 
-    			<div class="web clearfix">
-    				<div class="webnav">
-    				<img src="img/portfolio/LACD/membernav.png" alt="" style="">
-    				</div>
-    				<div class="scroll">
-    				<img src="img/portfolio/LACD/member.png" alt="" style="">
-    				</div>
-    				
-    			</div>
-    			
+                <div class="web clearfix">
+                    <div class="website" style="display: inline-block;">
+                    <img src="img/portfolio/Seraph/girl2.jpg" alt="" style="height:400px">
+                    </div>
 
-					<div class="mob">
-    			<img src="img/portfolio/LACD/member_m.png" alt="" style="">
-					</div>
-					<div class="clear"></div>
+                    <div class="website" style="display: inline-block;">
+                    <img src="img/portfolio/Seraph/girl2nav.jpg" alt="" style="height:400px;padding-left: 10px;">
+                     </div>
 
-					<p>‣‣ 成員頁 的電腦版為三個成員一列，手機及平板的版面則為一個成員一列</p>	
-    		</div>
+                     <div class="clear"></div>
+
+            </div>
+
+
+         
 
 
 
-    		<div class="list pub clearfix">
-
-    			<h4>
-    				<img src="img/list.png" alt="" >
-    				 Publications Page
-    			</h4>
-
-
-    			<div class="web clearfix">
-    				<div class="webnav">
-    				<img src="img/portfolio/LACD/pubnav.png" alt="" style="">
-    				</div>
-    				<div class="scroll">
-    				<img src="img/portfolio/LACD/pub.png" alt="" style="">
-    				</div>
-    				
-    			</div>
-    			
-
-					<div class="mob">
-    			<img src="img/portfolio/LACD/pub_m.png" alt="" style="">
-					</div>
-					<div class="clear"></div>
-    		</div>
-
-
-
-
-
-    		<div class="list album clearfix">
-
-    			<h4>
-    				<img src="img/list.png" alt="" >
-    				 Album Page
-    			</h4>
-
-
-    			<div class="web clearfix">
-    				<div class="webnav">
-    				<img src="img/portfolio/LACD/albumnav.png" alt="" style="">
-    				</div>
-    				<div class="scroll">
-    				<img src="img/portfolio/LACD/album.png" alt="" style="">
-    				</div>
-    				
-    			</div>
-    			
-
-					<div class="mob">
-    			<img src="img/portfolio/LACD/album_m.png" alt="" style="">
-					</div>
-					<div class="clear"></div>
-
-					<p>‣‣ 相簿頁 套用unitegallery.js，可按圖片看詳細敘述，並會隨著版型調整</p>
-    				
-    		</div>
-
-
-
-
-    		<div class="list contact clearfix">
-
-    			<h4>
-    				<img src="img/list.png" alt="" >
-    				 Contact Page
-    			</h4>
-
-
-    			<div class="web clearfix">
-    				<div class="webnav">
-    				<img src="img/portfolio/LACD/contactnav.png" alt="" style="">
-    				</div>
-    				<div class="scroll">
-    				<img src="img/portfolio/LACD/contact.png" alt="" style="">
-    				</div>
-    				
-    			</div>
-    			
-
-					<div class="mob">
-    			<img src="img/portfolio/LACD/contact_m.png" alt="" style="">
-					</div>
-					<div class="clear"></div>
-					<p>‣‣ 聯絡頁 內嵌Google地圖，且可直接留下聯絡資訊聯絡老師</p>
-    		</div>
 
 
     		

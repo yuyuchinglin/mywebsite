@@ -16,9 +16,9 @@
 .skills .skill {
   display: block;
   position: relative;
-  height: 60px;
+  height: 50px;
   margin: 10px auto;
-  width: 90%;
+  width: 60%;
 }
 @media only screen and (min-width: 900px) {
   .skills .skill {
@@ -38,13 +38,13 @@
   right: 0;
   bottom: 0;
   left: 0;
-  height: 20px;
+  height: 14px;
   background: #ddd;
 }
 .skills .skill:after {
   background-color: #c4a046;
   background: repeating-linear-gradient(-50deg, #c4a046, #c4a046 8px, #333 8px, #333 16px);
-  height: 16px;
+  height: 10px;
   top: 2px;
   right: 95%;
   bottom: 2px;

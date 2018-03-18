@@ -150,12 +150,23 @@
   text-align: center;
 }
 
+
+.port div:hover .intro {
+  background-color: #d96342;
+  color: #ddd;
+}
+
 .port img {
   width: 93%;
   display: block;
   margin: auto;
   background: transparent;
   padding-top: 5px;
+ -webkit-filter:saturate(0.8);
+}
+
+.port img:hover {
+ -webkit-filter:saturate(1.4);
 }
 
 
@@ -170,7 +181,7 @@
 }
 
 /* .intro:hover {
-  border:#f16130 5px solid;
+  border:#d96342 5px solid;
   color: #333;
 }  */
 
@@ -250,7 +261,7 @@
 }
 
 .words a:hover {
-  color: #f16130;
+  color: #d96342;
 }
 
 

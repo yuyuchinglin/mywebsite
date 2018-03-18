@@ -5,12 +5,12 @@
 
 	<meta charset="UTF-8">
 	
-	<title>LACD | YUCHING's Website</title>
+	<title>TSUVIMI | YUCHING's Website</title>
 	<link rel="shortcut icon" href="img/favicon.png" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel='stylesheet' href='css/style.css' type='text/css' />
-	
+	<script async src="http://assets.codepen.io/assets/embed/ei.js"></script>
 	
 <style>
 	*{color:#ddd;
@@ -34,17 +34,22 @@
 
   .list h4 {
     	color: #c4a046;
-		margin-left: 30px;
+        display: block;
+        
+        padding: 20px 0 5px 0;
+        padding-left: 15%;
+
 		
     }
 
     .list h4 img {
     	line-height: 50px;
+
     }
 
     .list{
     	display: block;
-   		width: 820px;
+   
     	margin:auto;
     	text-align: 0;
 
@@ -56,42 +61,18 @@
 
   
 
-    /*.list>div{
-		margin: 20px 0;
-    }*/
-    .web {
-    	min-width: 590px;
-    	float: left;
+   
 
-    }
-
-    .webnav{
-    	float: left;
-    }
-
-    .scroll{
- 		height: 400px;
-    	overflow: hidden;
-    	overflow-y:scroll;
-    	float: left;
-    }
+ 
 
     body {
     	background-color: #333;
     }
 
-    .mob{
-    	height: 400px;
-    	overflow: hidden;
-    	float: left;
-    	margin-left: 15px;
-    }
+  
 
     
 
-    .clearfix {
-    overflow: auto;
-	}
 
    /* .list img {
     	padding-bottom: 20px;
@@ -112,23 +93,38 @@ p {
 }
 
 .list {
-	
-	margin-bottom: 50px;
+
+	margin-bottom:100px;
 }
 
-.web, .mob {
-	margin-bottom: 20px;
+.web {
+	margin-bottom: 40px;
+    text-align: center;
+
+
 }
+
+.web:last-child {
+   text-align: 0;
+   margin: auto;
+}
+
+
 
 .list h4 {
 	display: block;
 	margin: 40px 0;
 }
 
-.clear{
-	clear:both;
+.clear {
+    clear: both;
 }
- 
+
+.list p {
+    margin: 30px 0;
+}
+
+
 
 
 </style>
@@ -177,193 +173,99 @@ p {
 
 <section id="port">
     	<div class="topic">
-    		<h2>[ PORTFOLIO ]</h2><h2> NCKU LACDLab</h2>
+    		<h2>[ PORTFOLIO ]</h2><h2> TSUVIMI Cosmetic</h2>
     		<div class="under"></div>
     	</div>
 
     	<div class="webintro">
 			
-			<p>‣  內容由 成大心理系語言與認知發展實驗室 提供</p>
-			<p>‣  Logo、圖片、版型、程式 皆由 林于靖 發想及製作</p>
-			<p>‣  整體配色為 藍色(#03007b) 與 黃色(#faf712)</p>	
+            <p>‣  資策會專題（圖片皆來自台灣美妝品牌TSUVIMI）</p>
+            <p>‣  整個網站的 版面設計 及 程式撰寫 皆由 林于靖 一人製作完成</p>
+            <p>‣  以CSS使選單能夠隨著版型調整(RWD)</p>	
 		<!-- 	
 			
 				
 				 -->
     	</div>
+
+
+      <div class="list frontpage clearfix">
+
+          <h4>
+            <img src="img/list.png" alt="">
+             Front Page Slider
+          </h4>
+        <div class="codepen" style="width:820px; margin:0 auto;">
+
+          <p data-height="520" data-theme-id="0" data-slug-hash="BYVdjO" data-default-tab="result" data-user="yuchinglin" data-embed-version="2" data-pen-title="slider" class="codepen">See the Pen <a href="https://codepen.io/yuchinglin/pen/BYVdjO/">slider</a> by yuchinglin (<a href="https://codepen.io/yuchinglin">@yuchinglin</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+        </div>
+          <p>‣ 可自動換下一張、游標停留在Slider時會暫停、可往左亦可往右<br>
+          ‣ 右下方有Slider控制鈕，可顯示現在是第幾張，使用者可用此切換</p>
+
+        </div>
+
     	
     		<div class="list frontpage clearfix">
 
     			<h4>
     				<img src="img/list.png" alt="">
-    				 Front Page
+    				 Lipsticks Swatches Slider (CSS Animation)
     			</h4>
+        <div class="codepen" style="width:820px; margin:0 auto;">
 
+    			<p data-height="430" data-theme-id="0" data-slug-hash="EENxrr" data-default-tab="result" data-user="yuchinglin" data-embed-version="2" data-pen-title="lipsticks slider" class="codepen">See the Pen <a href="https://codepen.io/yuchinglin/pen/EENxrr/">lipsticks slider</a> by yuchinglin (<a href="https://codepen.io/yuchinglin">@yuchinglin</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
-    			<div class="web clearfix">
-    				<div class="webnav">
-    				<img src="img/portfolio/LACD/frontnav.png" alt="" style="">
-    				</div>
-    				<div class="scroll">
-    				<img src="img/portfolio/LACD/front.png" alt="" style="">
-    				</div>
-    				
-    			</div>
-    			
-
-					<div class="mob">
-    			<img src="img/portfolio/LACDfront_m0.png" onmouseover="this.src='img/portfolio/LACDfront_m1.png';" onmouseout="this.src='img/portfolio/LACDfront_m0.png';" alt="" style="">
-					</div>
-					<div class="clear"></div>
-
-					<p>‣‣ 電腦版的導覽列固定在左側，手機及平板的導覽列則設計在上方（滑鼠移至手機版可看效果）</p>
+        </div>
+					<p>‣ 使用者可依Model試色照來挑選口紅，游標停留在圖片上則可見Model所擦的口紅色號</p>
     		</div>
 
+
+
+<div class="list frontpage clearfix">
+
+          <h4>
+            <img src="img/list.png" alt="">
+             Lipsticks Color Slider (CSS Animation)
+          </h4>
+        <div class="codepen" style="width:450px; margin:0 auto;">
+
+          <p data-height="586" data-theme-id="0" data-slug-hash="oEywXN" data-default-tab="result" data-user="yuchinglin" data-embed-version="2" data-pen-title="lipsticks menu" class="codepen">See the Pen <a href="https://codepen.io/yuchinglin/pen/oEywXN/">lipsticks menu</a> by yuchinglin (<a href="https://codepen.io/yuchinglin">@yuchinglin</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+        </div>
+          <p>‣ 口紅顏色比較，游標停留在口紅上面，則可見該口紅之色號及名稱</p>
+        </div>
     		
 
 
 
     		<div class="list prof clearfix">
 
-    			<h4>
-    				<img src="img/list.png" alt="">
-    				 Professor Page
-    			</h4>
+                <h4>
+                    <img src="img/list.png" alt="">
+                     Layout Design 2
+                </h4>
 
 
-    			<div class="web clearfix">
-    				<div class="webnav">
-    				<img src="img/portfolio/LACD/profnav.png" alt="" style="">
-    				</div>
-    				<div class="scroll">
-    				<img src="img/portfolio/LACD/prof.png" alt="" style="">
-    				</div>
-    				
-    			</div>
-    			
+                <div class="web clearfix">
+                    <div class="website" style="display: inline-block;">
+                    <img src="img/portfolio/Seraph/girl2.jpg" alt="" style="height:400px">
+                    </div>
 
-					<div class="mob">
-    			<img src="img/portfolio/LACD/prof_m.png" alt="" style="">
-					</div>
-					<div class="clear"></div>
-    		</div>
+                    <div class="website" style="display: inline-block;">
+                    <img src="img/portfolio/Seraph/girl2nav.jpg" alt="" style="height:400px;padding-left: 10px;">
+                     </div>
+
+                     <div class="clear"></div>
+
+            </div>
 
 
-
-    		<div class="list members clearfix">
-
-    			<h4>
-    				<img src="img/list.png" alt="" >
-    				 Members Page
-    			</h4>
-
-
-    			<div class="web clearfix">
-    				<div class="webnav">
-    				<img src="img/portfolio/LACD/membernav.png" alt="" style="">
-    				</div>
-    				<div class="scroll">
-    				<img src="img/portfolio/LACD/member.png" alt="" style="">
-    				</div>
-    				
-    			</div>
-    			
-
-					<div class="mob">
-    			<img src="img/portfolio/LACD/member_m.png" alt="" style="">
-					</div>
-					<div class="clear"></div>
-
-					<p>‣‣ 成員頁 的電腦版為三個成員一列，手機及平板的版面則為一個成員一列</p>	
-    		</div>
+         
 
 
 
-    		<div class="list pub clearfix">
-
-    			<h4>
-    				<img src="img/list.png" alt="" >
-    				 Publications Page
-    			</h4>
-
-
-    			<div class="web clearfix">
-    				<div class="webnav">
-    				<img src="img/portfolio/LACD/pubnav.png" alt="" style="">
-    				</div>
-    				<div class="scroll">
-    				<img src="img/portfolio/LACD/pub.png" alt="" style="">
-    				</div>
-    				
-    			</div>
-    			
-
-					<div class="mob">
-    			<img src="img/portfolio/LACD/pub_m.png" alt="" style="">
-					</div>
-					<div class="clear"></div>
-    		</div>
-
-
-
-
-
-    		<div class="list album clearfix">
-
-    			<h4>
-    				<img src="img/list.png" alt="" >
-    				 Album Page
-    			</h4>
-
-
-    			<div class="web clearfix">
-    				<div class="webnav">
-    				<img src="img/portfolio/LACD/albumnav.png" alt="" style="">
-    				</div>
-    				<div class="scroll">
-    				<img src="img/portfolio/LACD/album.png" alt="" style="">
-    				</div>
-    				
-    			</div>
-    			
-
-					<div class="mob">
-    			<img src="img/portfolio/LACD/album_m.png" alt="" style="">
-					</div>
-					<div class="clear"></div>
-
-					<p>‣‣ 相簿頁 套用unitegallery.js，可按圖片看詳細敘述，並會隨著版型調整</p>
-    				
-    		</div>
-
-
-
-
-    		<div class="list contact clearfix">
-
-    			<h4>
-    				<img src="img/list.png" alt="" >
-    				 Contact Page
-    			</h4>
-
-
-    			<div class="web clearfix">
-    				<div class="webnav">
-    				<img src="img/portfolio/LACD/contactnav.png" alt="" style="">
-    				</div>
-    				<div class="scroll">
-    				<img src="img/portfolio/LACD/contact.png" alt="" style="">
-    				</div>
-    				
-    			</div>
-    			
-
-					<div class="mob">
-    			<img src="img/portfolio/LACD/contact_m.png" alt="" style="">
-					</div>
-					<div class="clear"></div>
-					<p>‣‣ 聯絡頁 內嵌Google地圖，且可直接留下聯絡資訊聯絡老師</p>
-    		</div>
 
 
     		

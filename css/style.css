@@ -2,7 +2,10 @@
       margin: 0;
       padding: 0;
       font-family: 'Raleway', sans-serif;
+      /* color: #ddd; */
     }
+
+
 
     
     .navbar {
@@ -75,10 +78,10 @@
 
     .topic  {
       color: #c4a046;
-      padding: 20px;
+      padding: 50px;
       margin: 0;
       text-align: center;
-      padding-top: 40px;
+      padding-top: 70px;
     }
 
     .under{
@@ -88,6 +91,84 @@
       width: 150px;
       height: 50px;
     }
+
+
+
+    .box{  
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background-color: #c4a046;
+      position: absolute;
+      right: 5%;
+      top: 3%;
+     
+      display: table;
+      margin: 0 auto;
+
+
+    }
+
+
+    .insidebox {
+      /* background-color: red; */
+      display: table-cell;
+     text-align: center;
+      
+      vertical-align: middle;
+      /* margin: 18px 0; */
+      font-size: 18px;
+      line-height: 23px;   
+      padding-top: 10px;
+    }
+
+    .box p{
+           color: #333;
+    }
+
+
+    a{
+      color: #c4a046
+    }
+
+    a:hover {
+      color: #d96342;
+    }
+
+
+.word {
+  margin-bottom: 30px;
+}
+
+.word h6{
+  font-size: 16px;
+  line-height: 18px;
+  color: #c4a046;
+}
+
+.word h5{
+  font-size: 22px;
+  line-height: 22px;
+  color: #d96342;
+}
+
+.word p{
+  font-size: 16px;
+  color: #ddd;
+  text-align: justify;
+}
+
+
+.about-topic h4{
+  display: inline-block;
+width: auto;
+padding: 15px;
+  background-color: #c4a046;
+  border-radius: 10px;
+  margin: 20px 0;
+  margin-left: 50px;
+  color: #333;
+}
 
 
 
@@ -274,6 +355,9 @@
       height: 100%; 
     }
 
+
+  
+
 /*about*/
 
 /*contact*/
@@ -294,6 +378,7 @@
   position: relative;
   box-shadow:15px 15px 12px  rgba(20,20,20,0.7);
   margin-bottom: 20px;
+  color: #333;
 }
 
 .bsn-logo {
@@ -332,12 +417,20 @@
   width: 340px;
   height: 240px;
  }
+}
 /*contact*/
 
 
 
 
 
-/* skills */
+/* about */
+
+
+
+
+
+
+
 
 

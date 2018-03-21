@@ -137,7 +137,7 @@
 
 
 .word {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .word h6{
@@ -158,17 +158,56 @@
   text-align: justify;
 }
 
+.about-topic {
+  padding-left: 10%;
+}
+
+.about-topic h4{
+  text-align: left;
+width: auto;
+text-decoration: underline;
+ 
+  line-height: 100px;
+  color: #c4a046;
+}
+
+
+@media (max-width: 768px) { 
+
+.about-topic {
+  padding-left: 1%;
+}
 
 .about-topic h4{
   display: inline-block;
-width: auto;
-padding: 15px;
-  background-color: #c4a046;
-  border-radius: 10px;
-  margin: 20px 0;
-  margin-left: 50px;
+  line-height: 20px;
+  background-color:  #c4a046;
   color: #333;
+   border-radius: 5px;
+  padding: 2px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 30px;
+
 }
+.word h6{
+  line-height: 12px;
+}
+
+.word p{
+  padding: 0 15px 0 0;
+  line-height: 20px;
+}
+
+.word h5{
+  padding: 0 15px 0 0;
+}
+
+
+
+}
+
+
 
 
 

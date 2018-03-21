@@ -166,9 +166,10 @@
   text-align: left;
 width: auto;
 text-decoration: underline;
- 
+ font-size: 25px;
   line-height: 70px;
   color: #c4a046;
+  /* color: #ddd; */
 }
 
 

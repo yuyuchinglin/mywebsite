@@ -78,7 +78,7 @@
 
     .topic  {
       color: #c4a046;
-      padding: 50px;
+      padding:20px;
       margin: 0;
       text-align: center;
       padding-top: 70px;
@@ -167,7 +167,7 @@
 width: auto;
 text-decoration: underline;
  
-  line-height: 100px;
+  line-height: 70px;
   color: #c4a046;
 }
 

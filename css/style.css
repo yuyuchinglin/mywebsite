@@ -293,11 +293,11 @@
 
 /*contact*/
 
-  #contact { 
+  /* #contact { 
     background: url('img/contactbg.png') center center #333;
     background-size: contain;
     background-attachment: fixed;
-  }
+  } */
 
   .bsncard {
     width: 400px;

@@ -74,12 +74,28 @@
 
 <div class="container-fluid">
 
+
+	<!-- <div class="col-12 about-topic"><h4>OBJECTIVE</h4></div> -->
+
+		<div class="row">
+				<div class="d-none d-sm-block col-sm-2">
+					<!-- <div class="box">
+						<div class="insidebox"><p>my<br>status<br>now</p></div>
+					</div> -->
+				</div>
+
+				<div class="word col-12 col-sm-8 my-3">
+				<h5 style="text-align: center;">Hello, I am Yu-Ching Lin. <div style="color:#c4a046; display: inline-block;">Welcome to my website!</div></h5>
+				<p style="font-size: 17px;"> I just graduated from the Institute of Psychology in NCKU. And, I had been trained in Institute for Information Industry for half year. I am still learning more programming skills on Udemy. Now, I am seeking for a front-end engineering job. I have a more detailed <a target="_blank" href="CV20180221(en).pdf">résumé</a> if you're interested in.</p>					
+				</div>
+		</div>
+
 	<div class="col-12 about-topic"><h4>WORK EXPERIENCE</h4></div>
 
 		<div class="row">
 				<div class="d-none d-sm-block col-sm-3">
 					<div class="box">
-						<div class="insidebox"><p>2017.12<br>|<br>2017.09</p></div>
+						<div class="insidebox"><p>2018.01<br>↑<br>2017.09</p></div>
 					</div>
 				</div>
 
@@ -100,14 +116,14 @@
 		<div class="row">
 				<div class="d-none d-sm-block col-sm-3">
 					<div class="box">
-						<div class="insidebox"><p>2017.09<br>|<br>2015.09</p></div>
+						<div class="insidebox"><p>2017.09<br>↑<br>2015.09</p></div>
 					</div>
 				</div>
 
 				<div class="word col-12 col-sm-8">
 				<h6>National Cheng Kung University (NCKU)</h6>
 				<h5>Master’s degree in Psychology</h5>
-				<p>I learned how to measure humans’ behavior and analyze it. I was the outstanding graduate student in 2015. I wrote a thesis, <a target="_blank" href="thesis.pdf">The Study of the Familiarity Effect on Artifact Categorization</a>. I have been to CogSci to published my research in London in 2017, which was sponsored by Ministry of Sicience and Technology (MOST).</p>					
+				<p>I learned behavior measurement and data analysis. I was the outstanding graduate student in 2015. I wrote a thesis, <a target="_blank" href="thesis.pdf">The Study of the Familiarity Effect on Artifact Categorization</a>. I have been to CogSci to publish my research in London in 2017, sponsored by Ministry of Sicience and Technology (MOST).</p>					
 				</div>
 		</div>
 
@@ -116,7 +132,7 @@
 			<div class="row">
 				<div class="d-none d-sm-block col-sm-3">
 					<div class="box">
-						<div class="insidebox"><p>2015.09<br>|<br>2015.04</p></div>
+						<div class="insidebox"><p>2015.09<br>↑<br>2015.04</p></div>
 					</div>
 				</div>
 				<div class="word col-12 col-sm-8">
@@ -562,7 +578,7 @@
     	</div>
     	<div class="skillsIntro">
     		<ul>
-    			<li><b>Language:</b> Chinese (native), English (TOIEC:795/990), Taiwanese</li>
+    			<li><b>Language:</b> Chinese (native), English (fluent), Taiwanese</li>
     			<li><b>Data Analysis:</b> R, SPSS</li>
     			<li><b>Software:</b> Photoshop, Illustrator, Flash, InDesign, Premiere, Dreamweaver</li>
     			<li><b>Programming Skills:</b> HTML, CSS, Bootstrap, jQuery, JavaScript, PHP, MySQL, Github</li>
@@ -571,10 +587,10 @@
 
 		<ul class="skills">
   <li class="skill" aria-label="advanced">Photoshop</li>
-  <li class="skill" aria-label="pro">HTML / CSS / RWD</li>
+  <li class="skill" aria-label="pro">HTML, CSS (RWD)</li>
   <li class="skill" aria-label="advanced">Bootstrap</li>
-  <li class="skill" aria-label="advanced">JavaScript / jQuery</li>
-  <li class="skill" aria-label="average">PHP / MySQL</li>
+  <li class="skill" aria-label="advanced">jQuery, JavaScript (json, ajax)</li>
+  <li class="skill" aria-label="average">PHP, MySQL</li>
 
   
   <li class="skill" aria-label="novice">Github</li>
@@ -647,6 +663,7 @@
 <script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/SmoothScroll.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
 
 <script type="text/javascript">
 
@@ -669,6 +686,9 @@
     });
 });
 
+
+		
+
 		
 	
 	</script>
@@ -682,6 +702,119 @@
 
 		  gtag('config', 'UA-115360200-1');
 		</script>
+
+
+		<script>	
+			// alert('hello');
+
+
+			// $('#about').waypoint(function() {
+			// alert('hello');
+ 		// 	 // $("#about").css({ 
+		 //   //      background-color: "red"
+   // 		// 	   });
+			// }, { offset: 30px });
+
+
+			// var waypoint = new Waypoint({
+ 		// 		 element: document.getElementById('about'),
+ 		// 		 handler: function() {
+   // 					$("#about").css({ 
+   // 						display: "block",
+   // 						margin-top: "0"
+   // 						// animation-delay: "0.5s"
+   // 						});
+ 		// 		 }
+			// })
+$(document).ready(function(){
+
+		// $(window).scroll(function() {
+
+				//   if($(window).scrollTop() < $('#about').offset().top){
+				//     $('#about').slideDown(1500);
+				//     $('#about').css('margin-left','2000px');
+				//     $('#about').delay(2000).css('margin-left','0');
+				//     $('.resume').addClass('here');
+				//     $('.profile').removeClass('here');
+				//     $('.skill').removeClass('here');
+				//     $('.portfolio').removeClass('here');
+				//   }
+				// });
+
+	
+
+			$(window).scroll(function() {
+				// $('#about').css('visibility','hidden');
+				
+
+			if($(window).scrollTop() < $('#about').offset().top){
+				
+			//     // $('#about').slideDown(1500);
+			//     //$('#about .topic').addClass('left');
+			//     // $('.topic').delay(2000).css('margin-left','0');
+			//     // $('.resume').addClass('leftAnimation');
+			//     // $('.profile').removeClass('here');
+			//     // $('.skill').removeClass('here');
+			//     // $('.portfolio').removeClass('here');
+			  }
+
+
+			var aboutApear = $('#welcomepic').height()*1/4;
+
+			  if($(window).scrollTop() >= aboutApear){
+			    $('#about').css('visibility','visible');
+			    $('#about').css('animation','topAnim 2s');
+			  }
+
+
+			  var portfolioApear =  $('#portfolio').offset().top-($('#about').height()*3/4);
+
+
+			  if($(window).scrollTop() >= portfolioApear){
+			    $('#portfolio').css('visibility','visible');
+			    $('#portfolio').css('animation','topAnim 2s');
+			  }
+
+			  var momentsApear =  $('#moments').offset().top-($('#portfolio').height()*3/4);
+
+			  if($(window).scrollTop() >= momentsApear ){
+			    $('#moments').css('visibility','visible');
+			    $('#moments').css('animation','topAnim 2s');
+			  }
+
+			  var skillsApear =  $('#skills').offset().top-($('#portfolio').height()*3/4);
+
+			  if($(window).scrollTop() >= skillsApear ){
+			    $('#skills').css('visibility','visible');
+			    $('#skills').css('animation','topAnim 2s');
+			  }
+
+			  var contactApear =  $('#contact').offset().top-($('#portfolio').height()*3/4);
+
+			  if($(window).scrollTop() >= contactApear ){
+			    $('#contact').css('visibility','visible');
+			    $('#contact').css('animation','topAnim 2s');
+			  }
+
+
+
+
+
+			});
+
+
+			
+
+
+		})
+		
+		
+		</script>
+
+
+		  
+
+		
 
 
 	

@@ -31,7 +31,7 @@
   content: "";
   position: absolute;
   border-radius: 20px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .skills .skill:before {
   top: 0;
@@ -42,17 +42,22 @@
   background: #ddd;
 }
 .skills .skill:after {
-  background-color: #c4a046;
   background: repeating-linear-gradient(-50deg, #c4a046, #c4a046 8px, #333 8px, #333 16px);
   height: 10px;
   top: 2px;
   right: 95%;
   bottom: 2px;
   left: 2px;
+}
+
+.skillAnimation {
   -webkit-animation: fill 2s both;
   -moz-animation: fill 2s both;
   animation: fill 2s both;
 }
+
+
+
 .skills .skill:nth-child(1):after {
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
@@ -141,7 +146,7 @@
 
 @media only screen and (min-width: 850px) {
   .skillsIntro {   
-    width: 750px;
+    width:750px;
     margin: 0 auto;
     margin-bottom: 40px;
   }

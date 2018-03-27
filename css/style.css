@@ -19,6 +19,12 @@
     }
 
 
+
+    #about{
+      /* visibility: none; */
+    }
+
+
     .navbar-brand {
       height: 60px;
       background-color: red;
@@ -82,7 +88,15 @@
       margin: 0;
       text-align: center;
       padding-top: 70px;
+
+      /* background-color: red; */
     }
+   /*  .topicAnmi {
+       animation: topicAnmi 2s;
+    } */
+
+
+
 
     .under{
       background: url('../img/line.jpg') center center no-repeat;
@@ -137,8 +151,10 @@
 
 
 .word {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
+
+
 
 .word h6{
   font-size: 16px;
@@ -465,6 +481,44 @@ text-decoration: underline;
 
 
 /* about */
+
+/* animation */
+
+/* .leftAnimation {
+  animation:topicAnim 2s;
+} */
+
+body {
+  background-color: #333;
+}
+
+#about, #moments, #skills, #portfolio, #contact {
+    visibility: hidden;
+    }
+
+ @keyframes leftAnim {
+    0%   {margin-left: 2000px;}
+}
+
+
+@keyframes topAnim {
+    0%   {margin-top: 2000px;}
+    /* 100% {visibility: visible;} */
+}
+
+.top {
+  margin-top: 2000px;
+}
+
+
+.left {
+  margin-left: 2000px;
+}
+
+
+.right {
+  margin-right: 2000px;
+}
 
 
 

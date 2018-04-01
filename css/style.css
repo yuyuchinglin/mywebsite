@@ -86,10 +86,34 @@
 
   .topic  {
     color: #c4a046;
-    padding:20px;
+    padding:25px;
     margin: 0;
     text-align: center;
     padding-top: 40px;
+  }
+
+  .topic h2 {
+    padding: 10px;
+  }
+
+  @media (max-width: 900px) {
+    .topic {
+      padding-top: 0px;
+      padding:15px;
+      /* background-color: red; */
+
+    }
+
+    .topic h2 {
+      padding: 0px;
+      font-size: 26px;
+    }
+
+    .under {
+      height: 10px;
+      width: 90px;
+    }
+
   }
    
   .under{
@@ -97,7 +121,7 @@
     background-size: contain;
     margin: 0 auto;
     width: 150px;
-    height: 50px;
+    height: 25px;
   }
 
 

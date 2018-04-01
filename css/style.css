@@ -184,7 +184,6 @@
   }
 
   .about-topic h4{
-    text-align: left;
     width: auto;
     text-decoration: underline;
     font-size: 25px;
@@ -323,9 +322,6 @@
 
   #contact { 
     background: url('../img/contactbg3.jpg') center center;
-    /* background-size: contain; */
-    /* background-attachment: fixed; */
-    /* padding-bottom: 20px; */
   } 
 
 
@@ -350,7 +346,7 @@
     width: 65px;
     height: 65px;
     background: url('../img/icon.png') center center no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 
   .bsn-intro {
@@ -382,6 +378,10 @@
     width: 340px;
     height: 240px;
    }
+
+   #contact { 
+    background: #333;
+  }
   }
 
 

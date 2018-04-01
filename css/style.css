@@ -100,20 +100,17 @@
     .topic {
       padding-top: 0px;
       padding:15px;
-      /* background-color: red; */
-
     }
 
     .topic h2 {
       padding: 0px;
-      font-size: 26px;
+      font-size: 28px;
     }
 
     .under {
       height: 10px;
       width: 90px;
     }
-
   }
    
   .under{
@@ -221,6 +218,7 @@
   .word p{
     padding: 0 15px 0 0;
     line-height: 20px;
+    font-size: 14px;
   }
 
   .word h5{

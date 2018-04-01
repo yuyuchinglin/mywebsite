@@ -22,6 +22,12 @@
     overflow: hidden;
   }
 
+
+  #welcomepic, #about, #moments, #skills, #portfolio, #contact {
+    margin-bottom: 30px;
+  }
+
+
   .navbar-brand {
     height: 60px;
     background-color: red;
@@ -83,7 +89,7 @@
     padding:20px;
     margin: 0;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 40px;
   }
    
   .under{
@@ -293,22 +299,28 @@
 
 /*contact*/
 
-  /* #contact { 
-    background: url('img/contactbg.png') center center #333;
-    background-size: contain;
-    background-attachment: fixed;
-  } */
+  #contact { 
+    background: url('../img/contactbg3.jpg') center center;
+    /* background-size: contain; */
+    /* background-attachment: fixed; */
+    /* padding-bottom: 20px; */
+  } 
+
+
+  #contact >.topic{
+    background-color: #333;
+  }
 
   .bsncard {
     width: 400px;
     height: 250px;
     background-color: #ddd;
-    margin: 0 auto;
+    margin: 20px auto;
     border-radius: 5px;
     padding: 20px;
     position: relative;
     box-shadow:15px 15px 12px  rgba(20,20,20,0.7);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #333;
   }
 
@@ -358,7 +370,18 @@
     overflow: hidden;
   }
 
+
   @keyframes topAnim {
     0%   {margin-top: 1500px;}
+    /* 100% {visibility: visible;} */
+  }
+
+  @keyframes leftAnim {
+    0%   {margin-left: 600px;}
+    /* 100% {visibility: visible;} */
+  }
+
+  @keyframes rightAnim {
+    0%   {margin-left: -600px;}
     /* 100% {visibility: visible;} */
   }

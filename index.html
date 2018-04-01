@@ -388,12 +388,12 @@
 		     style="display:none">
 		</a>
 
-		<a href="http://unitegallery.net">
+		<!-- <a href="http://unitegallery.net">
 		<img alt="Hi Zenbo!"
 		     src="img/ig/thumbs/20170616.jpg"
 		     data-image="img/ig/20170616.jpg"
 		     style="display:none">
-		</a>
+		</a> -->
 
 		<!-- <a href="http://unitegallery.net">
 		<img alt="Thank you all for taking care of me."
@@ -577,7 +577,7 @@
 				<img src="img/icon_ig.png" alt="" style="width: 35px">
 			</a>
 			
-			<img src="img/icon.png" class="logo" style="width: 80px; margin: 0 10px; " alt="">
+			<img src="img/icon.png" class="logo" style="width: 70px; margin: 0 10px; " alt="">
 
 
 			<a target="_blank" href="https://codepen.io/yuchinglin/">
@@ -601,17 +601,17 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/SmoothScroll.js"></script>
-	<script src="js/lazyload.min.js"></script>
+	<!-- <script src="js/lazyload.min.js"></script> -->
 
 	
 	<!-- lazyload -->
-	<script>
+	<!-- <script>
 		$(function() {
             $(".lazyload").lazyload({
                   effect : "fadeIn"
             });
       });
-	</script>
+	</script> -->
      
 	<!-- moments -->
 	<script>
@@ -668,27 +668,27 @@
 
 			  if($(window).scrollTop() >= aboutApear){
 			    $('#about').css('visibility','visible');
-			    $('#about').css('animation','topAnim 1s');
+			    $('#about').css('animation','rightAnim 1.5s');
 			  }
 
 			  if($(window).scrollTop() >= portfolioApear){
-			    $('#portfolio').css('visibility','visible');
-			    $('#portfolio').css('animation','topAnim 1s');
+				$('#portfolio').css('visibility','visible');
+			    $('#portfolio').css('animation','leftAnim 1.5s');
+			  }	
+
+			  if($(window).scrollTop() >= skillsApear ){
+			    $('#skills').css('visibility','visible');
+			    $('#skills').css('animation','rightAnim 1.5s');
 			  }		
 
 			  if($(window).scrollTop() >= momentsApear ){
 			    $('#moments').css('visibility','visible');
-			    $('#moments').css('animation','topAnim 1s');
-			  }		
-
-			  if($(window).scrollTop() >= skillsApear ){
-			    $('#skills').css('visibility','visible');
-			    $('#skills').css('animation','topAnim 1s');
-			  }		
+			    $('#moments').css('animation','leftAnim 1.5s');
+			  }			
 
 			  if($(window).scrollTop() >= contactApear ){
 			    $('#contact').css('visibility','visible');
-			    $('#contact').css('animation','topAnim 1s');
+			    $('#contact').css('animation','rightAnim 1.5s');
 			  }
 
 			});

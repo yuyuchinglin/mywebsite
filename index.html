@@ -9,9 +9,10 @@
 	<link rel="shortcut icon" href="img/favicon.png" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel='stylesheet' href='css/skillbar.css' type='text/css' />
 	<link rel='stylesheet' href='css/style.css' type='text/css' />
 	<link rel='stylesheet' href='css/unite-gallery.css' type='text/css' />
-	<link rel='stylesheet' href='css/skillbar.css' type='text/css' />
+	
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
 </head>
@@ -194,35 +195,48 @@
 
 		<!-- skills 列點介紹 -->
     	<div class="skillsIntro">
+
     		<ul>
     			<li>
-    				<b>Language:</b> 
-    				 Chinese (native), English (fluent), Taiwanese
+    				<b>Language:</b> <br>
+    				<div class="graph">
+			<div class="chart" data-percent="100"><p>Chinese<br>(native)</p></div>
+  			<div class="chart" data-percent="80"><p>English<br>(fluent)</p></div>
+ 			<div class="chart" data-percent="70"><p>Taiwanese<br>(fluent)</p></div>
+    				</div>
+					
+					
     			</li>
     			<li>
-    				<b>Data Analysis:</b>
-    				 R, SPSS
+    				<b>Data Analysis:</b> <br>
+    				<div class="graph">
+			<div class="chart" data-percent="80"><p>R<br>80%</p></div>
+  			<div class="chart" data-percent="80"><p>SPSS<br>80%</p></div>
+    				</div>
     			</li>
     			<li>
     				<b>Software:</b>
-    				 Photoshop, Illustrator, Flash, InDesign, Premiere, Dreamweaver
+    					<div class="graph-cont">
+						  <div class="bar bar1">Photoshop</div>
+						  <div class="bar bar2">Illustrator</div>
+						  <div class="bar bar4">Premiere</div>
+						  <div class="bar bar5">Dreamweaver</div>
+						</div>
     			</li>
     			<li>
-    				<b>Programming Skills:</b>
-    				 HTML, CSS, Bootstrap, jQuery, JavaScript, PHP, MySQL, Github
+    				<b>Programming:</b>
+    					<div class="graph-cont">
+						  <div class="bar bar6">HTML,CSS (RWD)</div>
+						  <div class="bar bar7">Bootstrap</div>
+						  <div class="bar bar8">jQuery, JavaScript (json, ajax, API)</div>
+						  <div class="bar bar9">PHP, MySQL</div>
+						  <div class="bar bar10">Github</div>
+						</div>
     			</li>
     		</ul>
     	</div>
 		
-		<!-- skills 圖 -->
-		<ul class="skills">
-			<li class="skill" aria-label="advanced">Photoshop</li>
-			<!-- <li class="skill" aria-label="pro">HTML, CSS (RWD)</li>
-			<li class="skill" aria-label="advanced">Bootstrap</li>
-			<li class="skill" aria-label="advanced">jQuery, JavaScript (json, ajax)</li>
-			<li class="skill" aria-label="average">PHP, MySQL</li>
-			<li class="skill" aria-label="novice">Github</li> -->
-		</ul>
+		
 	</section>
 
     
@@ -601,99 +615,22 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/SmoothScroll.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/main.js"></script>
 	<!-- <script src="js/lazyload.min.js"></script> -->
 
 	
-	<!-- lazyload -->
-	<!-- <script>
-		$(function() {
-            $(".lazyload").lazyload({
-                  effect : "fadeIn"
-            });
-      });
-	</script> -->
-     
-	<!-- moments -->
-	<script>
-		jQuery(document).ready(function(){
-
-			jQuery("#gallery").unitegallery({
-				tile_enable_icons:false,
-				tiles_type:"justified"
-			});
-		});
-	</script>
-
-	<!-- page scroll -->
-	<script>
-		$(function() {
-    		$('a.page-scroll').bind('click', function(event) {
-		        var $anchor = $(this);
-		        $('html, body').stop().animate({
-		            scrollTop: $($anchor.attr('href')).offset().top
-		        }, 800, 'linear');
-		        event.preventDefault();
-   			});
-		});
-	</script>
-		
-
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115360200-1"></script>
-	<script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115360200-1">
+	
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
 		  gtag('config', 'UA-115360200-1');
+
 	</script>
-
-
-	<!-- 動畫 -->
-	<script>	
-		$(document).ready(function(){
-		setTimeout(() => window.scrollTo(0,0), 150);
-		//重新整理回到最上方
-
-		$(window).scroll(function() {	
-
-			var proportion = 2/3;
-			var aboutApear = $('#welcomepic').height()*1/3;
-			var portfolioApear =  $('#portfolio').offset().top-($('#about').height()*proportion);
-			var skillsApear =  $('#skills').offset().top-($('#portfolio').height()*proportion);
-			var momentsApear =  $('#skills').offset().top;
-			//注意：moments 會在 skills section top 時，開始跑動畫
-			var contactApear =  $('#contact').offset().top-($('#moments').height()*proportion);
-
-			  if($(window).scrollTop() >= aboutApear){
-			    $('#about').css('visibility','visible');
-			    $('#about').css('animation','rightAnim 1.5s');
-			  }
-
-			  if($(window).scrollTop() >= portfolioApear){
-				$('#portfolio').css('visibility','visible');
-			    $('#portfolio').css('animation','leftAnim 1.5s');
-			  }	
-
-			  if($(window).scrollTop() >= skillsApear ){
-			    $('#skills').css('visibility','visible');
-			    $('#skills').css('animation','rightAnim 1.5s');
-			  }		
-
-			  if($(window).scrollTop() >= momentsApear ){
-			    $('#moments').css('visibility','visible');
-			    $('#moments').css('animation','leftAnim 1.5s');
-			  }			
-
-			  if($(window).scrollTop() >= contactApear ){
-			    $('#contact').css('visibility','visible');
-			    $('#contact').css('animation','rightAnim 1.5s');
-			  }
-
-			});
-		})
-	</script>
+	
 
 </body>
 </html>

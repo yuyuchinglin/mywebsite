@@ -392,6 +392,11 @@
     overflow: hidden;
   }
 
+  #about, #moments, #skills, #portfolio, #contact {
+    visibility: visible;
+    overflow: hidden;
+  }
+
 
   @keyframes topAnim {
     0%   {margin-top: 1500px;}
@@ -407,3 +412,147 @@
     0%   {margin-left: -600px;}
     /* 100% {visibility: visible;} */
   }
+
+  .skillsIntro {
+
+  margin-bottom: 50px;
+  text-align: left;
+  padding:0  2%;
+}
+
+.skillsIntro ul{
+  list-style-type:none; 
+}
+
+.skillsIntro li:before{
+  content: " ‣ "; 
+  color: #c4a046;
+}
+
+@media only screen and (min-width: 850px) {
+  .skillsIntro {   
+    width:750px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+}
+
+@media (max-width: 768px) { 
+.skillsIntro {
+  padding: 0 20px;
+  /* text-align: center; */
+}
+
+
+}
+
+
+
+
+/* skill */
+
+.skillsIntro b {
+  color: #c4a046;
+}
+
+.graph{
+  text-align:center;
+}
+
+.chart {
+  width: 150px;
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px;
+  color:   #c4a046;
+  font-weight: 400;
+  /*text-transform: uppercase;*/
+  text-align: center;
+} 
+
+canvas {
+  position: absolute;
+  top: 0; left: 0;
+}
+
+.chart p{
+  margin: 50px auto;
+  line-height: 25px;
+}
+
+.graph-cont{
+  width: 80%;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+
+.bar{
+  height: 25px;
+  line-height: 25px;
+  font-weight: 550;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  font-size: 16px;
+  color: #333;
+  padding: 0 0 0 10px;
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bar::before{
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  top: 0;
+  z-index: -2;
+  background: #ddd;
+}
+
+ .bar::after{
+  content: '';
+  background: #c4a046;
+  height: 100%;
+  transition: 0.7s;
+  display: block;
+  width: 100%;
+  -webkit-animation: bar-before 1 1.8s;
+  position: absolute;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bar1::after{max-width: 90%;}
+.bar2::after{max-width: 50%;}
+.bar3::after{max-width: 50%;}
+.bar4::after{max-width: 70%;}
+.bar5::after{max-width: 85%;}
+
+.bar6::after{max-width: 95%;}
+.bar7::after{max-width: 80%;}
+.bar8::after{max-width: 70%;}
+.bar9::after{max-width: 40%;}
+.bar10::after{max-width: 65%;}
+
+@-webkit-keyframes bar-before{
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+  
+
+
+

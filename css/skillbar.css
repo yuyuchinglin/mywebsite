@@ -134,48 +134,7 @@
 */
 
 
-.skillsIntro {
 
-  margin-bottom: 50px;
-  text-align: left;
-  padding:0  2%;
-}
-
-.skillsIntro ul{
-  list-style-type:none; 
-}
-
-.skillsIntro li:before{
-  content: " ‣ "; 
-  color: #c4a046;
-}
-
-@media only screen and (min-width: 850px) {
-  .skillsIntro {   
-    width:750px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-
-}
-
-@media (max-width: 768px) { 
-.skillsIntro {
-  padding: 0 20px;
-  /* text-align: center; */
-}
-
-
-}
-
-
-
-
-
-
-.skillsIntro b {
-  color: #c4a046;
-}
 
 
 

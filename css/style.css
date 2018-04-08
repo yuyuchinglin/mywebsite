@@ -321,7 +321,7 @@
 /*contact*/
 
   #contact { 
-    background: url('../img/contactbg3.jpg') center center;
+    background: url('../img/contactbg4.jpg') center center;
   } 
 
 
@@ -533,7 +533,6 @@ canvas {
 
 .bar1::after{max-width: 90%;}
 .bar2::after{max-width: 50%;}
-.bar3::after{max-width: 50%;}
 .bar4::after{max-width: 70%;}
 .bar5::after{max-width: 85%;}
 

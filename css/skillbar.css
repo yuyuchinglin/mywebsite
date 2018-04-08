@@ -12,14 +12,17 @@
   list-style: none;
   font-size: 18px;
   padding: 0;
+  background-color: red;
 }
 .skills .skill {
   display: block;
   position: relative;
   height: 50px;
   margin: 10px auto;
-  width: 70%;
+  width: 70vw;
+  background: yellow;
 }
+
 @media only screen and (min-width: 900px) {
   .skills .skill {
     display: inline-block;
@@ -27,11 +30,13 @@
     margin: 10px;
   }
 }
+
 .skills .skill:before, .skills .skill:after {
   content: "";
   position: absolute;
   border-radius: 20px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  margin-left: 250px;
 }
 .skills .skill:before {
   top: 0;

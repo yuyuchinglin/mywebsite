@@ -343,10 +343,10 @@
   }
 
   .bsn-logo {
-    width: 65px;
-    height: 65px;
+    width: 80px;
+    height: 80px;
     background: url('../img/icon.png') center center no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 
   .bsn-intro {

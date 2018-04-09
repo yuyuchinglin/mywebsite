@@ -37,6 +37,14 @@
     width: 60vw;  
   }
 
+  .nav-item a {
+    color: #ddd;
+  }
+
+  .nav-item a:hover {
+    color: #d96342;
+  }
+
 
 /* welcome */
 
@@ -112,7 +120,7 @@
       right: 0;
       background-color: #333;
       text-align: center;
-      bottom: 15%;
+      bottom: 18%;
       padding: 3vw 0;
       text-shadow:0 0 40px #000;
       line-height: 10vw;
@@ -363,6 +371,7 @@
     box-shadow:15px 15px 12px  rgba(20,20,20,0.7);
     margin-bottom: 25px;
     color: #333;
+    opacity: 0;
   }
 
   .bsn-logo {
@@ -420,6 +429,11 @@
     overflow: hidden;
   }
 
+  .rightAnim {
+   -webkit-animation: rightAnim 3s;
+    transition: 3s;
+  }
+
 
   @keyframes topAnim {
     0%   {margin-top: 1500px;}
@@ -432,7 +446,7 @@
   }
 
   @keyframes rightAnim {
-    0%   {margin-left: -600px;}
+    0%   {left: -600px;}
     /* 100% {visibility: visible;} */
   }
 

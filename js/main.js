@@ -84,6 +84,8 @@
 	
 		$(function() {
 
+
+		//easychart + waypoints
 		$('.chart').waypoint(function() {
 		  $(this).easyPieChart({
 		    scaleColor: false,
@@ -102,11 +104,23 @@
 
 
 
-
+		//barchart waypoints
 		$('.graph-cont').waypoint(function() {
-
       		$('.bar').addClass('animation');
-  		}, { offset: 500 });
+  		}, { offset: 300 });
+
+  		//barchart waypoints
+		$('#contact').waypoint(function() {
+			//$('.bsncard').fadeIn(1500); 
+      		$('.bsncard').animate({ opacity: 1 }, 1200); 
+  		}, { offset: 300 });
+
+	
+
+		$('.about-intro').waypoint(function() {
+			//$('.bsncard').fadeIn(1500); 
+      		$(this).addClass('rightAnim');
+  		}, { offset: 300 });
 
 		});
 

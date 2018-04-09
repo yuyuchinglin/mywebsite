@@ -530,11 +530,12 @@ canvas {
   line-height: 25px;
 }
 
-.graph-cont{
+.programming-graph, .software-graph{
   width: 80%;
   width: 100%;
   max-width: 800px;
   margin: 20px auto;
+  visibility: hidden;
 }
 
 

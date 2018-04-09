@@ -104,32 +104,38 @@
 
 
 		//barchart waypoints
-		$('.graph-cont').waypoint(function() {
-      		$('.bar').addClass('animation');
+		$('.software-graph').waypoint(function() {
+			$(this).css("visibility","visible");
+      		$('.software-graph .bar').addClass('animation');
+  		}, { offset: 300 });
+
+  		$('.programming-graph').waypoint(function() {
+			$(this).css("visibility","visible");
+      		$('.programming-graph .bar').addClass('animation');
   		}, { offset: 300 });
 
   		//barchart waypoints
 		$('#contact').waypoint(function() {
 			//$('.bsncard').fadeIn(1500); 
-      		$('.bsncard').animate({ opacity: 1 }, 1200); 
+      		$('.bsncard').animate({ opacity: 1 }, 1100); 
   		}, { offset: 300 });
 
 	
 
 		$('.about-intro').waypoint(function() {
 			$(this).css("visibility","visible");
-			$(this).css('animation','rightAnim 3s');
-  		}, { offset:  'bottom-in-view' });
+			$(this).css('animation','rightAnim 2s');
+  		}, { offset:  'bottom-in-view'});
 
   		$('.about-work').waypoint(function() {
 			$(this).css("visibility","visible");
-			$(this).css('animation','leftAnim 3s');
+			$(this).css('animation','leftAnim 2s');
   		}, { offset:  'bottom-in-view' });
 
   		$('.about-edu').waypoint(function() {
 			$(this).css("visibility","visible");
-			$(this).css('animation','rightAnim 3s');
-  		}, { offset:  'bottom-in-view' });
+			$(this).css('animation','rightAnim 2s');
+  		}, { offset:  'bottom-in-view'});
 
 
 		});

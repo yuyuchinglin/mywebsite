@@ -83,7 +83,9 @@
 
 	
 		$(function() {
-		  $('.chart').easyPieChart({
+
+		$('.chart').waypoint(function() {
+		  $(this).easyPieChart({
 		    scaleColor: false,
 		    lineWidth: 10,
 		    // lineCap: 'round',
@@ -91,9 +93,24 @@
     		barColor: '#c4a046',
     		trackColor: '#ddd' ,
 		    size: 150,
-		    animate: 500
-		  });
+		    animate: 2000
+		  });		  
+		}, {
+ 		 	triggerOnce: true,
+ 		 	offset: 'bottom-in-view'
 		});
+
+
+
+
+		$('.graph-cont').waypoint(function() {
+
+      		$('.bar').addClass('animation');
+  		}, { offset: 500 });
+
+		});
+
+		
 
 
 }

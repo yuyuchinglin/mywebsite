@@ -429,10 +429,13 @@
     overflow: hidden;
   }
 
-  .rightAnim {
-   -webkit-animation: rightAnim 3s;
-    transition: 3s;
+
+  .about-intro, .about-work, .about-edu {
+    width: 100%;
+    visibility: hidden;
   }
+
+  
 
 
   @keyframes topAnim {
@@ -441,12 +444,12 @@
   }
 
   @keyframes leftAnim {
-    0%   {margin-left: 600px;}
+    0%   {margin-left: 2000px;}
     /* 100% {visibility: visible;} */
   }
 
   @keyframes rightAnim {
-    0%   {left: -600px;}
+    0%   {margin-left: -2000px;}
     /* 100% {visibility: visible;} */
   }
 

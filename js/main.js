@@ -84,7 +84,6 @@
 	
 		$(function() {
 
-
 		//easychart + waypoints
 		$('.chart').waypoint(function() {
 		  $(this).easyPieChart({
@@ -118,9 +117,20 @@
 	
 
 		$('.about-intro').waypoint(function() {
-			//$('.bsncard').fadeIn(1500); 
-      		$(this).addClass('rightAnim');
-  		}, { offset: 300 });
+			$(this).css("visibility","visible");
+			$(this).css('animation','rightAnim 3s');
+  		}, { offset:  'bottom-in-view' });
+
+  		$('.about-work').waypoint(function() {
+			$(this).css("visibility","visible");
+			$(this).css('animation','leftAnim 3s');
+  		}, { offset:  'bottom-in-view' });
+
+  		$('.about-edu').waypoint(function() {
+			$(this).css("visibility","visible");
+			$(this).css('animation','rightAnim 3s');
+  		}, { offset:  'bottom-in-view' });
+
 
 		});
 

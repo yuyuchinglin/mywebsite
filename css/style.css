@@ -321,7 +321,9 @@
 /*contact*/
 
   #contact { 
+    background-color: red;
     background: url('../img/contactbg4.jpg') center center;
+    background-size: cover;
   } 
 
 

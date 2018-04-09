@@ -1,13 +1,14 @@
-	// lazyload
-		// $(function() {
-  //           $(".lazyload").lazyload({
-  //                 effect : "fadeIn"
-  //           });
-  //     });
+  function main(){
 
-     
+
+	// lazyload
+		$(function() {
+            $(".lazyload").lazyload({
+                  effect : "fadeIn"
+            });
+      });
+
 	// moments
-	function main(){
 		jQuery(document).ready(function(){
 
 			jQuery("#gallery").unitegallery({

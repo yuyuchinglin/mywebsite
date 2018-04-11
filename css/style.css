@@ -346,6 +346,20 @@
 
   }
 
+  .portfolio-word {
+    color:#ddd;
+    font-size:20px; 
+    right:0; 
+    text-align: right; 
+    margin-top:15px;
+  }
+
+  @media (max-width: 768px) { 
+    .portfolio-word {
+       font-size:16px;
+    } 
+  }
+
 
 /*contact*/
 

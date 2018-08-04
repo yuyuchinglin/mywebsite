@@ -4,12 +4,13 @@
 	
 
 	<meta charset="UTF-8">
-	
+	<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
 	<title>TSUVIMI | YUCHING's Website</title>
 	<link rel="shortcut icon" href="img/favicon.png" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel='stylesheet' href='css/style.css' type='text/css' />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<script async src="http://assets.codepen.io/assets/embed/ei.js"></script>
 	
 <style>
@@ -157,34 +158,95 @@ p {
            
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                 
+
+                  <li>
+                      <a class="nav-link">see more</a>
+                  </li>
+                 <li class="nav-item projects">
+                      <a class="nav-link active" name="projects">PROJECTS</a>
+                  </li>
+                  <li>
+                      <a class="nav-link">or</a>
+                  </li>
+                   <li class="nav-item skills">
+                      <a class="nav-link active" name="skills">SKILLS</a>
+                  </li>
                   
-                  <li class="nav-item">
-                      <a class="nav-link" href="port1_LACD.html">1.LACD</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active" href="port2_TSUVIMI.html">2.TSUVIMI</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="port3_personal.html">3.PersonalWebsite</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="port4_Seraph.html">4.Seraph</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="port5_jQuery.html">5.jQuery</a>
-                  </li>
-                   <li class="nav-item">
-                      <a class="nav-link" href="port6_JavaScript.html">6.JavaScript</a>
-                  </li>
-                  <li class="nav-item">
-                      <a target="_blank" class="nav-link" href="index.html">[HOME]</a>
-                  </li>
               </ul>
             </div>
 
+
+                 <div class="home">
+                      <a target="_blank" class="nav-link" href="index.html">
+                          <i class="fas fa-home"></i>
+                      </a>
+                  </div>
           </div>
-    </nav
+
+
+    </nav>
+
+                      <div class="sub-navbar projects-subnavbar d-none">
+
+                        <a href="port4_Seraph.html">
+                          <div class="intro mx-auto">
+                                <h6>Seraph Kids' Wear (2015)</h6>
+                          <img src="img/portfolio/thumbs/Seraph(thumb).png" alt="">
+                          </div>
+                        </a>
+
+                        <a href="port2_TSUVIMI.html">
+                          <div class="intro mx-auto">
+                                <h6>TSUVIMI Cosmetic (2015)</h6>
+                          <img src="img/portfolio/thumbs/TSUVIMI(thumb).png" alt="">
+                          </div>
+                        </a>
+
+                        <a href="port3_personal.html">
+                          <div class="intro mx-auto">
+                                <h6>Personal Website (2017)</h6>
+                          <img src="img/portfolio/thumbs/Personal(thumb).png" alt="">
+                          </div>
+                        </a>
+
+                        <a href="port1_LACD.html">
+                          <div class="intro mx-auto">
+                                <h6>NCKU LACD Lab (2018)</h6>
+                          <img src="img/portfolio/thumbs/LACD(thumb).png" alt="">
+                          </div>
+
+                        </a>
+                        
+          
+                        <a href="port7_forest.html">
+                          <div class="intro mx-auto">
+                                <h6 style="font-weight: 400;">台灣山林悠遊網後台 (2018)</h6>
+                          <img src="img/portfolio/thumbs/forest(thumb).png" alt="">
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="sub-navbar skills-subnavbar d-none">
+                       
+                        <a href="port5_jQuery.html">
+                          <div class="intro mx-auto">
+                                <h6>jQuery</h6>
+                          <img src="img/portfolio/thumbs/jQuery(thumb).png" alt="">
+                          </div>
+                        </a>
+                        <a href="port6_JavaScript.html">
+                          <div class="intro mx-auto">
+                                <h6>JavaScript</h6>
+                          <img src="img/portfolio/thumbs/JavaScript(thumb).png" alt="">
+                          </div>
+                        </a>
+                        <a href="port8_UserExperience.html">
+                          <div class="intro mx-auto">
+                               <h6>User Experience</h6>
+                          <img src="img/portfolio/thumbs/UserExperience(thumb).png" alt="">
+                          </div>
+                        </a>
+                      </div>
 
 
 
@@ -416,7 +478,7 @@ p {
 <script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/SmoothScroll.js"></script>
-
+<script src="js/portfolio.js"></script>
 <script type="text/javascript">
 
 		

@@ -620,7 +620,71 @@ canvas {
   }
 }
 
+
+/* sub-navbar */
+
+.sub-navbar {
+  width: 100%;
+  /* height: 170px; */
+  /* background-color: red; */
+  overflow: hidden;
+  background-color: #000;
+  /* padding-bottom: 10px; */
+  text-align: center;
+}
+
+.sub-navbar a {
+  display: inline-block;
+  width: 19.5%;
+  height: 95%;
+  /* background-color: yellow; */
+  text-align: center;
+}
+
+.sub-navbar a .intro {
+  width: 100%;
+  height: 100%;
+}
+
+.sub-navbar a img {
+  width: 92%;
+}
+
+.sub-navbar a.active .intro {
+  background-color: #d96342;
+  color: #ddd;
+}
+
+.sub-navbar a.active img {
+    -webkit-filter:saturate(1.4);
+  }
+
+.sub-navbar a:hover .intro {
+  background-color: #d96342;
+  color: #ddd;
+}
+
+.sub-navbar a:hover img {
+    -webkit-filter:saturate(1.4);
+  }
+
+.home a{
+  background-color: #c4a046;
+  text-align: center;
+  border-radius: 6%;
   
+}
+
+.home a:hover{
+  background-color: #d96342;  
+  /* border-radius: 6%; */
+}
+
+.home i{
+  color: #333 !important; 
+  line-height: 30px;
+  font-size: 24px;  
+}
 
 
 

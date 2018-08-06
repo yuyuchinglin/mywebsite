@@ -601,15 +601,20 @@ canvas {
 }
 
 .bar1::after{max-width: 90%;}
-.bar2::after{max-width: 50%;}
+.bar2::after{max-width: 35%;}
 .bar4::after{max-width: 70%;}
-.bar5::after{max-width: 85%;}
+
 
 .bar6::after{max-width: 95%;}
 .bar7::after{max-width: 80%;}
 .bar8::after{max-width: 80%;}
 .bar9::after{max-width: 40%;}
 .bar10::after{max-width: 65%;}
+
+.bar a {
+  color:#000;
+  text-decoration: underline;
+}
 
 @-webkit-keyframes bar-before{
   0%{

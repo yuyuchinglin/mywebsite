@@ -612,7 +612,7 @@ canvas {
 .bar10::after{max-width: 55%;}
 
 .bar a {
-  color:#000;
+  color:#000 !important;
   text-decoration: underline;
 }
 

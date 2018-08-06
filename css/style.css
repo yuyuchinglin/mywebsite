@@ -608,8 +608,8 @@ canvas {
 .bar6::after{max-width: 95%;}
 .bar7::after{max-width: 80%;}
 .bar8::after{max-width: 80%;}
-.bar9::after{max-width: 40%;}
-.bar10::after{max-width: 65%;}
+.bar9::after{max-width: 25%;}
+.bar10::after{max-width: 55%;}
 
 .bar a {
   color:#000;

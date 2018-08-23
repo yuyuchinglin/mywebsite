@@ -661,6 +661,19 @@ for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElemen
 mixpanel.init("4a6a775cccb977118be3fc9e1c01df76");</script><!-- end Mixpanel -->
 
 <script>mixpanel.track("pageview");</script>
+
+<script>
+	window.addEventListener("load",function(event){
+		var a = document.querySelectorAll('.port a');
+		a.forEach(function(item){
+			item.addEventListener("click",function(){
+				var desc = item.querySelector('h5').innerText;
+				//alert(desc);
+				mixpanel.track(desc);
+			})
+		})
+	})
+</script>
 	
 
 </body>

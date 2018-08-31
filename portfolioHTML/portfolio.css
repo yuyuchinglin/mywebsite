@@ -1,0 +1,300 @@
+* {
+    color:#ddd;
+}
+
+.portpic {
+  width: 80vw;
+  height: 80vh;
+  background-size: contain;
+  position: relative;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.navbar-brand {
+    background: url('../img/portfolio.png') center center no-repeat;
+    background-size: contain;
+    color: #c4a046;
+  }
+
+#portpic, #port {
+    background-color: #333;
+}
+
+.list h4 {
+    color: #c4a046;
+    margin-left: 30px;		
+}
+
+.list h4 img {
+    line-height: 50px;
+}
+
+.list{
+    display: block;
+       width: 820px;
+    margin:auto;
+    text-align: 0; 
+}
+
+.web {
+    min-width: 590px;
+    float: left;
+}
+
+.webnav{
+    float: left;
+}
+
+.scroll{
+     height: 400px;
+    overflow: hidden;
+    overflow-y:scroll;
+    float: left;
+}
+
+body {
+    background-color: #333;
+}
+
+.mob{
+    height: 400px;
+    overflow: hidden;
+    float: left;
+    margin-left: 15px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.webintro {
+    color: #ddd;
+    line-height: 14px;
+    margin: 20px auto;
+    margin-bottom: 35px; 
+    width:820px ;
+}
+
+p {
+    text-align: center;
+}
+
+.list {	
+    margin-bottom: 50px;
+}
+
+.web, .mob {
+    margin-bottom: 20px;
+}
+
+.list h4 {
+    display: block;
+    margin: 40px 0;
+}
+
+.clear{
+    clear:both;
+}
+
+.navbar-brand {
+    background: url('img/portfolio.png') center center no-repeat;
+    background-size: contain;
+    color: #c4a046;
+}
+
+.navbar {
+  border-bottom: 1px solid #000;
+}
+
+#footer {
+  border-top: 1px solid #000;
+}
+
+
+.left-intro {
+    width:100%;
+    padding: 6px 0;
+    color: #333 !important;
+    background: rgba(196,160,70,1);
+    border-radius: 4px;
+    margin: 4px 0;
+    /* padding-left:5px; */
+    /* text-align: center; */
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .left-intro div {
+      color:#333;
+      /* text-align: left; */
+  }
+
+  /* .left-navbar {
+      color:#333 !important;
+      text-align: left;
+  } */
+
+
+  /* portfolio 手風琴 */
+
+
+.accordion {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+.accordion ul {
+	list-style-type: none;
+}
+
+.accordion a {
+	/**color: #b63b4d;*/
+	text-decoration: none;
+}
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+ .accordion h1 {
+ 	color: #FFF;
+ 	font-size: 24px;
+ 	font-weight: 400;
+ 	text-align: center;
+ 	margin-top: 80px;
+ }
+
+ .accordion h1 a {
+ 	color: #c12c42;
+ 	font-size: 16px;
+ }
+
+ .accordion {
+
+ 	width: 100%;
+ 	max-width: 360px;
+ 	margin: 30px auto 20px 20px;
+     background: #ddd;
+     background: #c4a046;
+     background: #333;
+     
+ 	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+     border-radius: 4px;
+     list-style: none;
+     /* position: relative; */
+ }
+
+.accordion .topic {
+	/* -webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	border-radius: 4px; */
+	padding: 6px 0px 6px 20px;
+    /* background-color: #c4a046; */
+    /* background-color: #d96342; */
+    overflow:hidden;
+    color:#333;
+    /* color:#ddd; */
+    
+    font-weight: 500;
+    /* margin-left: -120px; */
+    width: 100%;
+    text-align: left;
+    /* position: absolute; */
+    margin-top: 10px;
+    color: #d96342;
+    border-bottom: 1px solid #d96342;
+}
+
+.accordion a ,.accordion i {
+     color: #333;
+     color:#c4a046;
+     color:#ddd;
+}
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	padding: 15px 10px 10px 36px;
+	/* color: #4D4D4D; */
+	font-size: 14px;
+	font-weight: 500;
+	/* color:#c4a046; */
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+	border-bottom: 0;
+}
+
+.accordion li i {
+	position: absolute;
+	top: 16px;
+	left: 12px;
+	font-size: 18px;
+    /* color: #333; */
+    
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+	right: 12px;
+	left: auto;
+	font-size: 16px;
+}
+
+.accordion li.open .link {
+    color: #d96342;
+    color:#c4a046;
+}
+
+.accordion li.open i {
+    color: #d96342;
+    color:#c4a046;
+}
+
+.accordion li.open a {
+    color: #d96342;
+    color:#c4a046;
+}
+.accordion li.open i.fa-chevron-down {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.accordion li.default .submenu {
+    display: block;
+}
+/**
+ * Submenu
+ -----------------------------*/
+ .accordion .submenu {
+ 	display: none;
+ 	background: #444359;
+ 	font-size: 0px;
+ }
+
+ .accordion img {
+  width: 100%;
+}
+
+.accordion .link i {
+  font-size: 16px !important;
+  text-align: center;
+  padding-right: 5px;
+}
+
+.accordion li.default a, .accordion li.default i {
+    color: #d96342;
+}

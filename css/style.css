@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU", "標楷體", "DFKai-sb", serif;
+    font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   }
 
   body {
@@ -602,13 +604,15 @@ canvas {
 
 .bar1::after{max-width: 90%;}
 .bar2::after{max-width: 35%;}
-.bar4::after{max-width: 70%;}
+.bar3::after{max-width: 70%;}
 
 
-.bar6::after{max-width: 95%;}
-.bar7::after{max-width: 80%;}
-.bar8::after{max-width: 80%;}
-.bar9::after{max-width: 25%;}
+.bar4::after{max-width: 95%;}
+.bar5::after{max-width: 80%;}
+.bar6::after{max-width: 80%;}
+.bar7::after{max-width: 50%;}
+.bar8::after{max-width: 25%;}
+.bar9::after{max-width: 20%;}
 .bar10::after{max-width: 55%;}
 
 .bar a {
@@ -690,6 +694,10 @@ canvas {
   line-height: 30px;
   font-size: 24px;  
 }
+
+
+
+
 
 
 

@@ -461,6 +461,20 @@ p {
     height: 100%;
     /* overflow: hidden; */
   }
+
+  .accordion .submenu  {
+      position: relative;
+  }
+
+  .accordion .submenu a {
+    /* background-color: red; */
+    /* color:#000; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+  }
   
   .pic.effect img {
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;

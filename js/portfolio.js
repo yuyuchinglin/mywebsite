@@ -62,7 +62,7 @@ var navItem = document.querySelectorAll('.navbar-nav .nav-item');
             // Evento
             var def = document.querySelector('.default');
 
-            links.on('mouseenter', {el: this.el, multiple: this.multiple},this.dropdown)
+            links.on('mouseover', {el: this.el, multiple: this.multiple},this.dropdown)
         }
     
         Accordion.prototype.dropdown = function(e) {
@@ -86,3 +86,9 @@ var navItem = document.querySelectorAll('.navbar-nav .nav-item');
     //     console.log(this);
     //     this.dropdown;
     // }
+
+    // var a = document.querySelector('.accordion .submenu li a');
+
+    // a.on('mouseover', function(){
+    //     // a.que
+    // })

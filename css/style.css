@@ -4,7 +4,7 @@
     /* font-family: 'Raleway', sans-serif; */
     /* font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU", "標楷體", "DFKai-sb", serif; */
     /* font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; */
-    font-family:"PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
+    font-family:"Arial","PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
   }
 
   body {
@@ -449,7 +449,7 @@
 /*portfolio*/
 
 
-  .port {
+  /* .port {
     width: 94%;
     text-align: center;
     margin: 0 auto;
@@ -464,14 +464,10 @@
     line-height: 1em;
     font-size: 1em;
     font-weight: 500;
-    /* text-transform:uppercase; */
-    /* text-align: left; */
   }
 
 
   .port div:hover .intro {
-    /* background-color: #E; */
-    /* color: #fff; */
   }
 
   .port img {
@@ -479,7 +475,6 @@
     display: block;
     margin: auto;
     background: transparent;
-    /* padding-top: 5px; */
     -webkit-filter:saturate(0.8);
   }
 
@@ -521,7 +516,7 @@
     .portfolio-word {
        font-size:16px;
     } 
-  }
+  } */
 
 
 /*contact*/
@@ -934,6 +929,7 @@ header {
   /* background-color: #E37D5C; */
   background-color: #fff;
   /* border-bottom: 1px solid rgba(256,256,256,0.15); */
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
 }
 
 header div {
@@ -1275,6 +1271,171 @@ a:hover p{
     width: 0;
     transition: width .4s;
   }
+
+
+
+
+
+  /* css-new */
+
+
+  /* selected work */
+
+
+  #selectedwork .row {
+    min-height:60vh;
+    background-color: #f9f9f9;
+    display:flex; align-items:center;justify-content:center;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  #selectedwork .row .text h6 {
+    color: #E98059;
+    font-weight: 700 !important;
+  }
+
+  #selectedwork .row .text h4 {
+    font-weight: 700 !important;
+  }
+
+  #selectedwork .row .text button {
+    background-color: #E98059;
+    color:#fff;
+    padding:3px 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+
+
+  /* portfolio */
+
+  /*portfolio*/
+
+
+  .port {
+
+    text-align: center;
+    margin: 0 auto;
+    /* background-color: #123; */
+  }
+
+  .port div {
+    height: auto;
+    text-align: center;
+  }
+
+  .port h5 {
+    /* line-height: 1em; */
+    font-size: 1em;
+    font-weight: 500;
+    /* text-transform:uppercase; */
+    /* text-align: left; */
+  }
+
+  
+
+  .port .intro {
+    overflow: hidden !important;
+  }
+
+  .port .intro .desc {
+    position: absolute;
+    bottom:0px;
+    background-color: #fff;
+    width: 85%;
+    left:0;
+    right:0;
+    border-radius: 5px;
+    margin:0 auto;
+    padding:8px 3px 3px 3px;
+    opacity: 0;
+    transition-delay: .1s;
+    transition: all .2s ease-out;
+
+  }
+
+  .port .portfolio-item:hover .desc {
+
+    bottom:15px;
+    opacity: 1;
+
+
+  }
+
+  .port .portfolio-item:hover .intro {
+    overflow: hidden;
+  }
+
+  .port .intro .desc h5 {
+    margin-bottom: 0;
+  }
+
+  .port .intro .desc small {
+    margin-bottom: 0;
+    font-size: 12px;
+    opacity: 0.6;
+  }
+
+
+  .port img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    background: rgb(239,239,239);
+    transform:scale(1,1);
+    transition: all .3s ease-out;
+    -webkit-filter:saturate(1);
+    webkit-filter:grayscale(0);
+    
+  }
+
+  .port .portfolio-item:hover img {
+    transform:scale(1.2,1.2);
+    -webkit-filter:saturate(1.4);
+    webkit-filter:grayscale(0.5);
+    background: rgb(220,220,220);
+  }
+
+
+  .portfolio-item {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 0 6px !important;
+  }
+
+  
+
+
+  .intro {
+    width:100%;
+    /* padding: 12px 5px 6px 5px; */
+    color: #333; 
+    border-radius: 5px;
+    margin: 4px 0;
+
+  }
+
+  .portfolio-word {
+    font-size:20px; 
+    right:0; 
+    text-align: right; 
+    margin-top:15px;
+  }
+
+  @media (max-width: 768px) { 
+    .portfolio-word {
+       font-size:16px;
+    } 
+  }
+
+
+  /* header>div:hover a:nth-child(2) {
+    display:none;
+  } */
+
 
 
 

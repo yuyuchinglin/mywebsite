@@ -400,6 +400,8 @@
     #footer {
       display: flex;
     }
+
+
   }
   @media (max-width: 900px) {
     #footer div{
@@ -417,6 +419,12 @@
       width:90%;
 
     }
+
+    .bsncard {
+      margin:0 auto 60px;
+    }
+
+
   
   }
 

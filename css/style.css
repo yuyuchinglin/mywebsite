@@ -111,7 +111,7 @@
 
   @media (max-width: 900px) {
     .welcomepic {
-      height: 90vh;
+      height: 45vh;
       /* background: url("../img/yuchingpic.jpg") 20% 20%; */
       background-size: cover;
     }

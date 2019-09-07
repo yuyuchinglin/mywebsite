@@ -101,44 +101,46 @@
  		 	offset: 'bottom-in-view'
 		});
 
+	});
+
 
 
 		//barchart waypoints
-		$('.software-graph').waypoint(function() {
-			$(this).css("visibility","visible");
-      		$('.software-graph .bar').addClass('animation');
-  		}, { offset: 300 });
+		// $('.software-graph').waypoint(function() {
+		// 	$(this).css("visibility","visible");
+      	// 	$('.software-graph .bar').addClass('animation');
+  		// }, { offset: 300 });
 
-  		$('.programming-graph').waypoint(function() {
-			$(this).css("visibility","visible");
-      		$('.programming-graph .bar').addClass('animation');
-  		}, { offset: 300 });
+  		// $('.programming-graph').waypoint(function() {
+		// 	$(this).css("visibility","visible");
+      	// 	$('.programming-graph .bar').addClass('animation');
+  		// }, { offset: 300 });
 
   		//barchart waypoints
-		$('#contact').waypoint(function() {
-			//$('.bsncard').fadeIn(1500); 
-      		$('.bsncard').animate({ opacity: 1 }, 1100); 
-  		}, { offset: 300 });
+		// $('#contact').waypoint(function() {
+	 
+      	// 	$('.bsncard').animate({ opacity: 1 }, 1100); 
+  		// }, { offset: 300 });
 
 	
 
-		$('.about-intro').waypoint(function() {
-			$(this).css("visibility","visible");
-			$(this).css('animation','rightAnim 2s');
-  		}, { offset:  'bottom-in-view'});
+		// $('.about-intro').waypoint(function() {
+		// 	$(this).css("visibility","visible");
+		// 	$(this).css('animation','rightAnim 2s');
+  		// }, { offset:  'bottom-in-view'});
 
-  		$('.about-work').waypoint(function() {
-			$(this).css("visibility","visible");
-			$(this).css('animation','leftAnim 2s');
-  		}, { offset:  'bottom-in-view' });
+  		// $('.about-work').waypoint(function() {
+		// 	$(this).css("visibility","visible");
+		// 	$(this).css('animation','leftAnim 2s');
+  		// }, { offset:  'bottom-in-view' });
 
-  		$('.about-edu').waypoint(function() {
-			$(this).css("visibility","visible");
-			$(this).css('animation','rightAnim 2s');
-  		}, { offset:  'bottom-in-view'});
+  		// $('.about-edu').waypoint(function() {
+		// 	$(this).css("visibility","visible");
+		// 	$(this).css('animation','rightAnim 2s');
+  		// }, { offset:  'bottom-in-view'});
 
 
-		});
+		// });
 				
 		
 		
@@ -181,10 +183,30 @@
 				// 	lastScrollTop = st;
 				// }
 
-		
+
+
+
+
+
+					var navBar = $('header');
+    				lastScrollY = 0;
+						window.addEventListener('scroll', function(){
+						var st = this.scrollY;
+						// 判斷是向上捲動，而且捲軸超過 200px
+						if( st < lastScrollY) {
+							navBar.removeClass("hideUp");
+						}else{
+							
+							navBar.addClass("hideUp");
+						}
+						lastScrollY = st;
+						});
 
 
 }
+
+
+
 main();
 
 

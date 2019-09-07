@@ -8,13 +8,7 @@
   }
 
   body {
-    /* background-color:#000;  */
     color:#111;
-
-  }
-
-  section {
-    /* margin-top: 80px; */
   }
 
 
@@ -33,7 +27,7 @@
 
 
   #welcomepic, #about, #moments, #skills, #portfolio, #contact {
-    margin-bottom: 30px;
+    margin: 100px auto 80px;
   }
 
 
@@ -57,7 +51,7 @@
   }
 
   .nav-item a {
-    color: #E98059;
+    color: #9E6B57;
   }
 
   .nav-item a:hover {
@@ -69,30 +63,19 @@
 
   .welcomepic {
     height: 85vh;
-    background: url("../img/yuchingpic.jpg") top left no-repeat;
-    background-size: contain;
-    position: relative;
-    background-color: #E98059;
-    /* background-color: #fbe091; */
+    text-align: center;
+    margin-top: 20px;
   }
 
-  .dark-overlay{
-    position: absolute;
-    /* background-color: rgba(40, 10, 30, 0.15); */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; 
-  }
 
   #welcomepic h1{
     display: block;
     width: 45vw;
     font-size: 4vw;
     position: absolute;
-    color: #E98059;
+    color: #9E6B57;
     right: 0;
-    background-color: #FBE091;
+    /* background-color: #FBE091; */
     /* background-color: #fbe091; */
     text-align: center;
     /* bottom: 28%; */
@@ -115,7 +98,7 @@
 /* topic */
 
   .topic  {
-    color: #E98059;
+    color: #9E6B57;
     padding:25px;
     margin: 0;
     text-align: center;
@@ -129,7 +112,7 @@
   @media (max-width: 900px) {
     .welcomepic {
       height: 90vh;
-      background: url("../img/yuchingpic.jpg") 20% 20%;
+      /* background: url("../img/yuchingpic.jpg") 20% 20%; */
       background-size: cover;
     }
 
@@ -138,7 +121,7 @@
       width:70vw;
       font-size: 7vw;
       position: absolute;
-      color: #E98059;
+      color: #9E6B57;
       right: 0;
       background-color: #333;
       text-align: center;
@@ -174,23 +157,30 @@
 
 
   #welcome {
-    height: 80vh;
+    height: 55vw;
     width: 100%;
-    background-color: #FBE091;
-    margin-top: 70px;
+    background-color: #fff;
+    /* margin-top: 70px; */
     position: relative;
+    overflow: hidden;
   }
 
-  #welcome img {
+   #welcome img:first-child {
     position: absolute;
     display: block;
     margin:auto;
-    width:45%;
+    width:90vw;
     left:0;
-    right:0;
-    top:0;
-    bottom:0;
+    top:125px;
+  } 
+
+  #welcome img:nth-child(2) {
+    position: absolute;
+    width:65%;
+    right:10%;
+    top:70px;
   }
+
 
 
 /* about */
@@ -199,7 +189,7 @@
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    background-color: #E98059;
+    background-color: #9E6B57;
     position: absolute;
     right: 5%;
     top: 3%; 
@@ -221,7 +211,7 @@
   }
 
   a{
-    color: #E98059
+    color: #9E6B57
   }
 
   a:hover {
@@ -238,12 +228,12 @@
   }
 
   .word h5{
-    font-size: 36px;
-    line-height: 42px;
-    color: #E98059;
+    font-size: 30px;
+    line-height: 36px;
+    color: #9E6B57;
     font-weight: 600;
     display: inline;
-    /* background: -webkit-linear-gradient(top, #E98059 0, #E98059 75%); */
+    /* background: -webkit-linear-gradient(top, #9E6B57 0, #9E6B57 75%); */
     /* background: -webkit-linear-gradient(top, #E98058 50%, #FBE091 25%); */
     /* -webkit-background-clip: text; */
     /* -webkit-text-fill-color: transparent; */
@@ -270,14 +260,23 @@
 
 
   .sm-section, .bg-section {
-    border-left: 2px solid #E98059;
-    padding-left:15px;
+    /* border-left: 2px solid #9E6B57; */
+    /* padding-left:15px; */
     margin-bottom: 20px;
     margin-top: 6px;
   }
 
   .sm-section p, .bg-section p{
     line-height: 1.6em;
+  }
+
+  .sm-section i {
+    font-size: 26px;
+    line-height: 44px;
+  }
+
+  .sm-section a:hover i {
+    color: #9E6B57;
   }
 
   .bg-section span {
@@ -300,7 +299,7 @@
     text-decoration: underline;
     font-size: 25px;
     line-height: 70px;
-    color: #E98059;
+    color: #9E6B57;
   }
 
 
@@ -313,7 +312,7 @@
   .about-topic h4{
     display: inline-block;
     line-height: 20px;
-    background-color:  #E98059;
+    background-color:  #9E6B57;
     color: #333;
     border-radius: 5px;
     padding: 2px 5px;
@@ -343,7 +342,11 @@
   }
 
   section {
-    margin-top: 60px;
+    margin: 150px auto !important;
+  }
+
+  section .container {
+    padding:500px auto !important;
   }
 
 }
@@ -354,22 +357,17 @@
   #footer {
     padding:15px 0 10px 0;
     text-align: center;
-    /* background-color: #000; */
     color: #252525;
     flex-direction: row-reverse;
     border-top: 1px solid rgba(256,256,256,0.15);
-    background:#FBE091;
+    background:rgb(248,248,248);
     color:#252525;
   }
 
-  #footer div {
-    flex:1;
-    
-
-    
+  #footer div { 
+    /* width: 100% !important; */
+    flex: 1
   }
-
-
 
   #footer div span {
     line-height: 40px;
@@ -424,13 +422,13 @@
 
   #footer a:hover {
     background: transparent;
-    color:#E98059;
+    color:#9E6B57;
     
   }
 
   #footer>div>a:hover {
     background-color: transparent;
-    color:#E98059;
+    color:#9E6B57;
   }
 
 
@@ -537,15 +535,15 @@
     height: 250px;
     background-color: rgba(256,256,256,0.9);
     /* margin: 20px auto; */
-    border-radius: 5px;
+    border-radius: 8px;
     padding:25px;
     position: relative;
-    box-shadow:15px 15px 12px  rgba(20,20,20,0.7);
+    box-shadow:5px 5px 12px  rgba(10,10,100,0.15);
     margin-bottom: 25px;
     color: #333;
-    opacity: 0;
+    /* opacity: 0; */
     text-align: left;
-    border:1px #999 solid;
+    border:1px rgb(253, 253, 253) solid;
   }
 
   .bsn-logo {
@@ -604,19 +602,19 @@
 /* animation */
 
   #about, #moments, #skills, #portfolio, #contact {
-    visibility: hidden;
+    /* visibility: hidden; */
     overflow: hidden;
   }
 
   #about, #moments, #skills, #portfolio, #contact {
-    visibility: visible;
+    /* visibility: visible; */
     overflow: hidden;
   }
 
 
   .about-intro, .about-work, .about-edu {
     width: 100%;
-    visibility: hidden;
+    /* visibility: hidden; */
   }
 
   
@@ -653,7 +651,7 @@
 
 .skillsIntro li:before{
   content: " ‣ "; 
-  color: #E98059;
+  color: #9E6B57;
   font-size: 22px;
   line-height: 30px;
 }
@@ -682,7 +680,7 @@
 }
 
 .skillsIntro li>p {
-  color: #E98059;
+  color: #9E6B57;
   font-size: 22px;
   text-transform: uppercase;
   line-height: 30px;
@@ -698,7 +696,7 @@
   position: relative;
   display: inline-block;
   margin: 20px 10px 0px 10px;
-  color:   #E98059;
+  color:   #9E6B57;
   font-weight: 400;
   /*text-transform: uppercase;*/
   text-align: center;
@@ -754,7 +752,7 @@ canvas {
 
  .bar::after{
   content: '';
-  background: #E98059;
+  background: #9E6B57;
   height: 100%;
   display: block;
   width: 100%;
@@ -854,7 +852,7 @@ canvas {
   }
 
 .home a{
-  background-color: #E98059;
+  background-color: #9E6B57;
   text-align: center;
   border-radius: 6%;
   
@@ -900,7 +898,7 @@ canvas {
 
 
 .slick-slide:hover{
-  background-color: #E98059;
+  background-color: #9E6B57;
 }
 
 
@@ -930,6 +928,11 @@ header {
   background-color: #fff;
   /* border-bottom: 1px solid rgba(256,256,256,0.15); */
   /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+  transition: top .4s ease-in-out
+}
+
+header.hideUp {
+  /* top: -70px; */
 }
 
 header div {
@@ -960,7 +963,7 @@ header .link a:hover {
 }
 
 header .link a.active:hover {
-  color:#E98059;
+  color:#9E6B57;
 }
 
 
@@ -1066,7 +1069,7 @@ header img {
   }
   
   #accordion li a:hover {
-  color:#E98059;
+  color:#9E6B57;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -1125,7 +1128,7 @@ header img {
 
 
 .type li a{
-  /* background-color: #E98059; */
+  /* background-color: #9E6B57; */
   /* padding: 10px; */
   margin: 0 12px;
   color: #000;
@@ -1136,7 +1139,7 @@ header img {
 }
 
 .type li a.active {
-  color:#E98059;
+  color:#9E6B57;
 }
 
 
@@ -1217,14 +1220,14 @@ a:hover h3{
 
 a:hover p{
   display: block;
-  color: white;
-  text-align: center;
+  /* color: white; */
+  /* text-align: center; */
 }
 
 /* underline */
 
 .underline.active {
-  color:#E98059;
+  color:#9E6B57;
   border-style: solid;
   border-width: 0px 0px 2px 0px;
   font-weight: 600;
@@ -1292,7 +1295,7 @@ a:hover p{
   }
 
   #selectedwork .row .text h6 {
-    color: #E98059;
+    color: #9E6B57;
     font-weight: 700 !important;
   }
 
@@ -1301,7 +1304,7 @@ a:hover p{
   }
 
   #selectedwork .row .text button {
-    background-color: #E98059;
+    background-color: #9E6B57;
     color:#fff;
     padding:3px 10px;
     border: none;
@@ -1341,7 +1344,7 @@ a:hover p{
     overflow: hidden !important;
   }
 
-  .port .intro .desc {
+  /* .port .intro .desc {
     position: absolute;
     bottom:0px;
     background-color: #fff;
@@ -1367,16 +1370,36 @@ a:hover p{
 
   .port .portfolio-item:hover .intro {
     overflow: hidden;
+  } */
+
+  .port .intro .desc {
+    text-align: left;
+    margin-top: 10px;
   }
 
   .port .intro .desc h5 {
     margin-bottom: 0;
+    margin-top: 6px;
+    white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   }
 
   .port .intro .desc small {
-    margin-bottom: 0;
     font-size: 12px;
-    opacity: 0.6;
+    opacity: 0.62;
+  }
+
+  .port .intro .desc p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    opacity: 0.62;
+    font-size:16px;
+    margin-bottom: 0;
+    margin-top: 8px;
   }
 
 
@@ -1389,21 +1412,33 @@ a:hover p{
     transition: all .3s ease-out;
     -webkit-filter:saturate(1);
     webkit-filter:grayscale(0);
+    border-radius:5px;
     
   }
 
-  .port .portfolio-item:hover img {
+  /* .port .portfolio-item:hover img {
     transform:scale(1.2,1.2);
     -webkit-filter:saturate(1.4);
     webkit-filter:grayscale(0.5);
     background: rgb(220,220,220);
-  }
+  } */
 
 
   .portfolio-item {
     text-align: center;
     margin-bottom: 5px;
-    padding: 0 6px !important;
+    padding: 15px 20px !important;
+    border:1px solid transparent;
+    border-radius:5px;
+
+  }
+
+  .portfolio-item:hover {
+    border:1px solid rgba(0,0,0,0.3);
+  } 
+
+  .portfolio-item:hover a {
+    text-decoration: none;
   }
 
   
@@ -1435,6 +1470,11 @@ a:hover p{
   /* header>div:hover a:nth-child(2) {
     display:none;
   } */
+
+
+  section .container{
+    max-width:1520px;
+  }
 
 
 

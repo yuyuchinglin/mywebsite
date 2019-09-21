@@ -27,7 +27,7 @@
 
 
   #welcomepic, #about, #moments, #skills, #portfolio, #contact {
-    margin: 100px auto 80px;
+    margin: 90px auto 80px;
   }
 
 
@@ -36,8 +36,8 @@
   }
 
   #portfolio {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    /* padding-top: 60px; */
+    /* padding-bottom: 30px; */
   }
 
 
@@ -159,7 +159,9 @@
   #welcome {
     height: 55vw;
     width: 100%;
-    background-color: #fff;
+    /* background-color: #FBE091; */
+    background-color: #FEEFDC;
+    background-color: #FDF5EB
     /* margin-top: 70px; */
     position: relative;
     overflow: hidden;
@@ -447,8 +449,8 @@
   }
 
   .logo{
-    height: 80px;
-    margin: 0 10px;
+    /* height: 0px; */
+    /* margin: 0 10px; */
   }
 
 
@@ -493,8 +495,8 @@
     text-align: center;
     margin-bottom: 10px;
     /* width: 30%; */
-    padding: 0 10px !important;
-  }
+    /* padding: 0 10px !important; */
+  /* } */
 
   
 
@@ -503,7 +505,7 @@
     width:100%;
     padding: 12px 5px 6px 5px;
     color: #333;
-    background: #FBE091;
+    /* background: #FBE091; */
   
     border-radius: 6px;
     margin: 4px 0;
@@ -511,7 +513,7 @@
   }
 
   .portfolio-word {
-    color:#;
+    /* color:#; */
     font-size:20px; 
     right:0; 
     text-align: right; 
@@ -926,14 +928,14 @@ canvas {
 
 header {
   height: 70px;
-  position: fixed;
+  position: absolute;
   top: 0;
   transition: top 0.5s ease-in-out;
   width: 100%;
   padding: 17px 80px ;
   z-index: 100;
   /* background-color: #E37D5C; */
-  background-color: #fff;
+  /* background-color: #fff; */
   /* border-bottom: 1px solid rgba(256,256,256,0.15); */
   /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
   transition: top .4s ease-in-out

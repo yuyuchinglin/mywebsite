@@ -12,7 +12,7 @@
 	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel='stylesheet' href='css/style.css' type='text/css' />
-	<link rel='stylesheet' href='css/unite-gallery.css' type='text/css' />
+	<!-- <link rel='stylesheet' href='css/unite-gallery.css' type='text/css' /> -->
 
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
@@ -24,26 +24,44 @@
 
 	<!-- nav bar -->
 	<header>
-		<div>
-			<a href="../index.html">
-				<img src="./img-new/logo.png" alt="" style="height:35px; padding-left: 20px;">
-				<!-- <img src="./img-new/logo-name.png" alt="" style="height:25px; padding-left: 20px;"> -->
+		<div class="container">
+
+			<div class="row align-items-center">
+				<div class="col-3">
+						<a href="../index.html">
+							<img src="./img-new/logo.png" alt="" style="height:35px;">
+							
+							
+						</a>
+				</div>
+				<div class="col-9 link"  style="text-align:right">
+					<a href="../index.html" class="underline active">WORKS</a>
+					<a href="./about.html" style="margin-right: 0;" class="underline">ABOUT</a>
+					<a href="#" class="fas fa-bars opennav" onclick="openNav()"></a>
+				</div>
+			</div>
 				
-			</a>
 		</div>
-		<div class="link">
-			<a href="../index.html" class="underline active">WORKS</a>
-			<a href="./about.html" style="margin-right: 0;" class="underline">ABOUT</a>
-			<a href="#" class="fas fa-bars opennav" onclick="openNav()"></a>
-		</div>
+		
 	</header>
 
 
 	<!-- welcome -->
 	<section id="welcome">
-		<!-- <img src="img-new/YC-left.svg" alt=""> -->
-		<!-- <img src="img-new/YC-right.svg" alt=""> -->
-		<!-- <img src="img-new/rect-right.svg" alt=""> -->
+
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-7 pr-5">
+					<h1>I'm Yu-Ching Lin, a UX/UI designer from Taiwan. I have a great zeal for human, design and coding.</h1>
+				</div>
+				<div class="col-5">
+					<div class="img-box" style="background-image: url('./img-new/home_black.jpeg');"></div>
+				</div>
+
+			</div>
+				
+		</div>
+		
 	</section>
 
 
@@ -105,10 +123,7 @@
 	
 	<section id="portfolio">
 
-		<div class="container col-lg-8 col-md-12 col-12">
-
-		
-			
+		<div class="container">
 
 		<div class="categories">
 			<ul class="type">
@@ -146,10 +161,8 @@
 			<div class="port mx-3">
 
 					<div class="col-lg-4 col-md-6 col-12 portfolio-item code front CMS">
-							<a href="./portfolio/pro_1828CMS.html">
+							<a href="./portfolio/ruggon.html">
 								<div class="intro">
-									
-									<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png" alt="">
 
 									<div class="desc">
 
@@ -158,6 +171,8 @@
 											<p>An IoT Device Management which makes you easily to organize your devices and send firmware or software updates over-the-air (OTA).</p>
 
 									</div>
+
+									<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png" alt="">
 
 									
 									
@@ -171,8 +186,6 @@
 					<a href="./portfolio/pro_1828.html">
 						<div class="intro">
 							
-							<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F141eT1dINCS1bn5TpURZ5q5hpcfc3Salq%2Fio2019-playlist-2x1-small.png" alt="">
-							
 							<div class="desc">
 
 									<small>#UI #UX #app</small>
@@ -181,6 +194,7 @@
 									
 
 							</div>
+							<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F141eT1dINCS1bn5TpURZ5q5hpcfc3Salq%2Fio2019-playlist-2x1-small.png" alt="">
 
 							
 						</div>
@@ -192,9 +206,6 @@
 				<div class="col-lg-4 col-md-6 col-12 portfolio-item design UI UX code responsive website">
 					<a href="./portfolio/pro_omni2go.html">
 						<div class="intro">
-							
-							<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png" alt="">
-							
 
 							<div class="desc">
 									<small>#landingpage #responsive</small>
@@ -202,6 +213,8 @@
 									<p>A tea shop app which contains online ordering, delivery service, lottery games, rewards card and irregular marketing events.</p>
 									
 							</div>
+
+							<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png" alt="">
 						</div>
 					</a>
 				</div>
@@ -211,14 +224,14 @@
 					<a href="./portfolio/pro_amigowriting.html">
 						<div class="intro">
 							
-							<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png" alt="">
-							
 							<div class="desc">
 									<small>#NodeJS #Heroku #Firebase</small>
 									<h5>Amigo Writing's IG Bio Link</h5>
 									
 									<p>A tea shop app which contains online ordering, delivery service, lottery games, rewards card and irregular marketing events.</p>
 							</div>
+
+							<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png" alt="">
 						</div>
 					</a>
 				</div>
@@ -259,9 +272,6 @@
 				<div class="col-lg-4 col-md-6 col-12 portfolio-item design UX code front CMS">
 					<a href="./portfolio/pro_forest.html">
 						<div class="intro">
-							
-							<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png" alt="">
-							
 
 							<div class="desc">
 									<small>#JavaScript #UX</small>
@@ -269,6 +279,8 @@
 									<p>A tea shop app which contains online ordering, delivery service, lottery games, rewards card and irregular marketing events.</p>
 									
 							</div>
+
+							<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png" alt="">
 						</div>
 					</a>
 				</div>
@@ -277,15 +289,15 @@
 				<div class="col-lg-4 col-md-6 col-12 portfolio-item design UI UX website">
 					<a href="./portfolio/pro_UKEAS.html">
 						<div class="intro">
-							
-							<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png" alt="">
-							
+								
 							<div class="desc">
 									<small>#Marketing #UI #UX</small>
 									<h5>UKEAS Boarding School's Website</h5>
 									
 									<p>A tea shop app which contains online ordering, delivery service, lottery games, rewards card and irregular marketing events.</p>
 							</div>
+
+							<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png" alt="">
 						</div>
 					</a>
 				</div>
@@ -294,15 +306,15 @@
 				<div class="col-lg-4 col-md-6 col-12 portfolio-item design UI code responsive website">
 					<a href="./portfolio/pro_LACD.html">
 						<div class="intro">
-							
-							<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png" alt="">
-							
+						
 							<div class="desc">
 									<small>#responsive #UI</small>
 									<h5>LACD Lab's Website</h5>
 									
 									<p>A tea shop app which contains online ordering, delivery service, lottery games, rewards card and irregular marketing events.</p>
 							</div>
+
+							<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png" alt="">
 						</div>
 					</a>
 				</div>
@@ -311,16 +323,15 @@
 				<div class="col-lg-4 col-md-6 col-12 portfolio-item design UI UX code responsive GithubPage website">
 					<a href="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png">
 						<div class="intro">
-							
-							<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png" alt="">
-							
-
+						
 							<div class="desc">
 									<small>#UX #UI #GithubPage</small>
 									<h5>Personal Website</h5>
 									
 									<p>A tea shop app which contains online ordering, delivery service, lottery games, rewards card and irregular marketing events.</p>
 							</div>
+
+							<img src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GOAsTA8HIHva_fOFnS45OULMzPUmfRoe%2Fgd-darktheme-2x1-small.png" alt="">
 						</div>
 					</a>
 				</div>
@@ -372,9 +383,12 @@
 
 
 
-    <!-- footer -->
-	<section id="footer">
-		<div>
+ <!-- footer -->
+ <section id="footer">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-4 col-sm-12">
 			<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/">
 				<i class="fab fa-linkedin-in"></i>
 			</a>
@@ -392,13 +406,15 @@
 				<i class="fab fa-github"></i>
 			</a>
 		</div>	
-		<div>
+		<div class="col-lg-4 col-sm-12">
 			<a href="mailto:yuyuchinglin@gmail.com"><b>yuyuchinglin@gmail.com</b></a>
 		 </div>
 
-		 <div>
-			<span>COPYRIGHT © YUCHING 2017-2019</span>
-		 </div>
+		 <div class="col-lg-4 col-sm-12">
+				<span>COPYRIGHT © YUCHING 2017-2019</span>
+			 </div>
+		</div>
+	</div>
 	</section>
 
 

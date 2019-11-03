@@ -64,7 +64,7 @@
   .welcomepic {
     height: 85vh;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 60px;
   }
 
 
@@ -157,14 +157,36 @@
 
 
   #welcome {
-    height: 55vw;
+    height: 80vh;
     width: 100%;
     /* background-color: #FBE091; */
-    background-color: #FEEFDC;
-    background-color: #FDF5EB
+    /* opacity:0.2 */
+    /* background-color: #FEEFDC; */
+    /* background-color: #FDF5EB */
     /* margin-top: 70px; */
+    /* background-color:beige; */
+
+    /* background-color: rgb(202,201,128); */
     position: relative;
     overflow: hidden;
+    padding: 9% 20px;
+  }
+
+  #welcome h1 {
+    line-height: 1.5em;
+    font-family: Calibre, sans-serif;
+    font-size:2.3em;
+    font-weight: 500;
+    color: #0a0a14;
+  }
+
+  #welcome .img-box {
+    height: 400px;
+    width: 350px;
+    float:right;
+    background-color: black;
+    background-size: cover;
+    background-position: 85% center;
   }
 
    #welcome img:first-child {
@@ -230,11 +252,12 @@
   }
 
   .word h5{
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 44px;
     color: #9E6B57;
     font-weight: 600;
     display: inline;
+    text-align: center;
     /* background: -webkit-linear-gradient(top, #9E6B57 0, #9E6B57 75%); */
     /* background: -webkit-linear-gradient(top, #E98058 50%, #FBE091 25%); */
     /* -webkit-background-clip: text; */
@@ -242,20 +265,17 @@
     /* text-shadow: 0.1em 0.1em 0.5em #FBE091; */
   }
 
-  .word p {
-    line-height: 2em;
-  }
-
 
   #about p, #about a, .word p{
     font-size: 1em;
     color: #252525;
-    text-align: left;
+    /* text-align: left; */
     line-height: 1.75em;
   }
 
   .word p {
-    font-size: 1.1em !important;
+    font-size: 1em !important;
+    line-height: 1.8em;
   }
 
 
@@ -272,9 +292,16 @@
     line-height: 1.6em;
   }
 
+  .sm-section a:hover{
+    text-decoration: none;
+    color:#9E6B57 !important;
+  }
+
   .sm-section i {
-    font-size: 26px;
+    font-size: 22px;
     line-height: 44px;
+    width:26px;
+    padding-top: 3px
   }
 
   .sm-section a:hover i {
@@ -356,26 +383,37 @@
 
 /* footer */
 
-  #footer {
-    padding:15px 0 10px 0;
+#footer {
+  border-top: 1px solid rgba(256,256,256,0.15);
+  background:rgb(248,248,248);
+  color:#252525;
+  font-size: 18px;
+  padding:15px 0 10px 0;
+  
+}
+
+  #footer .container .row div{
+    
     text-align: center;
-    color: #252525;
-    flex-direction: row-reverse;
-    border-top: 1px solid rgba(256,256,256,0.15);
-    background:rgb(248,248,248);
-    color:#252525;
+    color: hsl(0, 0%, 15%);
+    text-decoration: none;
+    
+
+    
   }
 
-  #footer div { 
+  #footer .container div { 
     /* width: 100% !important; */
-    flex: 1
+    /* flex: 1; */
+    /* direction: rtl; */
+    flex-direction: row-reverse;
   }
 
   #footer div span {
     line-height: 40px;
   }
 
-  #footer div a{
+  #footer .container .row a{
     vertical-align: middle;
   }
 
@@ -384,12 +422,12 @@
     -webkit-transition: filter .8s;
   }
 
-  #footer>div>a {
+  #footer a {
     display: inline-block;
     text-decoration: none;
     color: #252525;
-    margin:0px 3px;
-    padding: 6px;
+    margin:0px 1px;
+    padding: 5px;
   }
 
   #footer a i {
@@ -552,8 +590,8 @@
     margin-bottom: 25px;
     color: #333;
     /* opacity: 0; */
-    text-align: left;
     border:1px rgb(253, 253, 253) solid;
+    margin: 10px auto 15px;
   }
 
   .bsn-logo {
@@ -622,8 +660,9 @@
   }
 
 
-  .about-intro, .about-work, .about-edu {
+  .contact-intro, .about-intro, .about-work, .about-edu {
     width: 100%;
+    text-align: center;
     /* visibility: hidden; */
   }
 
@@ -927,13 +966,14 @@ canvas {
 
 
 header {
-  height: 70px;
+  height: 200px;
   position: absolute;
   top: 0;
   transition: top 0.5s ease-in-out;
   width: 100%;
-  padding: 17px 80px ;
+  /* padding: 20px 20px ; */
   z-index: 100;
+  padding: 35px 20px;
   /* background-color: #E37D5C; */
   /* background-color: #fff; */
   /* border-bottom: 1px solid rgba(256,256,256,0.15); */
@@ -946,7 +986,7 @@ header.hideUp {
 }
 
 header div {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 
@@ -1000,7 +1040,7 @@ header img {
       /* height: 40px; */
   }
   header {
-      padding:17px 10px;
+      /* padding:17px 10px; */
   }
   header .link .underline{
     display: none;
@@ -1341,11 +1381,10 @@ a:hover p{
   }
 
   .port h5 {
-    /* line-height: 1em; */
+
     font-size: 1em;
     font-weight: 500;
-    /* text-transform:uppercase; */
-    /* text-align: left; */
+
   }
 
   
@@ -1354,42 +1393,16 @@ a:hover p{
     overflow: hidden !important;
   }
 
-  /* .port .intro .desc {
-    position: absolute;
-    bottom:0px;
-    background-color: #fff;
-    width: 85%;
-    left:0;
-    right:0;
-    border-radius: 5px;
-    margin:0 auto;
-    padding:8px 3px 3px 3px;
-    opacity: 0;
-    transition-delay: .1s;
-    transition: all .2s ease-out;
-
-  }
-
-  .port .portfolio-item:hover .desc {
-
-    bottom:15px;
-    opacity: 1;
-
-
-  }
-
-  .port .portfolio-item:hover .intro {
-    overflow: hidden;
-  } */
+  
 
   .port .intro .desc {
     text-align: left;
-    margin-top: 10px;
+    margin-bottom: 8px;
   }
 
   .port .intro .desc h5 {
     margin-bottom: 0;
-    margin-top: 6px;
+    margin-top: 3px;
     white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -1407,9 +1420,11 @@ a:hover p{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     opacity: 0.62;
-    font-size:16px;
+    font-size:15px;
     margin-bottom: 0;
-    margin-top: 8px;
+    margin-top: 6px;
+
+
   }
 
 
@@ -1435,16 +1450,23 @@ a:hover p{
 
 
   .portfolio-item {
+    padding:8px 10px;
+  }
+
+
+  .portfolio-item .intro {
     text-align: center;
     margin-bottom: 5px;
-    padding: 15px 20px !important;
-    border:1px solid transparent;
+    padding: 8px 12px 12px !important;
+    /* border:1px solid transparent; */
     border-radius:5px;
+    background: #e6f2fd;
+    margin:1px 0;
 
   }
 
   .portfolio-item:hover {
-    border:1px solid rgba(0,0,0,0.3);
+    /* border:1px solid rgba(0,0,0,0.3); */
   } 
 
   .portfolio-item:hover a {
@@ -1482,8 +1504,30 @@ a:hover p{
   } */
 
 
-  section .container{
-    max-width:1520px;
+  .container{
+    max-width:1410px;
+  }
+
+  @media screen and (min-width: 1170px){
+    .container-fluid, .container, .admin-container {
+      padding: 0 6.66667rem 0 6.66667rem;
+  }
+  }
+
+
+  .ig-photo {
+    width: 280px;
+    height: 280px;
+    overflow:hidden;
+    background-color: black;
+    display: inline-block;
+    background-size: cover;
+    margin:10px;
+    background-position: center;
+  }
+
+  .ig-photo:hover {
+    opacity: 0.85;
   }
 
 

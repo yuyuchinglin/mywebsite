@@ -635,15 +635,16 @@
 
   @media (max-width: 575px) { 
   .bsncard {
-    width: 340px;
+    width: 380px;
     height: 240px;
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto;
    }
 
-   #contact { 
-    background: #333;
-  }
+   #contact {
+     margin:80 auto;
+   }
+
   }
 
 
@@ -1515,11 +1516,15 @@ a:hover p{
   }
 
 
+  /* about moments */
+
+
   .ig-photo {
-    width: 280px;
-    height: 280px;
+    width: 33vw;
+    height: 33vw;
+    max-width: 280px;
+    max-height: 280px;
     overflow:hidden;
-    background-color: black;
     display: inline-block;
     background-size: cover;
     margin:10px;
@@ -1529,6 +1534,20 @@ a:hover p{
   .ig-photo:hover {
     opacity: 0.85;
   }
+
+
+  @media screen and (max-width: 950px){
+     .ig-photo {
+      width:30vw;
+      height: 30vw;
+      margin:0;
+    } 
+
+    .moments .container {
+      padding:0 ;
+    }
+  } 
+
 
 
 

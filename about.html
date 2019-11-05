@@ -5,9 +5,9 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>YUCHING's Website</title>
+	<title>YUCHING - UX/UI Designer</title>
 
-	<link rel="shortcut icon" href="img/favicon.png" />
+	<link rel="shortcut icon" href="img-new/favicon.ico" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
 		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -15,6 +15,11 @@
 	<link rel='stylesheet' href='css/unite-gallery.css' type='text/css' />
 
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script>
+		ScrollReveal({ reset: true });
+	</script>
 
 </head>
 
@@ -47,7 +52,7 @@
 	<!-- welcome -->
 	<section id="welcomepic">
 		<div class="container welcomepic">
-			<img src="../img/yuchingpic.jpg" alt="" width="96%">
+			<img src="../img-new/yuchingpic.jpg" alt="" width="96%">
 		</div>
 	</section>
 
@@ -56,29 +61,30 @@
 		<div class="container">
 
 
-			<div class="row about-intro">
+			<!-- <div class="row about-intro" style="margin:auto 4%;"> -->
 
-				<div class="word col-12 my-2 p-0">
-					<h5>Hi there, I am Yu-Ching Lin.</h5>
-					<!-- <p>I am a front-end engineer with UI/UX mindset.</p> -->
-					<p>with great zeal for human, design and technology</p>
-				</div>
+			<div class="word col-12 my-2 p-0 about-intro">
+				<h5>Hi there, I am Yu-Ching Lin.</h5>
+				<!-- <p>I am a front-end engineer with UI/UX mindset.</p> -->
+				<p>with great zeal for human, design and technology</p>
 			</div>
+			<!-- </div> -->
 
 			<div class="row">
-				<div class="col-10">
+				<div class="col-12 col-lg-10">
 					<div class="bg-section">
 						<p>
 							<!-- <span>About me</span><br> -->
 							<!-- Graduated from the Institute of Psychology with great zeal for human, design and coding. As a self-motivated individual, I keep pursuing cutting-edge techniques while reflecting on the fundamental human nature.</p> -->
 
-							My most recent work was with Ubiqconn Inc. and RuggON Inc. where I designed an IoT cloud service and
+							My most recent work is with Ubiqconn Inc. and RuggON Inc. where I’m designing an IoT cloud service and
 							devices’ interface. The IoT system is very huge and I am the only designer in this team. Thus, I need to
-							decide an efficient design guideline and communicate with managers and engineers.<br>
+							decide on an efficient design system and communicate or relay information to the managers or engineers.
+							<br>
 						</p>
 						<p>
-							I am very fascinated about how people think, so I chose psychology as my major. Psychology is using
-							scientific methods to understand human behaviors. Hence, I learned psychological statistics and
+							I am very fascinated about how people think, so I chose psychology as my major. Psychology is a study that
+							uses scientific methods to understand human behaviors. Hence, I learned psychological statistics and
 							experimental psychology there. It’s very helpful for me to do or understand UX research.<br>
 						</p>
 						<p>
@@ -101,7 +107,7 @@
 				</div>
 
 
-				<div class="col-2" style="text-align:right">
+				<div class="col-2 d-none d-lg-block" style="text-align:right">
 
 
 					<div class="sm-section" style="text-align: left">
@@ -364,6 +370,24 @@
 			document.getElementById("mySidenav").style.right = "-417px";
 			document.querySelector('.window-overlay').style.display = "none";
 		}
+	</script>
+
+	<script>
+
+
+		ScrollReveal().reveal('header, #welcomepic, .moments',
+			{
+				origin: 'bottom',
+				distance: '50px',
+				duration: '1000',
+				easing: 'ease',
+				mobile: 'true',
+				reset: 'true',
+				viewFactor: 0.3,
+
+			});
+
+
 	</script>
 
 

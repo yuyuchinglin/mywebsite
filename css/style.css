@@ -62,7 +62,7 @@
 /* welcome */
 
   .welcomepic {
-    height: 85vh;
+    /* height: 85vh; */
     text-align: center;
     margin-top: 60px;
   }
@@ -109,43 +109,7 @@
     padding: 10px;
   }
 
-  @media (max-width: 900px) {
-    .welcomepic {
-      height: 45vh;
-      /* background: url("../img/yuchingpic.jpg") 20% 20%; */
-      background-size: cover;
-    }
 
-    #welcomepic h1{
-      display: block;
-      width:70vw;
-      font-size: 7vw;
-      position: absolute;
-      color: #9E6B57;
-      right: 0;
-      background-color: #333;
-      text-align: center;
-      bottom: 18%;
-      padding: 3vw 0;
-      text-shadow:0 0 40px #000;
-      line-height: 10vw;
-    }
-
-    .topic {
-      padding-top: 0px;
-      padding:15px;
-    }
-
-    .topic h2 {
-      padding: 0px;
-      font-size: 28px;
-    }
-
-    .under {
-      height: 10px;
-      width: 90px;
-    }
-  }
    
   .under{
     background: url('../img/line.jpg') center center no-repeat;
@@ -281,11 +245,11 @@
 
 
 
-  .sm-section, .bg-section {
+   .bg-section {
     /* border-left: 2px solid #9E6B57; */
     /* padding-left:15px; */
     margin-bottom: 20px;
-    margin-top: 6px;
+    margin-top: 10px !important;
   }
 
   .sm-section p, .bg-section p{
@@ -362,22 +326,32 @@
   }
 
   .word h5{
+      font-size: 28px;
+      line-height: 36px;
     padding: 0 15px 0 0;
   }
 
   .sm-section, .bg-section{
-    margin:0 8%;
+    margin:0 4%;
     margin-bottom: 20px;
   }
 
   section {
-    margin: 150px auto !important;
+    margin: 50px auto !important;
   }
 
   section .container {
-    padding:500px auto !important;
+    padding:50px auto !important;
   }
 
+}
+
+
+@media (max-width: 1409px){
+
+  .bg-section{
+    margin:0 4%;
+  }
 }
 
 
@@ -586,7 +560,7 @@
     border-radius: 8px;
     padding:25px;
     position: relative;
-    box-shadow:5px 5px 12px  rgba(10,10,100,0.15);
+    box-shadow:5px 5px 12px  rgba(10,10,100,0.2);
     margin-bottom: 25px;
     color: #333;
     /* opacity: 0; */
@@ -595,11 +569,11 @@
   }
 
   .bsn-logo {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     position: absolute;
     right:25px;
-    background: url('../img/icon.png') center center no-repeat;
+    background: url('../img-new/logo_black.png') center center no-repeat;
     background-size: contain;
     margin-right: 0;
   }
@@ -635,15 +609,16 @@
 
   @media (max-width: 575px) { 
   .bsncard {
-    width: 340px;
+    width: 380px;
     height: 240px;
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto;
    }
 
-   #contact { 
-    background: #333;
-  }
+   #contact {
+     margin:80 auto;
+   }
+
   }
 
 
@@ -1515,11 +1490,15 @@ a:hover p{
   }
 
 
+  /* about moments */
+
+
   .ig-photo {
-    width: 280px;
-    height: 280px;
+    width: 33vw;
+    height: 33vw;
+    max-width: 280px;
+    max-height: 280px;
     overflow:hidden;
-    background-color: black;
     display: inline-block;
     background-size: cover;
     margin:10px;
@@ -1529,6 +1508,57 @@ a:hover p{
   .ig-photo:hover {
     opacity: 0.85;
   }
+
+
+  @media screen and (max-width: 950px){
+     .ig-photo {
+      width:30vw;
+      height: 30vw;
+      margin:0;
+    } 
+
+    .moments .container {
+      padding:0 ;
+    }
+  } 
+
+
+  @media (max-width: 768px) {
+    section#welcomepic {
+      /* height: 70vh; */
+      margin-top: 40px !important;
+      margin-bottom: 0px !important;
+      background-size: cover;
+    }
+
+
+    .topic {
+      padding-top: 0px;
+      padding:15px;
+    }
+
+    .topic h2 {
+      padding: 0px;
+      font-size: 28px;
+    }
+
+    .under {
+      height: 10px;
+      width: 90px;
+    }
+  }
+
+
+  @media (max-width: 560px) { 
+    section#welcomepic {
+      /* height: 60vh; */
+      margin-top: 40px !important;
+      margin-bottom: 0px !important;
+      background-size: cover;
+    }
+  }
+
+
 
 
 

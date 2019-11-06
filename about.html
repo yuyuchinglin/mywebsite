@@ -5,7 +5,7 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>YUCHING - UX/UI Designer</title>
+	<title>Yu-Ching Lin - UX/UI Designer</title>
 
 	<link rel="shortcut icon" href="img-new/favicon.ico" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
@@ -17,8 +17,9 @@
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
 	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="./js/pace.js"></script>
 	<script>
-		ScrollReveal({ reset: true });
+		ScrollReveal();
 	</script>
 
 </head>
@@ -375,15 +376,14 @@
 	<script>
 
 
-		ScrollReveal().reveal('header, #welcomepic, .moments',
+		ScrollReveal().reveal('header, #welcomepic, #about, .moments .word, .ig-photo, #contact',
 			{
 				origin: 'bottom',
-				distance: '50px',
+				distance: '80px',
 				duration: '1000',
 				easing: 'ease',
 				mobile: 'true',
-				reset: 'true',
-				viewFactor: 0.3,
+				viewFactor: 0.35,
 
 			});
 

@@ -16,7 +16,18 @@
 
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
+	<script src="https://unpkg.com/scrollreveal"></script>
 	<script src="./js/pace.js"></script>
+
+	<script>
+			ScrollReveal({
+					distance: '80px',
+					duration: '1000',
+					easing: 'ease',
+					mobile: 'true',
+					viewFactor: 0.3,
+	});
+		</script>
 
 
 
@@ -449,8 +460,23 @@
 
 
 	<!-- js開始 -->
-
 	<script type='text/javascript' src='js/jquery-11.0.min.js'></script>
+	<script>
+
+			ScrollReveal().reveal('header',
+						{
+							origin: 'top',		
+						});
+	
+	
+			ScrollReveal().reveal('#welcome',
+				{
+					origin: 'bottom',		
+				});
+	
+	
+		</script>
+
 	<!-- <script type='text/javascript' src='js/unitegallery.min.js'></script> -->
 	<!-- <script type='text/javascript' src='js/ug-theme-tiles.js'></script> -->
 	<!-- <script src="js/popper.min.js"></script> -->

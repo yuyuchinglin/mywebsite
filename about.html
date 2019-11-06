@@ -19,7 +19,13 @@
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<script src="./js/pace.js"></script>
 	<script>
-		ScrollReveal();
+		ScrollReveal({
+				distance: '80px',
+				duration: '1000',
+				easing: 'ease',
+				mobile: 'true',
+				viewFactor: 0.3,
+});
 	</script>
 
 </head>
@@ -306,6 +312,21 @@
 
 
 	<!-- js開始 -->
+	<script>
+
+			ScrollReveal().reveal('header',
+						{
+							origin: 'top',		
+						});
+	
+	
+			ScrollReveal().reveal('#welcomepic, #about, .moments .word, .ig-photo, #contact',
+				{
+					origin: 'bottom',		
+				});
+	
+	
+		</script>
 	<script type='text/javascript' src='js/jquery-11.0.min.js'></script>
 	<script type='text/javascript' src='js/unitegallery.min.js'></script>
 	<script type='text/javascript' src='js/ug-theme-tiles.js'></script>
@@ -373,22 +394,7 @@
 		}
 	</script>
 
-	<script>
 
-
-		ScrollReveal().reveal('header, #welcomepic, #about, .moments .word, .ig-photo, #contact',
-			{
-				origin: 'bottom',
-				distance: '80px',
-				duration: '1000',
-				easing: 'ease',
-				mobile: 'true',
-				viewFactor: 0.4,
-
-			});
-
-
-	</script>
 
 
 </body>

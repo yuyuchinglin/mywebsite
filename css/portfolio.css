@@ -326,6 +326,11 @@ body {
     display: table-cell;
 }
 
+.list-img .imgs {
+    display:inline-block;
+    text-align:center;
+}
+
 
 
 

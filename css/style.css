@@ -1406,13 +1406,14 @@ a:hover p{
   .port img {
     width: 100%;
     display: block;
-    margin: auto;
-    background: rgb(239,239,239);
+    margin: 30px auto 5px;
+    /* background: rgb(239,239,239); */
     transform:scale(1,1);
     transition: all .3s ease-out;
     -webkit-filter:saturate(1);
     webkit-filter:grayscale(0);
     border-radius:5px;
+    height: 140px;
     
   }
 
@@ -1435,7 +1436,7 @@ a:hover p{
     padding: 8px 12px 12px !important;
     /* border:1px solid transparent; */
     border-radius:5px;
-    background: #e6f2fd;
+    /* background: #e6f2fd; */
     margin:1px 0;
 
   }

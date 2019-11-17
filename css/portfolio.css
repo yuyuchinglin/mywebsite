@@ -145,6 +145,11 @@ body {
 }
 
 
+.list-img > img{
+    width: 62%;
+}
+
+
 
 
 
@@ -204,6 +209,9 @@ body {
 
     #port {
         margin-top: 0px !important;
+    }
+    .list-img > img{
+        width: 90%;
     }
 }
 

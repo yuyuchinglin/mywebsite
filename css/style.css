@@ -340,6 +340,10 @@
     margin: 50px auto !important;
   }
 
+  #footer {
+    margin-bottom: 0;
+  }
+
   section .container {
     padding:50px auto !important;
   }

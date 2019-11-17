@@ -16,7 +16,18 @@
 	<link rel='stylesheet' href='../css/slick-theme.css' type='text/css' />
 	<link rel='stylesheet' href='../css/slick.css' type='text/css' />
 	<link rel="stylesheet" href="../css/portfolio.css" type='text/css' />
+	<script src="https://unpkg.com/scrollreveal"></script>
 	<script src="../js/pace.js"></script>
+
+	<script>
+		ScrollReveal({
+			distance: '80px',
+			duration: '1000',
+			easing: 'ease',
+			mobile: 'true',
+			viewFactor: 0.1,
+		});
+	</script>
 
 </head>
 
@@ -103,7 +114,7 @@
 					this cloud service.</p>
 			</div>
 
-			<div>
+			<div class="list-img">
 				<img src="img/interaction-1.png" alt="" style="width:65%">
 				<div class="caption">PM needs to organize and distribute every companies' users and devices.</div>
 			</div>
@@ -116,7 +127,7 @@
 					and update their devices' firmware and software without connecting them to computers.</p>
 			</div>
 
-			<div>
+			<div class="list-img">
 				<img src="img/interaction-2.png" alt="" style="width:65%">
 				<div class="caption">SOTA & FOTA update workflow</div>
 			</div>
@@ -130,7 +141,7 @@
 					the future.</p>
 			</div>
 
-			<div>
+			<div class="list-img">
 				<img src="./img/interaction-3.png" alt="" style="width:50%;">
 				<div class="caption">Users can monitor the tiring conditions on our cloud service.</div>
 			</div>
@@ -151,7 +162,7 @@
 				<p><b>1. RuggON Cloud Service's Prototype</b></p>
 			</div>
 
-			<div>
+			<div class="list-img">
 				<div class="row">
 					<img src="./img/visual-1-1.png" alt="" style="width:49%; margin-right:5px">
 					<img src="./img/visual-1-2.png" alt="" style="width:49%;">
@@ -168,7 +179,7 @@
 					RuggON tablet's appearance is not so modern, I make it be a traditional way.</p>
 			</div>
 
-			<div>
+			<div class="list-img">
 				<img src="./img/visual-2-1.png" alt="" style="width:55%;">
 				<div class="caption">RuggON Tablet's Prototype.</div>
 			</div>
@@ -180,7 +191,7 @@
 					Users can add and monitor RuggON's tablet through their phones.</p>
 			</div>
 
-			<div>
+			<div class="list-img">
 				<div class="row" style="justify-content: center;">
 					<img src="./img/visual-3-1.png" alt="" style="width:24%; margin-right:5px;">
 					<img src="./img/visual-3-2.png" alt="" style="width:24%; margin-right:5px;">
@@ -199,7 +210,7 @@
 					design.</p>
 			</div>
 
-			<div>
+			<div class="list-img">
 				<img src="./img/storybook.png" alt="" style="width:60%;">
 				<div class="caption">Screenshot of the Ubiqconn IOT storybook.</div>
 			</div>
@@ -214,7 +225,7 @@
 					great that I can control how it looks like actually.</p>
 			</div>
 
-			<div>
+			<div class="list-img">
 				<img src="./img/gitlab.png" alt="" style="width:60%;">
 				<div class="caption">Screenshot of our GitLab project.</div>
 			</div>
@@ -226,14 +237,14 @@
 					very important to us.</p>
 			</div>
 
-			<div>
+			<div class="list-img">
 				<img src="./img/VScode.png" alt="" style="width:60%;">
 				<div class="caption">Screenshot of our project.</div>
 			</div>
 
 
 
-			<div class="mt-3">
+			<div class="mt-3 list-img">
 				<div class="row">
 					<img src="./img/actualwebsite-1.png" alt="" style="width:60%;">
 					<img src="./img/actualwebsite-2.png" alt="" style="width:40%;">
@@ -255,126 +266,126 @@
 	</section>
 
 
-	<section class="read-more">
+	<!-- <section class="read-more">
 		<h5>MORE WORKS</h5>
 		<div class="more">
-			<!-- <div>
+			<div>
 				<a href="./pro_1828.html">
 					<p>1828王老吉涼水舖 app</p>
 					<img src="./img/portfolio/thumbs/1828(thumb).png" alt="" style="width: 100%;">
 					<p>#UI #UX #app</p>
 				</a>
-			</div> -->
-			<div>
-				<a href="./pro_omni2go.html">
-					<p>全方位開車助理 產品官網</p>
-					<img src="./img/portfolio/thumbs/3sdrive(thumb).png" alt="" style="width: 100%;">
-					<p>#landingpage #responsive</p>
-				</a>
 			</div>
-			<div>
-				<a href="./pro_InspireLove.html">
-					<p>幸福島</p>
-					<img src="./img/portfolio/thumbs/inpire-love(thumb).png" alt="" style="width: 100%;">
-					<p>#UI #responsive</p>
-				</a>
-			</div>
-			<div>
-				<a href="./pro_amigowriting.html">
-					<p>Amigo Writing</p>
-					<img src="./img/portfolio/thumbs/amigowriting(thumb).png" alt="" style="width: 100%;">
-					<p>#NodeJS #Heroku #Firebase</p>
-				</a>
-			</div>
-			<div>
-				<a href="./pro_CultureLaunch.html">
-					<p>藝時代</p>
-					<img src="./img/portfolio/thumbs/CultureLaunch(thumb).png" alt="" style="width: 100%;">
-					<p>#VueJS #VueCDN #VueCLI</p>
+	<div>
+		<a href="./pro_omni2go.html">
+			<p>全方位開車助理 產品官網</p>
+			<img src="./img/portfolio/thumbs/3sdrive(thumb).png" alt="" style="width: 100%;">
+			<p>#landingpage #responsive</p>
+		</a>
+	</div>
+	<div>
+		<a href="./pro_InspireLove.html">
+			<p>幸福島</p>
+			<img src="./img/portfolio/thumbs/inpire-love(thumb).png" alt="" style="width: 100%;">
+			<p>#UI #responsive</p>
+		</a>
+	</div>
+	<div>
+		<a href="./pro_amigowriting.html">
+			<p>Amigo Writing</p>
+			<img src="./img/portfolio/thumbs/amigowriting(thumb).png" alt="" style="width: 100%;">
+			<p>#NodeJS #Heroku #Firebase</p>
+		</a>
+	</div>
+	<div>
+		<a href="./pro_CultureLaunch.html">
+			<p>藝時代</p>
+			<img src="./img/portfolio/thumbs/CultureLaunch(thumb).png" alt="" style="width: 100%;">
+			<p>#VueJS #VueCDN #VueCLI</p>
 
-				</a>
-			</div>
-			<div>
-				<a href="./pro_UKEAS.html">
-					<p>UKEAS Boarding School</p>
-					<img src="./img/portfolio/thumbs/UKEAS(thumb).png" alt="" style="width: 100%;">
-					<p>#Marketing #UI #UX</p>
-				</a>
-			</div>
-			<div>
-				<a href="./pro_forest.html">
-					<p>台灣山林悠遊網後台</p>
-					<img src="./img/portfolio/thumbs/forest(thumb).png" alt="" style="width: 100%;">
-					<p>#FrontEndDevelopment #UX</p>
-				</a>
-			</div>
+		</a>
+	</div>
+	<div>
+		<a href="./pro_UKEAS.html">
+			<p>UKEAS Boarding School</p>
+			<img src="./img/portfolio/thumbs/UKEAS(thumb).png" alt="" style="width: 100%;">
+			<p>#Marketing #UI #UX</p>
+		</a>
+	</div>
+	<div>
+		<a href="./pro_forest.html">
+			<p>台灣山林悠遊網後台</p>
+			<img src="./img/portfolio/thumbs/forest(thumb).png" alt="" style="width: 100%;">
+			<p>#FrontEndDevelopment #UX</p>
+		</a>
+	</div>
 
-			<div>
-				<a href="./pro_LACD.html">
-					<p>LACD Lab</p>
-					<img src="./img/portfolio/thumbs/LACD(thumb).png" alt="" style="width: 100%;">
-					<p>#responsive #UI</p>
-				</a>
-			</div>
+	<div>
+		<a href="./pro_LACD.html">
+			<p>LACD Lab</p>
+			<img src="./img/portfolio/thumbs/LACD(thumb).png" alt="" style="width: 100%;">
+			<p>#responsive #UI</p>
+		</a>
+	</div>
 
-			<div>
-				<a href="./pro_personal.html">
-					<p>Personal Website</p>
-					<img src="./img/portfolio/thumbs/personal(thumb).png" alt="" style="width: 100%;">
-					<p>#UX #UI #GithubPage</p>
-				</a>
-			</div>
+	<div>
+		<a href="./pro_personal.html">
+			<p>Personal Website</p>
+			<img src="./img/portfolio/thumbs/personal(thumb).png" alt="" style="width: 100%;">
+			<p>#UX #UI #GithubPage</p>
+		</a>
+	</div>
 
-			<div>
-				<a href="./pro_TSUVIMI.html">
-					<p>TSUVIMI</p>
-					<img src="./img/portfolio/thumbs/TSUVIMI(thumb).png" alt="" style="width: 100%;">
-					<p>#FrontEndDesign #responsive</p>
-				</a>
-			</div>
+	<div>
+		<a href="./pro_TSUVIMI.html">
+			<p>TSUVIMI</p>
+			<img src="./img/portfolio/thumbs/TSUVIMI(thumb).png" alt="" style="width: 100%;">
+			<p>#FrontEndDesign #responsive</p>
+		</a>
+	</div>
 
-			<div>
-				<a href="./pro_Seraph.html">
-					<p>Seraph Kid's Wear</p>
-					<img src="./img/portfolio/thumbs/Seraph(thumb).png" alt="" style="width: 100%;">
-					<p>#responsive #UI</p>
-				</a>
-			</div>
+	<div>
+		<a href="./pro_Seraph.html">
+			<p>Seraph Kid's Wear</p>
+			<img src="./img/portfolio/thumbs/Seraph(thumb).png" alt="" style="width: 100%;">
+			<p>#responsive #UI</p>
+		</a>
+	</div>
 
-			<div>
-				<a href="./skills_jQuery.html">
-					<p>jQuery</p>
-					<img src="./img/portfolio/thumbs/jQuery(thumb).png" alt="" style="width: 100%;">
-					<p>#jQuery #animation</p>
-				</a>
-			</div>
+	<div>
+		<a href="./skills_jQuery.html">
+			<p>jQuery</p>
+			<img src="./img/portfolio/thumbs/jQuery(thumb).png" alt="" style="width: 100%;">
+			<p>#jQuery #animation</p>
+		</a>
+	</div>
 
-			<div>
-				<a href="./skills_javascript.html">
-					<p>JavaScript</p>
-					<img src="./img/portfolio/thumbs/JavaScript(thumb).png" alt="" style="width: 100%;">
-					<p>#JS #JavaScript #ajax</p>
-				</a>
-			</div>
+	<div>
+		<a href="./skills_javascript.html">
+			<p>JavaScript</p>
+			<img src="./img/portfolio/thumbs/JavaScript(thumb).png" alt="" style="width: 100%;">
+			<p>#JS #JavaScript #ajax</p>
+		</a>
+	</div>
 
-			<div>
-				<a href="./skills_vuejs.html">
-					<p>VueJS</p>
-					<img src="./img/portfolio/thumbs/Vuejs(thumb).png" alt="" style="width: 100%;">
-					<p>#Vue #VueCLI #VueCDN</p>
-				</a>
-			</div>
+	<div>
+		<a href="./skills_vuejs.html">
+			<p>VueJS</p>
+			<img src="./img/portfolio/thumbs/Vuejs(thumb).png" alt="" style="width: 100%;">
+			<p>#Vue #VueCLI #VueCDN</p>
+		</a>
+	</div>
 
-			<div>
-				<a href="./skills_UserExperience.html">
-					<p>User Experience</p>
-					<img src="./img/portfolio/thumbs/UserExperience(thumb).png" alt="" style="width: 100%;">
-					<p>#UX</p>
-				</a>
-			</div>
-		</div>
+	<div>
+		<a href="./skills_UserExperience.html">
+			<p>User Experience</p>
+			<img src="./img/portfolio/thumbs/UserExperience(thumb).png" alt="" style="width: 100%;">
+			<p>#UX</p>
+		</a>
+	</div>
+	</div>
 
-	</section>
+	</section> -->
 
 	<!-- footer -->
 	<section id="footer">
@@ -534,6 +545,8 @@
 		</ul>
 	</div> -->
 
+
+
 	<script type='text/javascript' src='../js/jquery-11.0.min.js'></script>
 	<script type='text/javascript' src='../js/slick.min.js'></script>
 	<!-- <script type='text/javascript' src='../js/unitegallery.min.js'></script> -->
@@ -542,6 +555,22 @@
 	<script src="../js/bootstrap.min.js"></script>
 	<!-- <script src="../js/SmoothScroll.js"></script> -->
 	<script src="../js/portfolio.js"></script>
+
+	<script>
+
+		ScrollReveal().reveal('header, .topic',
+			{
+				origin: 'top',
+			});
+
+
+		ScrollReveal().reveal('.seperate, .list, .list-img',
+			{
+				origin: 'bottom',
+			});
+
+
+	</script>
 
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->

@@ -157,9 +157,9 @@
     position: absolute;
     display: block;
     margin:auto;
-    width:90vw;
+    /* width:90vw; */
     left:0;
-    top:125px;
+    /* top:125px; */
   } 
 
   #welcome img:nth-child(2) {
@@ -167,6 +167,27 @@
     width:65%;
     right:10%;
     top:70px;
+  }
+
+
+
+  #welcome .row {
+    position:relative;
+    align-self: flex-end;
+  }
+
+
+  #welcome .intro-box {
+    position: absolute;
+    background-color: #E98059;
+    width: 400px !important;
+    padding:20px 35px;
+    right:0;
+    bottom:0;
+    font-size: 20px;
+    color:#fff;
+    
+   
   }
 
 

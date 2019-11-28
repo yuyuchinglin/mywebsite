@@ -4,7 +4,7 @@
     /* font-family: 'Raleway', sans-serif; */
     /* font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU", "標楷體", "DFKai-sb", serif; */
     /* font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; */
-    font-family:"Arial","PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
+    font-family:'Rubik', sans-serif,"Arial","PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
   }
 
   body {
@@ -121,19 +121,9 @@
 
 
   #welcome {
-    height: 80vh;
+    height: 95vh;
     width: 100%;
-    /* background-color: #FBE091; */
-    /* opacity:0.2 */
-    /* background-color: #FEEFDC; */
-    /* background-color: #FDF5EB */
-    /* margin-top: 70px; */
-    /* background-color:beige; */
-
-    /* background-color: rgb(202,201,128); */
-    position: relative;
-    overflow: hidden;
-    padding: 9% 20px;
+    padding: 11% 20px 0px;
   }
 
   #welcome h1 {
@@ -144,51 +134,47 @@
     color: #0a0a14;
   }
 
-  #welcome .img-box {
-    height: 400px;
-    width: 350px;
-    float:right;
-    background-color: black;
-    background-size: cover;
-    background-position: 85% center;
-  }
 
-   #welcome img:first-child {
-    position: absolute;
+   #welcome img{
     display: block;
-    margin:auto;
-    /* width:90vw; */
-    left:0;
-    /* top:125px; */
+    width:100%; 
   } 
 
-  #welcome img:nth-child(2) {
-    position: absolute;
-    width:65%;
-    right:10%;
-    top:70px;
-  }
 
 
 
   #welcome .row {
     position:relative;
-    align-self: flex-end;
   }
 
 
   #welcome .intro-box {
     position: absolute;
-    background-color: #E98059;
-    width: 400px !important;
-    padding:20px 35px;
-    right:0;
-    bottom:0;
-    font-size: 20px;
+    width: 420px !important;
+    right:10px;
+    bottom:55px;
+    font-size: 18px;
     color:#fff;
-    
-   
   }
+
+  #welcome .intro-box>div {
+    background-color: #9E6B57;
+    padding:25px 25px 12px;
+    
+
+  }
+
+  #welcome .intro-box h1 {
+    color:#9E6B57;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Amita', cursive;
+    padding-left:70px;
+    padding-bottom:10px;
+    font-size:34px;
+  }
+
+
+
 
 
 

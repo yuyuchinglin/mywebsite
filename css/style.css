@@ -4,7 +4,7 @@
     /* font-family: 'Raleway', sans-serif; */
     /* font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU", "標楷體", "DFKai-sb", serif; */
     /* font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; */
-    font-family:'Rubik', sans-serif,"Arial","PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
+    font-family:'Calibri','Roboto','Rubik', sans-serif,"Arial","PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
   }
 
   body {
@@ -121,7 +121,7 @@
 
 
   #welcome {
-    height: 95vh;
+    /* height: 95vh; */
     width: 100%;
     padding: 11% 20px 0px;
   }
@@ -149,28 +149,61 @@
 
 
   #welcome .intro-box {
-    position: absolute;
-    width: 420px !important;
-    right:10px;
-    bottom:55px;
-    font-size: 18px;
+    /* position: absolute; */
+    max-width: 470px ;
+    /* right:10px; */
+    /* bottom:70px; */
+    font-size: 20px;
     color:#fff;
+    min-width: 410px;
+  }
+
+  #welcome .intro-box>img {
+    width:100%;
+  }
+
+  #welcome .intro-box>img,  #welcome .intro-box>div {
+    display: inline-block;
   }
 
   #welcome .intro-box>div {
     background-color: #9E6B57;
-    padding:25px 25px 12px;
+    padding:25px 32px 8px;
     
 
   }
 
   #welcome .intro-box h1 {
-    color:#9E6B57;
-    font-family: 'Pacifico', cursive;
-    font-family: 'Amita', cursive;
-    padding-left:70px;
-    padding-bottom:10px;
-    font-size:34px;
+    /* padding-left:70px; */
+    /* padding-bottom:5px; */
+    font-size:38px;
+    /* text-align: right; */
+    margin-left: 26%;
+    
+    
+    font-family: 'Oregano', cursive;
+  }
+
+  #welcome .intro-box {
+    margin-left: -40%;
+  }
+
+
+  @media (max-width: 992px) {
+
+    #welcome .intro-box {
+      margin-top: 20px;
+    }
+    #welcome .intro-box h1 {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    #welcome .intro-box {
+      margin-left: 0;
+      max-width: 100%;
+    }
+
   }
 
 
@@ -438,13 +471,6 @@
     #footer div:nth-child(2) a{
       padding-bottom: 0px; 
       padding-top: 9px;
-    }
-
-
-    #welcome img {
-
-      width:90%;
-
     }
 
     .bsncard {
@@ -959,45 +985,29 @@ header {
   top: 0;
   transition: top 0.5s ease-in-out;
   width: 100%;
-  /* padding: 20px 20px ; */
   z-index: 100;
   padding: 35px 20px;
-  /* background-color: #E37D5C; */
-  /* background-color: #fff; */
-  /* border-bottom: 1px solid rgba(256,256,256,0.15); */
-  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
-  transition: top .4s ease-in-out
 }
 
-header.hideUp {
-  /* top: -70px; */
-}
-
-header div {
-  /* display: inline-block; */
-}
 
 
 header .link {
-  /* background-color: red; */
   float:right;
   margin-top: -2px;
+  
 }
 
-
-
 header .link a{
-  margin: 0 5px 0 5px;
+  margin: 0 8px;
   padding: 0;
-  color:#252525;
+  color:#C9BAB4;
   line-height: 35px;
-  font-weight: 500;
-  letter-spacing: .5px;
-  font-style: 18px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 header .link a:hover {
-  color:#252525;
+  color:#9E6B57;
 }
 
 header .link a.active:hover {
@@ -1005,86 +1015,34 @@ header .link a.active:hover {
 }
 
 
-
-
-header .link {
-  /* right: 0; */
-  float: right;
-  /* margin:10px auto; */
-}
-
-header img {
-  height: 40px;
-  vertical-align: middle;
-}
-
-.opennav {
-  display: none !important;
+.logo:hover {
+  text-decoration: none !important;
 }
 
 
-@media screen and (max-width: 720px) {
-  header img {
-      /* height: 40px; */
-  }
-  header {
-      /* padding:17px 10px; */
-  }
-  header .link .underline{
+.logo img:first-child {
+  height:25px;
+  margin-bottom:8px;
+  margin-right:5px
+}
+
+.logo img:nth-child(2) {
+  display: inline-block;
+  height:28px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .logo img:nth-child(2) {
     display: none;
-      /* background-color: red; */
-      /* margin:5px auto; */
-  }
-  .opennav {
-    display: block !important;
   }
 
 }
 
 
 
-/* The side navigation menu */
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 400px; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  right: -417px;
-  background-color: #333; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  /* opacity: 0.9; */
-  overflow-y: scroll;
-  /* padding-left:450px ; */
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-  padding: 8px 32px 8px 16px;
-  text-decoration: none;
-  /* font-size: 25px; */
-  color: #000;
-  
-  display: block;
-  transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-  color: #000;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 10px;
-  font-size: 24px;
-  /* margin-right: 50px; */
-  }
-  
+
   #accordion {
   padding:0 5%;
   list-style-type: none;
@@ -1282,14 +1240,14 @@ a:hover p{
 .underline:active {
   text-decoration: none; 
   cursor: pointer;
-  color:#252525;
+  color:#9E6B57;
 }
 
 .underline:hover:after,
 .underline:focus:after,
 .underline:active:after  {
       width: 100%;
-      color:#252525 !important;
+      color:#9E6B57 !important;
 }
 
 
@@ -1308,7 +1266,7 @@ a:hover p{
     left: 0; 
     bottom: -2px;
     height: 1px;
-    background-color: #252525;
+    background-color:#9E6B57;
     width: 0;
     transition: width .4s;
   }
@@ -1596,6 +1554,23 @@ a:hover p{
     width: 100%;
     height: 3px;
   }
+
+
+#portfolio .work{
+  background-color: #ccc;
+  background: url('../img-new/ruggon_sm.png') center center;
+  background-size: cover;
+  width:25vw;
+  height:25vw;
+  margin-bottom: 30px;
+  border-radius: 5px;
+
+
+}
+
+
+
+
   
 
 

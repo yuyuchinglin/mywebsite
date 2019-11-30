@@ -121,9 +121,14 @@
 
 
   #welcome {
-    /* height: 95vh; */
     width: 100%;
+  }
+
+  @media (max-width: 992px) {
+    
+  #welcome {
     padding: 11% 20px 0px;
+  }
   }
 
   #welcome h1 {
@@ -169,8 +174,7 @@
   #welcome .intro-box>div {
     background-color: #9E6B57;
     padding:25px 32px 8px;
-    
-
+  
   }
 
   #welcome .intro-box h1 {
@@ -191,13 +195,29 @@
 
   @media (max-width: 992px) {
 
+    #welcome {
+      padding:11% 0px !important;
+      margin-bottom: 0;
+  }
+
+  
+
     #welcome .intro-box {
       margin-top: 20px;
-      min-width: 410px;
+      min-width: 0px;
     }
     #welcome .intro-box h1 {
       margin-left: 0;
       text-align: center;
+      font-size: 32px;
+    }
+
+    #welcome .intro-box>div {
+      background-color: transparent;
+      /* padding:25px 32px 8px; */
+      color:#252525;
+      padding:10px;
+    
     }
   
     #welcome .intro-box {
@@ -206,6 +226,11 @@
     }
 
   }
+
+  @media screen and (max-width: 768px) {
+  
+
+}
 
 
 

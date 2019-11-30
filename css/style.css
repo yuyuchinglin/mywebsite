@@ -193,6 +193,7 @@
 
     #welcome .intro-box {
       margin-top: 20px;
+      min-width: 410px;
     }
     #welcome .intro-box h1 {
       margin-left: 0;

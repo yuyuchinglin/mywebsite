@@ -122,14 +122,9 @@
 
   #welcome {
     width: 100%;
-  }
-
-  @media (max-width: 992px) {
-    
-  #welcome {
     padding: 11% 20px 0px;
   }
-  }
+
 
   #welcome h1 {
     line-height: 1.5em;
@@ -389,12 +384,20 @@
     /* line-height: 20px; */
     font-size: 18px !important;
     line-height: 26px;
+    text-align: center;
+    display: none;
   }
 
   .word h5{
       font-size: 28px;
       line-height: 36px;
-    padding: 0 15px 0 0;
+    text-align: center !important;
+    display: inline;
+    
+  }
+
+  .word {
+    text-align: center;
   }
 
   .sm-section, .bg-section{

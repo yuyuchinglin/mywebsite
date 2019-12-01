@@ -828,10 +828,10 @@ header .link {
 header .link a{
   margin: 0 8px;
   padding: 0;
-  color:#C9BAB4;
+  color:#252525;
   line-height: 35px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 header .link a:hover {

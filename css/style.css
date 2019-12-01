@@ -222,10 +222,6 @@
 
   }
 
-  @media screen and (max-width: 768px) {
-  
-
-}
 
 
 
@@ -274,6 +270,10 @@
     font-weight: 600;
     color: #252525;
     letter-spacing: .5px;
+  }
+
+  .word {
+    text-align: center;
   }
 
   .word h5{

@@ -180,7 +180,7 @@
     margin-left: 26%;
     
     
-    font-family: 'Oregano', cursive;
+    font-family: 'Oregano';
   }
 
   #welcome .intro-box {
@@ -1156,8 +1156,9 @@ a:hover p{
 
   .port h5 {
 
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
+    font-family: 'Patua One','Roboto';
 
   }
 

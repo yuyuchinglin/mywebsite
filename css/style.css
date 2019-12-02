@@ -1,10 +1,15 @@
   *{
     margin: 0;
     padding: 0;
-    /* font-family: 'Raleway', sans-serif; */
-    /* font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU", "標楷體", "DFKai-sb", serif; */
-    /* font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; */
-    font-family:'Calibri','Roboto','Rubik', sans-serif,"Arial","PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
+    font-family:'Source Sans Pro', 'Calibri','Roboto','Rubik', sans-serif,"Arial","PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
+  }
+
+  @media (max-width: 768px) {
+
+    * {
+      font-size: 16px;
+    }
+
   }
 
   body {
@@ -269,7 +274,7 @@
     line-height: 22px;
     font-weight: 600;
     color: #252525;
-    letter-spacing: .5px;
+    /* letter-spacing: .5px; */
   }
 
   .word {
@@ -280,14 +285,10 @@
     font-size: 32px;
     line-height: 44px;
     color: #9E6B57;
-    font-weight: 600;
+    font-weight: 500;
     display: inline;
     text-align: center;
-    /* background: -webkit-linear-gradient(top, #9E6B57 0, #9E6B57 75%); */
-    /* background: -webkit-linear-gradient(top, #E98058 50%, #FBE091 25%); */
-    /* -webkit-background-clip: text; */
-    /* -webkit-text-fill-color: transparent; */
-    /* text-shadow: 0.1em 0.1em 0.5em #FBE091; */
+    font-family: 'Patua One','Roboto';
   }
 
 
@@ -438,23 +439,21 @@
   color:#252525;
   font-size: 18px;
   padding:15px 0 10px 0;
-  
 }
 
-  #footer .container .row div{
-    
+#footer .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+  #footer .container .row div{   
     text-align: center;
     color: hsl(0, 0%, 15%);
     text-decoration: none;
-    
 
-    
   }
 
   #footer .container div { 
-    /* width: 100% !important; */
-    /* flex: 1; */
-    /* direction: rtl; */
     flex-direction: row-reverse;
   }
 
@@ -495,6 +494,7 @@
   @media (max-width: 900px) {
     #footer div{
       width: 100% !important;
+      font-size: 16px;
       
     }
     #footer div:nth-child(2) a{
@@ -527,59 +527,6 @@
     font-size: 16px;
     text-align: center;
   }
-
-  .logo{
-    /* height: 0px; */
-    /* margin: 0 10px; */
-  }
-
-
-/*portfolio*/
-
-
-  /* .port {
-    width: 94%;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .port div {
-    height: auto;
-    text-align: center;
-  }
-
-  .port h5 {
-    line-height: 1em;
-    font-size: 1em;
-    font-weight: 500;
-  }
-
-
-  .port div:hover .intro {
-  }
-
-  .port img {
-    width: 100%;
-    display: block;
-    margin: auto;
-    background: transparent;
-    -webkit-filter:saturate(0.8);
-  }
-
-  .port img:hover {
-    -webkit-filter:saturate(1.4);
-  }
-
-
-  .portfolio-item {
-    text-align: center;
-    margin-bottom: 10px;
-    /* width: 30%; */
-    /* padding: 0 10px !important; */
-  /* } */
-
-  
-
 
   .intro {
     width:100%;
@@ -637,10 +584,10 @@
   }
 
   .bsn-logo {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     position: absolute;
-    right:40px;
+    right:30px;
     margin-top:5px ;
     background: url('../img-new/logo_12.png') center center no-repeat;
     background-size: contain;
@@ -666,7 +613,8 @@
   }
 
   .bsn-intro i {
-    width: 15px;
+    width: 22px;
+    font-size: 13px;
     text-align: center;
   }
 
@@ -678,14 +626,18 @@
 
   @media (max-width: 575px) { 
   .bsncard {
-    width: 380px;
-    height: 240px;
+    width: 340px;
+    height: 280px;
     text-align: center;
     margin: 10px auto;
    }
 
    #contact {
      margin:80 auto;
+   }
+
+   .bsn-intro p a {
+     font-size: 13px;
    }
 
   }
@@ -1278,6 +1230,10 @@ a:hover p{
     .portfolio-word {
        font-size:16px;
     } 
+
+    .port .intro .desc {
+      margin-left: 15px;
+    }
   }
 
 
@@ -1331,6 +1287,7 @@ a:hover p{
 
 
   @media (max-width: 768px) {
+
     section#welcomepic {
       /* height: 70vh; */
       margin-top: 40px !important;

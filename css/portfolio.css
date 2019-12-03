@@ -53,7 +53,7 @@ body {
 #port .topic {
     background-color: #FBE091;
     padding-top: 150px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 
@@ -108,7 +108,7 @@ body {
     /* width:50%; */
     height:auto;
     width:auto;
-    margin-top: 30px;
+    margin-top: 40px;
 
 }
 
@@ -360,6 +360,10 @@ body {
     text-align:center;
 }
 
+.list-img img {
+    width:70%;
+}
+
 .quality-interview p{
     text-align: left;
     margin: 0 !important;
@@ -371,7 +375,22 @@ body {
 
 .quality-interview img {
     margin: 10px 0;
+    width:80px
 }
+
+
+@media screen and (max-width: 756px) {
+    .quality-interview img {
+        margin: 5px 0;
+        width:55px
+    }
+
+    .list-img img {
+        width:95%;
+    }
+
+}
+
 
 
 

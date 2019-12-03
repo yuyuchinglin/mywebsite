@@ -104,7 +104,7 @@ body {
 }
 
 #port .topic img {
-    max-width: 300px;
+    max-height: 390px;
     /* width:50%; */
     height:auto;
     width:auto;

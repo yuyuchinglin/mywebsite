@@ -360,6 +360,19 @@ body {
     text-align:center;
 }
 
+.quality-interview p{
+    text-align: left;
+    margin: 0 !important;
+}
+
+.quality-interview .col {
+    margin: 15px 0;
+}
+
+.quality-interview img {
+    margin: 10px 0;
+}
+
 
 
 

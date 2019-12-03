@@ -387,6 +387,16 @@ body {
 
     .list-img img {
         width:95%;
+        text-align: right;
+        margin-right: 15px;
+    }
+
+    .topic h1 {
+        font-size: 32px;
+    }
+
+    .list h4 {
+        font-size: 1.4em;
     }
 
 }

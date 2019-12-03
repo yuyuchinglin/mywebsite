@@ -93,7 +93,8 @@ body {
 
 .topic h1 {
         margin:0;
-        font-weight: 700;
+        font-weight: 500;
+        font-family: 'Patua One','Roboto';
 
 
     }
@@ -103,10 +104,11 @@ body {
 }
 
 #port .topic img {
-    max-width: 500px;
+    max-width: 300px;
     /* width:50%; */
-    height:400px;
-    /* margin-top: 30px; */
+    height:auto;
+    width:auto;
+    margin-top: 30px;
 
 }
 
@@ -117,15 +119,21 @@ body {
 
 .list h4 {
     color:#252525;
-    font-weight: 700;
+    font-weight: 400;
     margin:20px 0 20px 0 !important;
     font-size: 1.6em;
+    font-family: 'Patua One','Roboto';
 }
 
 .list {
     text-align: left;
     width: 60%; 
     margin:0 auto;
+}
+
+.list b {
+    font-weight: 1000;
+    font-family: serif;
 }
 
 .list.point p {

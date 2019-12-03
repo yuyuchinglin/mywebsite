@@ -386,8 +386,9 @@ body {
     }
 
     .list-img img {
-        width:95%;
-        text-align: right;
+        width:98%;
+        text-align: center;
+        margin: 0 auto
         margin-right: 15px;
     }
 

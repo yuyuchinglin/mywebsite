@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Taiwan Forest Recreation's CMS | YUCHING's Website</title>
-	<link rel="shortcut icon" href="../img-new/favicon.png" />
+	<link rel="shortcut icon" href="../img-new/favicon.ico" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
 		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -70,9 +70,9 @@
 		<div class="topic" style="background-color: #F3FCE4">
 
 			<div class="container">
-				<h1>Taiwan Forest Recreation's CMS</h1>
+				<h1>Content Management System</h1>
 				<div class="webintro">
-					<p>A User-friendly Content Management System</p>
+					<p>A content management system for civil servants to update realtime forest-related information</p>
 
 				</div>
 				<img src="../img-new/md_forest.png" alt="" class="mt-4">
@@ -87,16 +87,19 @@
 			<div class="list">
 				<h4>Overview</h4>
 
-				<!-- <p>My friend runs instagram business profile which is full of quates handwriting. There is only one link
-					can put in the Instagram bio, so my friend asked me to do a page with links. I added a message box
-					in it so that fans can recommend books or quotes thay liked.</p> -->
+				<p>Supergeo Technologies, a geographic information company, took a case from the Forestry Bureau, Taiwanese
+					government. I participated in this case and responsible for front-end development. This is a content
+					management system for civil servants to update realtime forest-related information such as forest trials’
+					status, natural education, and volunteers, etc. The information will be updated on the Taiwan recreation
+					forest website.
+				</p>
 
 			</div>
 
 			<div class="list point">
 
 				<p><b>Company:</b> Supergeo Inc.</p>
-				<p><b>Role:</b> UX/UI Design, Front-end Development</p>
+				<p><b>Role:</b> Front-end Development</p>
 				<p><b>Time:</b> 2018/5-2018/7</p>
 				<!-- <p><b>URL:</b> <a
 						href="https://ancient-sands-20448.herokuapp.com/?utm_source=instamigo&utm_medium=link&utm_campaign=amigo-links">amigo
@@ -114,9 +117,11 @@
 
 			<div class="list">
 				<h4>Front-end Development</h4>
-				<p>This content management system is built in asp.net (C#). I cooperated with Supergeo Company's
-					back-end engineer. Except for content display, Every content needs to be edit, add or remove. I
-					learned a lot of Vanilla JS in this project.</p>
+				<p>I cooperated with Supergeo Company's back-end engineer who wrote asp.net (C#) as this website’s back-end. My
+					responsibility is that every content needs to be created, read, update, and delete (CRUD). Moreover, on this
+					website, I use a lot of AJAX (Asynchronous JavaScript + XML) which means web applications can send and
+					retrieve data from a server asynchronously (in the background) without interfering with the display and
+					behavior of the existing page. I learned lots of Vanilla JS from this project.</p>
 			</div>
 
 
@@ -124,92 +129,100 @@
 				<div class="website" style="height:450px; width:810px; overflow-y: scroll; margin:0 auto">
 					<img src="img/portfolio/forest/mgm_tab1.png" onMouseOver="this.src='img/portfolio/forest/mgm_tab1_edit.png'"
 						onMouseOut="this.src='img/portfolio/forest/mgm_tab1.png'" alt="" style="width:800px">
-					<div class="caption">You can hover the image to see the edit effect.</div>
-				</div>
 
+				</div>
+				<div class="caption">You can hover the image to see the edit effect.</div>
+			</div>
+
+
+			<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
+
+
+			<div class="list">
+				<h4>Questionnaire's Drag&Drop (VanillaJS)</h4>
+				<p>This is a live demo of our questionnaire. Left-hand side is the questionnaire. You can create, read, update
+					and delete (CRUD). The right-hand side is frequently questioned answers (FQA). You can drag the question and
+					drop it to the left-hand side's Questionnaire.
+				</p>
+			</div>
+
+
+			<div class="codepen" style="margin:0 auto; width:900px">
+
+				<p data-height="600" data-theme-id="0" data-slug-hash="BPPvQy" data-default-tab="result" data-user="yuchinglin"
+					data-pen-title="Questionnaire (drag&drop VanillaJS)" class="codepen">See
+					the Pen
+					<a href="https://codepen.io/yuchinglin/pen/BPPvQy/">Questionnaire (drag&drop VanillaJS)</a>
+					by yuchinglin (<a href="https://codepen.io/yuchinglin">@yuchinglin</a>)
+					on <a href="https://codepen.io">CodePen</a>.</p>
+				<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+
+				<div class="caption">Questionnaire Editing (Left: Questionnaire; Right: FQA)</div>
 
 				<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
 
 
 				<div class="list">
-					<h4>Questionnaire's Drag&Drop (VanillaJS)</h4>
-					<p>You can drag the right-hand side's FQA and drop it to the left-hand side's Questionnaire.</p>
+
+					<h4>
+						Navbar Redesign I (for user-friendly)
+					</h4>
+
+					<p><b>1. Navbar Redesign:</b> <br>In the origin design, some of the links will open the submenu, and some of
+						the links will jump to the page directly. Therefore, I added a symbol "<i class="fas fa-angle-down"></i>"
+						to make users easily understand.</p>
+					<p><b>2. Submenu Redesign:</b> <br>In the origin design, the submenu's <a target="_blank"
+							href="https://contrast-ratio.com/#rgb%2870%2C120%2C54%29-on-rgb%28192%2C233%2C187%29">word and
+							background color contrast
+							are only 3.9</a>, which fails to pass WCAG 2.0 level AA for normal text (requires at least 4.5).
+						Therefore, it
+						is not enough for users to recognize easily, so I changed the color.
+					</p>
 				</div>
 
 
-				<div class="codepen" style="margin:0 auto; width:900px">
-
-					<p data-height="600" data-theme-id="0" data-slug-hash="BPPvQy" data-default-tab="result"
-						data-user="yuchinglin" data-pen-title="Questionnaire (drag&drop VanillaJS)" class="codepen">See
-						the Pen
-						<a href="https://codepen.io/yuchinglin/pen/BPPvQy/">Questionnaire (drag&drop VanillaJS)</a>
-						by yuchinglin (<a href="https://codepen.io/yuchinglin">@yuchinglin</a>)
-						on <a href="https://codepen.io">CodePen</a>.</p>
-					<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-
-
-					<div class="caption">Questionnaire Editing (Left: Questionnaire; Right: FQA)</div>
-
-					<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
-
-
-					<div class="list">
-
-						<h4>
-							Navbar Redesign I
-						</h4>
-
-						<p><b>1. Navbar Redesign:</b> <br>In the origin design, some of the link will open the submenu,
-							and some
-							of the link will jump to the page directly. Therefore, I added a symbol "<i
-								class="fas fa-angle-down"></i>" to make users understand.</p>
-						<p><b>2. Submenu Redesign:</b> <br>In the origin design, the submenu's color contract is not
-							enough for
-							users to recognize easily, so I changed the color.</p>
+				<div class="list-img">
+					<div class="website" style="height: 500px; border:none; overflow: hidden;">
+						<img src="img/portfolio/forest/navbar_redesign.png" alt="" style="width:800px; background:#333;">
 					</div>
 
 
-					<div class="list-img">
-						<div class="website" style="height: 500px; border:none; overflow: hidden;">
-							<img src="img/portfolio/forest/navbar_redesign.png" alt="" style="width:800px; background:#333;">
-						</div>
+					<div class="caption">Navbar Redesign I (Left: Navbar Redesign; Right: Submenu Redesign)</div>
+				</div>
+
+				<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
 
 
-						<div class="caption">Navbar Redesign I (Left: Navbar Redesign; Right: Submenu Redesign)</div>
+				<div class="list">
+
+					<h4>
+
+						Navbar Redesign II (for user-friendly)
+
+					</h4>
+
+					<p>When I was coding and testing the website, I found out that the two navbars are very easy for us to get
+						confused. The main navbar always exists on the page, but the sub navbar will changed according to what the
+						main navbar have been clicked by users. That is to say, main navbar is fixed, and sub navbar is unfixed.
+						Therefore, I draw a line between them and give them different styles to separate them.
+					</p>
+				</div>
+
+				<div class="list-img">
+					<div class="website" style="border:none; overflow:hidden">
+						<img src="img/portfolio/forest/topic_redesign.png" alt=""
+							style="width:800px; background: #333; padding:30px 0;">
 					</div>
 
-					<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
-
-
-					<div class="list">
-
-						<h4>
-
-							Navbar Redesign II
-						</h4>
-
-						<p>When I was coding and testing the website, I found out that the two navbars are easily to let
-							me
-							confused. The main navbar always exists in the page, but the sub navbar will changed as
-							users
-							clicked on the main navbar. That is to say, main navbar is fixed, and sub navbar is unfixed.
-							Therefore, I draw a line between them and give them different style to seperate them.</p>
-					</div>
-
-					<div class="list-img">
-						<div class="website" style="border:none; overflow:hidden">
-							<img src="img/portfolio/forest/topic_redesign.png" alt=""
-								style="width:800px; background: #333; padding:30px 0;">
-						</div>
-
-						<div class="caption">Navbar Redesign II</div>
-
-					</div>
-
+					<div class="caption">Navbar Redesign II</div>
 
 				</div>
+
+
 			</div>
+		</div>
 		</div>
 	</section>
 

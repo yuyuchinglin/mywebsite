@@ -225,7 +225,7 @@ body {
 @media screen and (max-width: 768px) {
     .list {
         width: 98%;
-        font-size:1em;
+        /* font-size:1em; */
     }
 
     #port {
@@ -257,13 +257,17 @@ body {
     /* font-family:medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif; */
 }
 
+.list p, .list b{
+    font-size: 1.1em;
+}
+
 
 .list p {
     font-weight: 400!important;
     font-style: normal;
     color:rgba(0,0,0,0.85);
     /* text-align: justify; */
-    font-size: 1.1em;
+    
     line-height: 1.65;
     /* font-family:medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif; */
     letter-spacing: .004em;

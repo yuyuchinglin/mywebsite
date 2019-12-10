@@ -8,22 +8,17 @@
 	<title>Yu-Ching Lin - UX/UI Designer</title>
 
 	<link rel="shortcut icon" href="img-new/favicon.ico" />
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
 		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel='stylesheet' href='../css/style.css' type='text/css' />
-	<!-- <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> -->
-	<!-- <link href="https://fonts.googleapis.com/css?family=Amita:700|Open+Sans&display=swap" rel="stylesheet"> -->
-	<!-- <link href="https://fonts.googleapis.com/css?family=Amita:700|Rubik&display=swap" rel="stylesheet"> -->
-	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Oregano|Source+Sans+Pro|Patua+One|Roboto&display=swap"
 		rel="stylesheet">
-	<!-- <link rel='stylesheet' href='css/unite-gallery.css' type='text/css' /> -->
-
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
-	<script src="https://unpkg.com/scrollreveal"></script>
 	<script src="./js/pace.js"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+
 
 	<script>
 		ScrollReveal({
@@ -143,7 +138,7 @@
 			</div>
 
 			<div>
-				<div class="port mx-3">
+				<div class="port mx-3 row">
 
 					<div class="col-lg-4 col-md-6 col-12 portfolio-item design code">
 						<a href="./works/ruggon.html">
@@ -330,6 +325,7 @@
 
 	<!-- js開始 -->
 	<script type='text/javascript' src='js/jquery-11.0.min.js'></script>
+	<script src="js/isotope.js"></script> <!-- filter: isotope-->
 	<script>
 
 		ScrollReveal().reveal('header',
@@ -351,7 +347,7 @@
 	<!-- <script src="js/popper.min.js"></script> -->
 	<script src="js/bootstrap.min.js"></script>
 
-	<script src="js/isotope.js"></script> <!-- filter: isotope-->
+
 	<!-- <script src="js/SmoothScroll.js"></script> -->
 	<!-- <script src="js/easypiechart.js"></script> -->
 	<script src="js/main.js"></script>
@@ -457,22 +453,6 @@
 					return false;
 				});
 
-
-
-				$('.sub-type a').click(function () {
-					$('.sub-type a').removeClass('active');
-					$(this).addClass('active');
-					var selector = $(this).attr('data-filter');
-					$container.isotope({
-						filter: selector,
-						animationOptions: {
-							duration: 1000,
-							easing: 'linear',
-							queue: false
-						}
-					});
-					return false;
-				});
 
 			});
 

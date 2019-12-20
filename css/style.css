@@ -1136,8 +1136,8 @@ a:hover p{
   .port .intro .desc {
     text-align: left;
     /* margin-bottom: 8px; */
-    margin-left: 25px;
-    margin-top: 12px;
+    /* margin-left: 25px; */
+    margin: 12px 25px 8px;
   }
 
   .port .intro .desc h5 {
@@ -1149,7 +1149,7 @@ a:hover p{
   }
 
   .port .intro .desc small {
-    font-size: 12px;
+    font-size: 14px;
     opacity: 0.62;
   }
 
@@ -1185,12 +1185,28 @@ a:hover p{
     
   }
 
-  /* .port .portfolio-item:hover img {
-    transform:scale(1.2,1.2);
-    -webkit-filter:saturate(1.4);
-    webkit-filter:grayscale(0.5);
-    background: rgb(220,220,220);
-  } */
+  .port .design-dot::before, .port .code-dot::before {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    margin: 2px 3px 1px 1px;
+  }
+
+  .port .design-dot::before {
+    background-color: #E37D5C;
+    border:rgb(221, 111, 74) 1px solid;
+  }
+
+  .port .code-dot::before {
+    background-color: rgb(78, 87, 216);
+    border:rgb(74, 77, 221) 1px solid;
+  }
+
+  .port .desc small span:nth-child(2) {
+    margin-left: 5px;
+  }
 
 
   .portfolio-item {
@@ -1372,6 +1388,12 @@ a:hover p{
 
 html.sr .load-hidden {
   visibility: hidden;
+}
+
+
+#others {
+  border-top: 1px solid #eee;
+  padding:50px 0 80px;
 }
 
 

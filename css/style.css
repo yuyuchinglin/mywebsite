@@ -293,14 +293,14 @@
 
 
   #about p, #about a, .word p{
-    font-size: 1em;
+    font-size: 1.1em;
     color: #252525;
     /* text-align: left; */
     line-height: 1.75em;
   }
 
   .word p {
-    font-size: 1em !important;
+    /* font-size: 1.1em !important; */
     line-height: 1.8em;
   }
 
@@ -489,8 +489,17 @@
       display: flex;
     }
 
+    .portfolio-item {
+      /* max-height:355px; */
+      /* min-height: 340px; */
+      height: 350px !important;
+  
+    }
+
 
   }
+
+
   @media (max-width: 900px) {
     #footer div{
       width: 100% !important;
@@ -1260,9 +1269,7 @@ a:hover p{
     border-radius:5px;
     /* background: #e6f2fd; */
     margin:1px 0;
-    max-height:355px;
-    min-height: 340px;
-    height: 340px;
+
 
   }
 

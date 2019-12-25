@@ -135,8 +135,8 @@ body {
 }
 
 .list b {
-    font-weight: 900;
-    font-family:Arial,Times,serif, Helvetica, 'Roboto', sans-serif;
+    font-weight: 600;
+    font-family:'Source Sans Pro', sans-serif;
 }
 
 .list.point p {f

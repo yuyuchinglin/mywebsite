@@ -5,14 +5,14 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>IoT Cloud Service | Yu-Ching Lin</title>
+	<title>IoT Device Management | Yu-Ching Lin</title>
 	<link rel="shortcut icon" href="../img-new/favicon.ico" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
 		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
 		integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Patua+One|Source+Sans+Pro:400,600|Oregano&display=swap"
+	<link href="https://fonts.googleapis.com/css?family=Patua+One|Source+Sans+Pro|Montserrat:500|Oregano&display=swap"
 		rel="stylesheet">
 	<link rel='stylesheet' href='../css/style.css' type='text/css' />
 	<link rel='stylesheet' href='../css/slick-theme.css' type='text/css' />
@@ -112,8 +112,9 @@
 				<h4>Overview</h4>
 				<p>RuggON Inc. and Ubiqconn Inc. are owned by First International Computer Company (FIC Inc.), a Taiwanese
 					founded company. RuggON Inc. sells tablet computers for military and industrial purposes, and Ubiqconn Inc.
-					offers software solutions for RuggON tablets. For example, we built an IoT cloud service for RuggON tablets so
-					that people can organize their devices, update software or firmware, and remotely monitor their devices.
+					offers software solutions for RuggON tablets. For example, we built an IoT device management cloud service for
+					RuggON tablets so that people can organize their devices, update software or firmware, and remotely monitor
+					their devices.
 
 				</p>
 				<p>I work as a UI/UX, front-end designer in Ubiqconn's Digital Connectivity Service Division. I am the only
@@ -175,8 +176,7 @@
 			<div class="list">
 				<h4>Interaction Design (for Customers)</h4>
 				<p>This cloud service is not only for our company’s internal users but also for the consumers who buy our
-					tablets. This service has two main functions for consumers, which I market to them with the following
-					introductions and images.</p>
+					tablets. This service has three main functions for consumers.</p>
 
 				<p><b>1. Manage devices remotely</b><br>Customers can conveniently manage their devices remotely. Through our
 					cloud service, customers can remotely check their devices’ information as well as install or remove
@@ -211,7 +211,7 @@
 					Our final goal is the Internet of Vehicle (IoV), which enables real-time communication between different
 					entities such as vehicles, pedestrians, roads, parking lots, and city infrastructure. More specifically, users
 					can monitor their device’s information such as oil, electricity, time, position, tire-pressure, etc. in our
-					cloud service. </p>
+					device management cloud service. </p>
 			</div>
 
 			<div class="list-img">
@@ -393,6 +393,19 @@
 
 			<div class="port mx-3 row">
 
+
+				<!-- <div class="col-lg-4 col-md-6 col-12 portfolio-item design code">
+					<a href="./ruggon.html">
+						<div class="intro" style="background-color: #FCE4E4">
+							<div class="desc">
+								<h5>IoT Device Management</h5>
+								<small> <span class="design-dot">design</span> <span class="code-dot">code</span></small>
+							</div>
+							<img src="../img-new/sm_ruggon.png" alt="">
+						</div>
+					</a>
+				</div> -->
+
 				<div class="col-lg-4 col-md-6 col-12 portfolio-item design">
 					<a href="./1828WLJ.html">
 						<div class="intro" style="background-color: #E4EBFC">
@@ -416,6 +429,32 @@
 								</small>
 							</div>
 							<img src="../img-new/sm_amigo.png" alt="">
+						</div>
+					</a>
+				</div>
+
+
+				<div class="d-lg-block d-md-none col-lg-4 col-md-6 col-12 portfolio-item code">
+					<a href="./forest.html">
+						<div class="intro" style="background-color: #F3FCE4">
+							<div class="desc">
+								<h5>Content Management System</h5>
+								<small><span class="code-dot">code</span> <span class="design-dot">design</span></small>
+							</div>
+							<img src="../img-new/sm_forest2.png" alt="">
+						</div>
+					</a>
+				</div>
+
+
+				<div class="col-lg-4 col-md-6 col-12 portfolio-item design">
+					<a href="./3sdrive.html">
+						<div class="intro" style="background-color: #E4F5FC">
+							<div class="desc">
+								<h5>Landing Page</h5>
+								<small><span class="design-dot">design</span></small>
+							</div>
+							<img src="../img-new/sm_3sdrive.png" alt="">
 						</div>
 					</a>
 				</div>
@@ -481,6 +520,7 @@
 
 	<script type='text/javascript' src='../js/jquery-11.0.min.js'></script>
 	<script type='text/javascript' src='../js/slick.min.js'></script>
+	<script type='text/javascript' src='../js/portfolio.js'></script>
 	<!-- <script type='text/javascript' src='../js/unitegallery.min.js'></script> -->
 	<!-- <script type='text/javascript' src='../js/ug-theme-tiles.js'></script> -->
 	<!-- <script src="../js/popper.min.js"></script> -->
@@ -502,11 +542,21 @@
 			});
 
 
+
+		// $(document).ready(function () {
+		// 	$('.your-class').slick({
+		// 		setting- name: setting - value
+    //   });
+    // });
+
+
 	</script>
 
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115360200-1"></script>
+
+
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
@@ -534,6 +584,9 @@
 		mixpanel.init("4a6a775cccb977118be3fc9e1c01df76");</script><!-- end Mixpanel -->
 
 	<script>mixpanel.track("pageview 1828王老吉涼水舖");</script>
+
+
+
 
 </body>
 

@@ -725,8 +725,8 @@
 .slick-slide {
   display: block;
   text-align: center;
-  background: #FBE091;
-  margin: 20px 5px;
+  /* background: #FBE091; */
+  /* margin: 20px 5px; */
   border-radius: 5px;
   padding: 5px;
   width: 180px;
@@ -750,7 +750,7 @@
 
 
 .slick-slide:hover{
-  background-color: #9E6B57;
+  /* background-color: #9E6B57; */
 }
 
 

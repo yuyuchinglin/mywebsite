@@ -755,34 +755,32 @@
 
 
 .slick-slider {
-  width: 90%;
+  width: 95%;
   margin:0 auto;
 }
 
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .slick-next, .slick-next:before,
   .slick-prev, .slick-prev:before  {
     display: none;
-  }
-}
+  } */
+/* } */
 
 
 header {
   height: 100px;
   position: absolute;
   top: 0;
-  transition: top 0.5s ease-in-out;
+  left: 0;
+
   width: 100%;
   z-index: 100;
   padding: 35px 20px;
-  transition: top .4s ease-in-out;
+
   background-color: transparent;
 }
 
-header.hideUp {
-    top: -100px;
-}
 
 
 .navbar {
@@ -793,7 +791,7 @@ header.hideUp {
   left:0;
   transition: top 0.5s ease-in-out;
   width: 100%;
-  z-index: 80;
+  z-index: 110;
   padding: 20px 20px;
   transition: top .4s ease-in-out;
   background-color: white;
@@ -1257,8 +1255,8 @@ a:hover p{
 
   .portfolio-item {
     padding:8px 10px;
-
   }
+
 
 
   .portfolio-item .intro {
@@ -1269,6 +1267,7 @@ a:hover p{
     border-radius:5px;
     /* background: #e6f2fd; */
     margin:1px 0;
+    /* user-select: none; */
 
 
   }

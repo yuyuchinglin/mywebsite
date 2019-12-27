@@ -89,14 +89,18 @@
 }
 .slick-prev:before
 {
-    font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f359";
-    color:#E98059;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f104";
+    color:grey;
     font-size: 25px;
 }
 
 [dir='rtl'] .slick-prev:before
 {
-    font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f35a";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f105";
 }
 
 .slick-next
@@ -110,13 +114,15 @@
 }
 .slick-next:before
 {
-    font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f30a";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; content: "\f105";
     color:grey;
     font-size: 25px;
 }
 [dir='rtl'] .slick-next:before
 {
-    font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f30b";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; content: "\f104";
 }
 
 /* Dots */

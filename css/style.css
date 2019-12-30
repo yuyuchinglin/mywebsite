@@ -4,13 +4,7 @@
     font-family:'Source Sans Pro', 'Calibri','Roboto','Rubik', sans-serif,"Arial","PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
   }
 
-  @media (max-width: 768px) {
 
-    * {
-      font-size: 18px;
-    }
-
-  }
 
   body {
     color:#111;
@@ -127,7 +121,7 @@
 
   #welcome {
     width: 100%;
-    padding: 11% 20px 0px;
+    padding: 10% 20px 0px;
   }
 
 
@@ -333,7 +327,9 @@
   .sm-section {
     /* border-left: 1px solid #9E6B57; */
     margin-top: 40px;
+    font-size: 1.1em;
   }
+
 
   .sm-section .col {
     line-height: 1.7;
@@ -504,16 +500,6 @@
       display: flex;
     }
 
-    .portfolio-item small {
-      /* max-height:355px; */
-      /* min-height: 340px; */
-      /* height: 350px !important; */
-      /* display: none; */
-  
-    }
-
-    
-
 
   }
 
@@ -653,8 +639,8 @@
 
   @media (max-width: 575px) { 
   .bsncard {
-    width: 340px;
-    height: 260px;
+    width: 360px;
+    height: 240px;
     text-align: center;
     margin: 10px auto;
    }
@@ -856,12 +842,16 @@ header .link a.active:hover, .navbar .link a.active:hover {
   color:#9E6B57;
 }
 
+#welcome h1 {
+  font-size: 44px;
+}
+
 #welcome p {
   font-size: 22px;
 }
 
 #welcome a {
-  border-bottom: 1px solid #9E6B57;
+  /* border-bottom: 1px solid #9E6B57; */
 }
 
 #welcome a:hover {
@@ -1491,9 +1481,35 @@ html.sr .load-hidden {
   padding:50px 0 80px;
 }
 
-/* #others .word h5{
-  color: grey !important;
-} */
+
+
+
+@media (max-width: 768px) {
+
+  #about .bg-section p, #about .sm-section {
+    font-size: 16px;
+  }
+
+  #welcome {
+    padding-top: 6% !important;
+  }
+
+
+  #welcome img {
+    padding-top: 20px;
+    margin: 50px auto 0;
+    max-width: 180px;
+  }
+
+  #welcome h1 {
+    font-size: 26px;
+  }
+
+  #welcome p,   #welcome a  {
+    display: none;
+  }
+
+}
 
 
 

@@ -29,6 +29,8 @@
     margin: 90px auto 80px;
   }
 
+ 
+
 
   #welcomepic {
     margin-top: 70px;
@@ -287,7 +289,7 @@
 
 
   #about p, #about a, .word p{
-    font-size: 1.1em;
+    font-size: 18px;
     /* color: #252525; */
     /* text-align: left; */
     line-height: 1.75em;
@@ -418,7 +420,15 @@
   }
 
   section {
-    margin: 50px auto !important;
+    margin: 50px auto;
+  }
+
+  #welcomepic {
+    margin: 90px auto 0px;
+  }
+
+  #about {
+    margin: 10px auto 0px;
   }
 
   
@@ -449,7 +459,7 @@
   background:rgb(248,248,248);
   color:#252525;
   font-size: 18px;
-  padding:15px 0 10px 0;
+  padding:20px 0 15px 0;
 }
 
 #footer .row {
@@ -639,8 +649,8 @@
 
   @media (max-width: 575px) { 
   .bsncard {
-    width: 360px;
-    height: 240px;
+    width: 340px;
+    height: 230px;
     text-align: center;
     margin: 10px auto;
    }
@@ -867,8 +877,8 @@ header .link a.active:hover, .navbar .link a.active:hover {
 
 .logo img:first-child {
   height:25px;
-  margin-bottom:8px;
-  margin-right:5px
+  /* margin-bottom:8px; */
+  /* margin-right:5px */
 }
 
 .logo img:nth-child(2) {

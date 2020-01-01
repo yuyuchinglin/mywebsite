@@ -102,6 +102,11 @@
     width: 100%;
   }
 
+  #welcome .index-intro {
+    max-width: 520px;
+    padding-top: 50px;
+  }
+
 
   #welcome h1 {
     color: #0a0a14;
@@ -984,6 +989,15 @@ html.sr .load-hidden {
     padding-top: 6% !important;
   }
 
+  #welcome .index-intro {
+    padding-top: 25px;
+  }
+
+  #welcome .container {
+    margin: 0;
+    padding: 2%;
+  }
+
 
   #welcome img {
     margin: 0 auto;
@@ -992,7 +1006,7 @@ html.sr .load-hidden {
   }
 
   #welcome h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   #welcome p,   #welcome a  {

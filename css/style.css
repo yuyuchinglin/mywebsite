@@ -98,13 +98,13 @@
   }
 
   #welcome {
-    padding: 9% 20px 2%;
+    padding: 10.5% 20px 2%;
     width: 100%;
   }
 
   #welcome .index-intro {
-    max-width: 520px;
     padding-top: 50px;
+    max-width: 520px;
   }
 
 

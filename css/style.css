@@ -980,6 +980,10 @@ html.sr .load-hidden {
 
 @media (max-width: 768px) {
 
+  .pace {
+    display: none;
+  }
+
   .navbar {
     display: none !important;
     padding:10px 0px;

@@ -981,6 +981,7 @@ html.sr .load-hidden {
 @media (max-width: 768px) {
 
   .navbar {
+    display: none;
     padding:10px 0px;
   }
 

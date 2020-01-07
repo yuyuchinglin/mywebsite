@@ -136,8 +136,7 @@ body {
 
 .list b {
     font-weight: 600;
-    font-family:'Montserrat','Source Sans Pro', sans-serif;
-    /* color:#9E6B57 */
+    font-family:'Montserrat', 'Source Sans Pro', sans-serif;
 }
 
 .list.point p {f
@@ -184,6 +183,11 @@ body {
 
 
 @media screen and (max-width: 900px) {
+
+    .list b {
+        font-family:'Source Sans Pro','Montserrat',  sans-serif;
+    }
+    
     #port {width: 100%;}
     #port .topic img {width: 100%;}
     .webintro p {
@@ -392,6 +396,12 @@ body {
 
 
 @media screen and (max-width: 756px) {
+
+    #port {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
     .quality-interview img {
         margin: 5px 0;
         width:55px

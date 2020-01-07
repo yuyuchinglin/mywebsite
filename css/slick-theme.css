@@ -8,10 +8,9 @@
 /* Icons */
 @font-face
 {
-    font-family: 'slick';
     font-weight: normal;
     font-style: normal;
-
+    font-family: 'slick';
     src: url('./fonts/slick.eot');
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
@@ -19,37 +18,32 @@
 .slick-prev,
 .slick-next
 {
-    font-size: 0;
-    line-height: 0;
-
     position: absolute;
     top: 49%;
-
     display: block;
-
+    padding: 0;
     width: 20px;
     height: 20px;
-    padding: 0;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    /* background-color: #E98059; */
+    cursor: pointer;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
-    /* background-color: #E98059; */
-
-    cursor: pointer;
-
-    color: transparent;
-    border: none;
-    outline: none;
-    background: transparent;
 }
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
     outline: none;
     background: transparent;
+    color: transparent;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -67,12 +61,11 @@
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
-
-    opacity: .75;
     color: white;
+    font-size: 20px;
+    font-family: 'slick';
+    line-height: 1;
+    opacity: .75;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -89,19 +82,13 @@
 }
 .slick-prev:before
 {
+    color:grey; content: "\f104"; font-weight: 900;  font-size: 25px;
     font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
-    content: "\f104";
-    color:grey;
-    font-size: 25px;
-}
+    }
 
 [dir='rtl'] .slick-prev:before
-{
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
-    content: "\f105";
-}
+{ content: "\f105"; font-weight: 900;  font-family: "Font Awesome 5 Free"; 
+    }
 
 .slick-next
 {
@@ -114,16 +101,12 @@
 }
 .slick-next:before
 {
+    color:grey;content: "\f105"; font-weight: 900;  font-size: 25px;
     font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; content: "\f105";
-    color:grey;
-    font-size: 25px;
-}
+    }
 [dir='rtl'] .slick-next:before
-{
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; content: "\f104";
-}
+{content: "\f104"; font-weight: 900;  font-family: "Font Awesome 5 Free"; 
+    }
 
 /* Dots */
 .slick-dotted.slick-slider
@@ -135,47 +118,36 @@
 {
     position: absolute;
     bottom: -15px;
-
     display: block;
-
-    width: 100%;
-    padding: 0;
     margin: 0;
-
+    padding: 0;
+    width: 100%;
     list-style: none;
-
     text-align: center;
 }
 .slick-dots li
 {
     position: relative;
-
     display: inline-block;
-
-    width: 20px;
-    height: 20px;
     margin: 0 5px;
     padding: 0;
-
+    width: 20px;
+    height: 20px;
     cursor: pointer;
 }
 .slick-dots li button
 {
-    font-size: 0;
-    line-height: 0;
-
     display: block;
-
+    padding: 5px;
     width: 20px;
     height: 20px;
-    padding: 5px;
-
-    cursor: pointer;
-
-    color: transparent;
-    border: 0;
     outline: none;
+    border: 0;
     background: transparent;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    cursor: pointer;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
@@ -189,22 +161,18 @@
 }
 .slick-dots li button:before
 {
-    font-family: 'slick';
-    font-size: 30px;
-    line-height: 20px;
-
     position: absolute;
     top: 0;
     left: 0;
-
     width: 20px;
     height: 20px;
-
+    color: #000;
     content: '•';
     text-align: center;
-
-    opacity: .25;
-    color: #000;
+    font-size: 30px;
+    font-family: 'slick';
+    line-height: 20px;
+    opacity: .1;
     /* color:#ddd; */
 
     -webkit-font-smoothing: antialiased;
@@ -212,7 +180,14 @@
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
     color: black;
     color:#252525;
+    opacity: .4;
 }
+
+
+/* @media (max-width: 768px) {
+    .slick-arrow{
+        display: none !important;
+    }
+} */

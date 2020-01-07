@@ -4,12 +4,12 @@ body {
 }
 
 .portpic {
-    background: url("../img/portfolio/LACD(thumb).png") top left #c4a046 no-repeat;
-    width: 80vw;
-    height: 80vh;
-    background-size: contain;
     position: relative;
     margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    background: url("../img/portfolio/LACD(thumb).png") top left #c4a046 no-repeat;
+    background-size: contain;
     vertical-align: middle;
 }
 
@@ -31,30 +31,30 @@ body {
 
 
 .row{
+    margin: 0 auto;
+    border-radius: 6px;
     /* width: 80vw; */
     /* background-color: #fff; */
     text-align: center;
-    margin: 0 auto;
-    border-radius: 6px;
     /* background-color: yellow; */
     
 }
 
 
 #port {
-    text-align: center;
-    color:#fff;
-    width: 100vw;
     margin: 0 auto;
     padding-bottom: 40px;
+    width: 100vw;
+    color:#fff;
+    text-align: center;
 
 }
 
 #port .topic {
-    background-color: #FBE091;
+    z-index: 90;
     padding-top: 150px;
     padding-bottom: 40px;
-    z-index: 90;
+    background-color: #FBE091;
 }
 
 
@@ -80,9 +80,9 @@ body {
 }
 
 .webintro p {
-    line-height: 30px;
     margin: 5px !important;
     font-size: 1.1em;
+    line-height: 30px;
 
 }
 
@@ -107,11 +107,10 @@ body {
 
 
 #port .topic img {
-    
+    margin-top: 40px;
+    width:auto;
     /* width:50%; */
     height:auto;
-    width:auto;
-    margin-top: 40px;
 
 }
 
@@ -121,28 +120,25 @@ body {
 }
 
 .list h4 {
+    margin:20px 0 20px 0 !important;
     color:#252525;
     font-weight: 400;
-    margin:20px 0 20px 0 !important;
     font-size: 1.6em;
     font-family: 'Patua One','Roboto';
 }
 
-.list {
-    text-align: left;
-    width: 60%; 
-    margin:0 auto;
-}
+.list { margin:0 auto;
+    width: 60%;  text-align: left;
+    }
 
 .list b {
     font-weight: 600;
     font-family:'Montserrat', 'Source Sans Pro', sans-serif;
 }
 
-.list.point p {f
-
-    line-height: 1.5em;
+.list.point p {
     margin-bottom: 0.3em;
+    line-height: 1.5em;
 }
 
 .web, .mobile {
@@ -150,8 +146,8 @@ body {
 }
 
 .web {
-    min-width: 640px;
     float: left;
+    min-width: 640px;
 }
 
 
@@ -191,9 +187,9 @@ body {
     #port {width: 100%;}
     #port .topic img {width: 100%;}
     .webintro p {
+        margin-bottom: 5px;
         font-size: 1.1em;
         line-height: 28px;
-        margin-bottom: 5px;
     }
     .topic p:last-child{
         margin-bottom: 10px;
@@ -251,14 +247,13 @@ body {
 
 
 .story {
+    padding-left: 20px;      border-left: 1px solid #ddd;
     text-align: justify;
-    border-left: 1px solid #ddd;
-    padding-left: 20px;   
-}
+    }
 
 .story p {
-    font-weight: 400;
     color:#ddd;
+    font-weight: 400;
 }
 
 .list, .list a {
@@ -275,18 +270,17 @@ body {
 
 
 .list p {
-    font-weight: 400!important;
-    font-style: normal;
     color:rgba(0,0,0,0.85);
-    /* text-align: justify; */
-    
-    line-height: 1.65;
-    /* font-family:medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif; */
-    letter-spacing: .004em;
     /* --x-height-multiplier: 0.375; */
     /* --baseline-multiplier: 0.5; */
     word-break: break-word;
+    /* font-family:medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif; */
+    letter-spacing: .004em;
+    font-weight: 400!important;
+    font-style: normal;
     font-variant: normal;
+    /* text-align: justify; */
+    line-height: 1.65;
 
 }
 
@@ -302,18 +296,18 @@ body {
 
 
 .mob{
-    height: 400px;
-    overflow: hidden;
     float: left;
+    overflow: hidden;
+    height: 400px;
     /* margin-left: 15px; */
 }
 
 
 .scroll{
-    height: 400px;
+   float: left;
    overflow: hidden;
    overflow-y:scroll;
-   float: left;
+    height: 400px;
 }
 
 .webnav{
@@ -321,13 +315,13 @@ body {
 }
 
 .caption {
-    text-align: center !important;
-    color:#252525;
-    font-size:16px;
     margin-top: 6px;
+    color:#252525;
+    color:#666;
+    text-align: center !important;
     /* font-family: Georgia,Cambria,"Times New Roman",Times,serif; */
     letter-spacing: .004em;
-    color:#666;
+    font-size:16px;
 }
 
 .caption a{
@@ -336,9 +330,9 @@ body {
 }
 
 .read-more h5 {
-    text-align: center;
-    color:#E98059;
     margin: 30px 0 0px 0 ;
+    color:#E98059;
+    text-align: center;
     font-weight: 600;
   }
   
@@ -357,6 +351,7 @@ body {
 }
 
 #port img {
+    margin:0 auto;
     height:auto;
 }
 
@@ -367,8 +362,8 @@ body {
 
 
 .cell {
-    vertical-align: bottom;
     display: table-cell;
+    vertical-align: bottom;
 }
 
 .list-img .imgs {
@@ -381,8 +376,8 @@ body {
 }
 
 .quality-interview p{
-    text-align: left;
     margin: 0 !important;
+    text-align: left;
 }
 
 .quality-interview .col {
@@ -408,10 +403,10 @@ body {
     }
 
     .list-img img {
-        width:98%;
-        text-align: center;
         margin: 0 auto;
         margin-right: 15px;
+        width:98%;
+        text-align: center;
     }
 
     .topic h1 {

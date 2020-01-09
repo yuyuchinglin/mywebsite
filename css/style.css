@@ -75,6 +75,12 @@
   }
 
 
+  #welcome img { 
+    max-width: 240px;
+    filter: grayscale(0.1); 
+    }
+
+
 /* topic */
 
   .topic  {

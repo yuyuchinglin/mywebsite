@@ -98,13 +98,13 @@
   }
 
   #welcome {
-    padding: 11% 20px 1%;
+    padding: 10.5% 20px 1%;
     width: 100%;
   }
 
   #welcome .index-intro {
     padding-top: 50px;
-    max-width: 520px;
+    max-width: 500px;
   }
 
 
@@ -540,7 +540,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
 }
 
 #welcome h1 {
-  font-size: 38px;
+  font-size: 36px;
 }
 
 #welcome p {
@@ -968,10 +968,14 @@ html.sr .load-hidden {
 
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1250px) {
+
+  #welcome {
+    padding:11.5% 20px 0.5%;
+  }
 
   #welcome h1 {
-    /* font-size: 28px; */
+    font-size: 30px;
   }
 
   #welcome p{
@@ -979,7 +983,11 @@ html.sr .load-hidden {
   }
 
   #welcome .index-intro {
-    max-width: 340px;
+    max-width: 420px;
+  }
+
+  #welcome img {
+    max-width: 180px;
   }
 
  }
@@ -1059,6 +1067,12 @@ html.sr .load-hidden {
   #welcome p,   #welcome a  {
     display: none;
   }
+
+
+  #welcome img { 
+    max-width: 240px;
+    filter: grayscale(0.1); 
+    }
 
   .about-topic {
     padding-left: 1%;

@@ -132,7 +132,9 @@ body {
     }
 
 .list b {
-    font-weight: 600;
+    /* margin-top: 10px; */
+    color: #000;
+    font-weight: 700;
     font-family:'Montserrat', 'Source Sans Pro', sans-serif;
 }
 
@@ -336,7 +338,7 @@ body {
 
 
   #port p {
-      margin:30px 0 30px 0;
+      margin:5px 0 30px 0;
   }
 
   #port .list.point p {

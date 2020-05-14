@@ -623,7 +623,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
   margin: 0 12px;
   color: #000;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
 }
 
@@ -1002,7 +1002,8 @@ html.sr .load-hidden {
 @media (max-width: 1250px) {
 
   #welcome {
-    padding:11.5% 20px 0.5%;
+    padding:11.5% 32px 2.5%;
+    min-height: 0;
   }
 
   #welcome h1 {
@@ -1014,11 +1015,11 @@ html.sr .load-hidden {
   }
 
   #welcome .index-intro {
-    max-width: 420px;
+    max-width: 520px;
   }
 
   #welcome img {
-    max-width: 180px;
+    max-width: 300px;
   }
 
  }
@@ -1088,7 +1089,7 @@ html.sr .load-hidden {
   #welcome img {
     /* margin: 0 auto; */
     padding-top: 20px;
-    max-width: 180px !important;
+    max-width: 240px !important;
   }
 
   #welcome h1 {
@@ -1096,7 +1097,7 @@ html.sr .load-hidden {
   }
 
   #welcome p,   #welcome a  {
-    display: none;
+    /* display: none; */
   }
 
 
@@ -1192,12 +1193,16 @@ html.sr .load-hidden {
   }
 
   #welcome h1 {
-    font-weight: 400;
-    font-size: 26px;
+    font-weight: 600;
+    font-size: 34px !important;
   }
 
-  #welcome p, #welcome a {
-    font-size: 14px;
+  #welcome p:nth-child(2) {
+    font-size: 34px !important;
+  }
+
+  #welcome .index-intro p {
+    font-size: 24px;
   }
 
   .portfolio-word {

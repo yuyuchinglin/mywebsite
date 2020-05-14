@@ -76,7 +76,7 @@
 
 
   #welcome img { 
-    max-width: 240px;
+    max-width: 340px;
     filter: grayscale(0.1); 
     }
 
@@ -104,9 +104,10 @@
   }
 
   #welcome {
-    padding: 140px 20px 1%;
+    margin-top: 65px;
+    padding: 140px 32px 1%;
+    min-height: 80vh;
     width: 100%;
-    min-height: 88vh;
   }
 
   #welcome .index-intro {
@@ -121,29 +122,29 @@
 
   #welcome h1 {
     color: #0a0a14;
-    font-size:2.3em;
-    font-family:'Source Sans Pro', 'Calibri','Roboto','Rubik', sans-serif,"Arial","PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
     font-weight: 700;
     font-style:italic;
-    font-size: 32px;
+    font-size:2.8em !important;
+    font-family:'Source Sans Pro', 'Calibri','Roboto','Rubik', sans-serif,"Arial","PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
+    line-height: 1.2em;
   }
 
   #welcome .index-intro p {
-    font-family:'Source Sans Pro', 'Calibri','Roboto','Rubik', sans-serif,"Arial","PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
-    font-size:24px;
     color:#111;
-    line-height: 1.9em;
     font-weight: 400;
     font-style:normal;
+    font-size:32px;
+    font-family:'Source Sans Pro', 'Calibri','Roboto','Rubik', sans-serif,"Arial","PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
+    line-height: 1.9em;
   }
 
 
   #welcome .index-intro p:nth-child(2){
-   
+    color:#d9d9d9;
     font-weight: 700;
     font-style:italic;
-    color:#d9d9d9;
-    font-size: 32px;
+    font-size:2.8em;
+    line-height: 1.2em;
   }
 
 

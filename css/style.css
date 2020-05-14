@@ -1004,7 +1004,7 @@ html.sr .load-hidden {
   #welcome {
     padding:11.5% 32px 2.5%;
     min-height: 0;
-  }
+  } 
 
   #welcome h1 {
     font-size: 30px;
@@ -1245,13 +1245,18 @@ html.sr .load-hidden {
     background-size: cover;
   }
 
-  #welcome h1 {
-    font-weight: 400;
-    font-size: 22px;
+  #welcome h1, #welcome .index-intro p:nth-child(2) {
+    /* font-weight: 400; */
+    font-size: 26px !important;
+  }
+
+  #welcome .index-intro p {
+    font-size: 20px;
   }
 
   #welcome img {
     margin: 10px auto 0;
+    max-width: 300px !important;
 
   }
 }

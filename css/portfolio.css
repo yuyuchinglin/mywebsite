@@ -14,7 +14,7 @@ body {
 }
 
 #port .row {
-    width:inherit;
+    margin: 0 auto;
 }
 
 .navbar-brand {
@@ -38,6 +38,11 @@ body {
     text-align: center;
     /* background-color: yellow; */
     
+}
+
+.list-img.pic-2 {
+    margin: 0 auto;
+    width: 85% !important;
 }
 
 
@@ -138,11 +143,11 @@ body {
 }
 
 .list h3 {
-    margin:50px 0 40px 0 !important;
+    margin:50px 0 25px 0 !important;
     color:#252525;
     /* color:darkblue; */
     font-weight: 400;
-    font-size: 1.7em;
+    font-size: 1.8em;
     font-family: 'Patua One','Roboto';
 }
 
@@ -210,6 +215,12 @@ body {
     .list b {
         font-family:'Source Sans Pro','Montserrat',  sans-serif;
     }
+
+    .list-img.pic-2 {
+        /* margin: 0 auto; */
+        width: 100% !important;
+    }
+    
     
     #port {width: 100%;}
     #port .topic img {width: 100%;}
@@ -349,6 +360,10 @@ body {
     text-decoration: underline;
 }
 
+.level-2 a {
+    text-decoration: underline;
+}
+
 .read-more h5 {
     margin: 30px 0 0px 0 ;
     color:#E98059;
@@ -477,6 +492,32 @@ body {
     color: #252525;
     /* font-size: 18px;  */
     font-family:'Source Sans Pro', 'Calibri','Roboto';
+    }
+
+
+
+    .list-table {
+        margin:25px auto 40px;
+    }
+
+
+
+    table {
+        margin: 0px auto;
+        color: black;
+    }
+
+    table td {
+        padding: 5px 15px;
+        border: 1px solid #ddd;
+        white-space:nowrap;
+        font-size: 1rem;
+
+    }
+
+
+    table td.win {
+        color: green;
     }
 
 

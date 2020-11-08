@@ -5,6 +5,7 @@
 
   body {
     color:#111;
+    font-size: 1.2rem;
   }
 
   header .row, .navbar .row {
@@ -18,22 +19,22 @@
     color: #fff;
   }
 
-  nav, #welcomepic, #about, #moments, #skills, #portfolio, #contact, #footer {
+  nav, #welcomepic, #about, #moments, #skills, #portfolio, #article, #contact, #footer {
     overflow: hidden;
     width: 100%;
   }
 
-  #welcomepic, #about, #moments, #skills, #portfolio, #contact {
-    margin: 90px auto 80px;
+  #welcomepic, #about, .articles, .moments, #skills, #portfolio, #article, #contact {
+    margin: 120px auto 100px;
   }
 
   #welcomepic {
     margin: 40px auto 80px;
   }
 
-  #welcomepic {
+  /* #welcomepic { */
     /* margin-top: 70px; */
-  }
+  /* } */
 
   .navbar-brand {
     padding: 20px 0;
@@ -186,7 +187,6 @@
     display: table-cell;   padding-top: 10px;
     vertical-align: middle;
     text-align: center;
-    font-size: 18px;
     line-height: 23px;   
     }
 
@@ -226,7 +226,7 @@
 
 
   #about p, #about a, .word p{
-    font-size: 18px;
+    /* font-size: 18px; */
     line-height: 1.75em;
   }
 
@@ -257,7 +257,7 @@
 
   .sm-section {
     margin-top: 40px;
-    font-size: 18px;
+    /* font-size: 18px; */
   }
 
 
@@ -302,7 +302,7 @@
   border-top: 1px solid rgba(256,256,256,0.15);
   background:rgb(248,248,248);
   color:#252525;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 #footer .row {
@@ -540,7 +540,7 @@ header .link a, .navbar .link a{
   padding: 0;
   color:#252525;
   font-weight: 500;
-  font-size: 18px;
+  /* font-size: 18px; */
   line-height: 35px;
 }
 
@@ -785,10 +785,10 @@ header .link a.active:hover, .navbar .link a.active:hover {
   transition: box-shadow .3s ease-out,background-size .3s ease-out;
   }
 
-  .portfolio-item:hover .intro {
+  /* .portfolio-item:hover .intro { */
     /* box-shadow: 0 1px 6px rgba(0,0,0,.15); */
     /* box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.05), 0 4px 8px 3px rgba(60, 64, 67, 0.15); */
-  }
+  /* } */
   
 
   
@@ -881,6 +881,63 @@ html.sr .load-hidden {
   padding:50px 0 80px;
   border-top: 1px solid #eee;
 }
+
+
+.articles-item {
+  padding: 0 35px;
+  text-decoration: none !important;
+ 
+}
+
+.articles-item p {
+  color:rgba(0,0,0,.54) !important;
+  font-weight: 300;
+}
+
+.articles-item h5 b{
+  color:rgba(0,0,0,0.84) !important;
+  font-weight: 700;
+  font-size:26px;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  line-height: 34px;
+}
+
+.articles-item .pic {
+  height:180px
+}
+
+@media (max-width: 960px){
+
+  #
+  .articles-item h5 b{  
+    font-size:22px;
+    line-height: 28px;
+  }
+
+  .articles-item p {
+   font-size: 18px;
+   line-height: 24px;
+  }
+
+  .articles-item {
+    padding: 0 22px;
+  }
+}
+
+@media (min-width: 960px){
+  .articles-item.col-lg-6 .pic {
+    height:260px !important;
+  }
+}
+
+.name {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size:24px;
+  font-family: 'Patua One','Roboto';
+}
+
+
 
 
 
@@ -984,18 +1041,18 @@ html.sr .load-hidden {
 
 @media (max-width: 1250px) {
 
-  #welcome {
+  /* #welcome { */
     /* padding:11.5% 32px 2.5%; */
     /* min-height: 45vw; */
     /* line-height: 45vw; */
-  } 
+  /* }  */
 
   #welcome h1 {
     font-size: 30px;
   }
 
   #welcome p{
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #welcome .index-intro {
@@ -1024,8 +1081,13 @@ html.sr .load-hidden {
    padding:0 ;
  }
 
- #portfolio {
+ #portfolio{
    margin: 40px auto 80px;
+ }
+
+ #article {
+   margin: 40px auto 80px auto;
+   padding: 0 15px; 
  }
 } 
 
@@ -1069,12 +1131,12 @@ html.sr .load-hidden {
     
   }
 
-  #welcome {
+  /* #welcome { */
     /* min-height: 38vh; */
     /* line-height: 38vh; */
     /* height: 380px; */
     /* line-height: 380px; */
-  }
+  /* } */
 
 
   #welcome img {
@@ -1122,7 +1184,7 @@ html.sr .load-hidden {
     padding: 0 15px 0 0;
     text-align: center;
     /* line-height: 20px; */
-    font-size: 18px !important;
+    font-size: 20px !important;
     line-height: 26px;
   }
 
@@ -1250,14 +1312,14 @@ html.sr .load-hidden {
     font-size: 20px;
   }
 
-  #welcome {
+  /* #welcome { */
     /* height: 600px; */
     /* min-height: 30vh; */
     /* line-height: 30vh; */
     /* height:45vh; */
     /* line-height: 45vh; */
     /* min-height: 0; */
-  }
+  /* } */
 
   #welcome .container {
     margin: 0;

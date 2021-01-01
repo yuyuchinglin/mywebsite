@@ -25,7 +25,7 @@
   }
 
   #welcomepic, #about, .articles, .moments, #skills, #portfolio, #article, #contact {
-    margin: 120px auto 100px;
+    margin: 60px auto 40px;
   }
 
   #welcomepic {
@@ -493,7 +493,7 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
-  padding: 35px 20px;
+  padding: 35px 0px;
   width: 100%;
   height: 100px;
   background-color: transparent;
@@ -806,15 +806,19 @@ header .link a.active:hover, .navbar .link a.active:hover {
 
 
 
-  .container{
+  /* .container{
     max-width:1410px;
-  }
+  } */
 
   
 
 
 
   /* about moments */
+
+  .moments .container-fluid {
+    max-width:  950px;
+  }
 
 
   .ig-photo {
@@ -882,11 +886,29 @@ html.sr .load-hidden {
   border-top: 1px solid #eee;
 }
 
+p.title {
+  display: block;
+  margin: 30px -2px 26px -2px !important;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  color:rgba(0,0,0,.64);
+  font-size: 22px;
+  
+}
+
 
 .articles-item {
-  padding: 0 35px;
+  margin-bottom: 30px;
+  padding: 0 10px !important;
   text-decoration: none !important;
- 
+}
+
+.articles-item .card-body {
+  padding:12px 0 15px 0px;
+}
+
+.articles-item .card-body .card-text, .articles-item .card-body .card-title {
+  margin-bottom:5px;
 }
 
 .articles-item p {
@@ -903,14 +925,19 @@ html.sr .load-hidden {
 }
 
 .articles-item .pic {
-  height:180px
+  height:180px;
+  border: 1px solid #ccc;
+}
+
+.articles-item .card {
+  border: none;
 }
 
 @media (max-width: 960px){
 
-
+  
   .articles-item h5 b{  
-    font-size:22px;
+    font-size:22px !important;
     line-height: 28px;
   }
 
@@ -1034,7 +1061,7 @@ html.sr .load-hidden {
 
 @media screen and (min-width: 1170px){
   .container-fluid, .container, .admin-container {
-    padding: 0 6.66667rem 0 6.66667rem;
+    padding: 0 auto;
   }
 
 }
@@ -1071,6 +1098,13 @@ html.sr .load-hidden {
 
 
 @media screen and (max-width: 950px){
+
+
+  .moments .container-fluid {
+    /* max-width:  640px; */
+  }
+
+
   .ig-photo {
    margin:0;
    width:30vw;

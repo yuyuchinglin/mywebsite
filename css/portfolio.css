@@ -67,7 +67,7 @@ body {
 .research-table {
     max-width: 100%;
     margin-top: 5px;
-    color:rgba(0,0,0,.76);
+    color: rgba(0,0,0,.76);;
     
 }
 
@@ -386,11 +386,6 @@ body {
 .story p {
     color:#ddd;
     font-weight: 400;
-}
-
-
-.list p, .list b{
-    /* font-size: 18px !important; */
 }
 
 

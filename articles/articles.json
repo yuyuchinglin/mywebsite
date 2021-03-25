@@ -1,6 +1,24 @@
 {
   "en_articles": [
     {
+      "title": "The Appropriate Use of Visual Effects in Ads and Websites",
+      "subtitle": "This article will highlight two eye-tracking studies that discuss some limitations of visual communication.",
+      "date": "Oct 2, 2020",
+      "publication": "@ UX Collective",
+      "category": "User experience",
+      "img": "2020_cool.jpg",
+      "link": "https://uxdesign.cc/the-appropriate-use-of-visual-effects-in-advertisements-and-websites-50827833155d"
+    },
+    {
+      "title": "Search or navigation? How familiarity affects naming and behavior",
+      "subtitle": "In cognitive psychology research, familiarity will cause people to use different names for an object, which may explain e-commerce users’ search or browsing behaviors.",
+      "date": "Mar 3, 2021",
+      "publication": "@ UX Collective",
+      "category": "User Experience",
+      "img": "2021_familiarity.jpeg",
+      "link": "https://uxdesign.cc/search-or-navigation-how-familiarity-affects-naming-and-behavior-1371b17fe6e8"
+    },
+    {
       "title": "My Minimalist Approach to Combat Consumerism",
       "subtitle": "The secret to achieving financial goals and ideal space",
       "date": "Dec 21, 2020",
@@ -17,26 +35,26 @@
       "category": "Strategy",
       "img": "2020_value.jpeg",
       "link": "https://uxplanet.org/how-to-make-company-core-values-more-than-just-a-slogan-62783433dc05"
-    },
-    {
-      "title": "The Appropriate Use of Visual Effects in Ads and Websites",
-      "subtitle": "This article will highlight two eye-tracking studies that discuss some limitations of visual communication.",
-      "date": "Oct 2, 2020",
-      "publication": "@ UX Collective",
-      "category": "User experience",
-      "img": "2020_cool.jpg",
-      "link": "https://uxdesign.cc/the-appropriate-use-of-visual-effects-in-advertisements-and-websites-50827833155d"
     }
   ],
   "cn_articles": [
     {
-      "title": "那些新鮮人不懂的職場事",
-      "subtitle": "介紹自己出社會後才懂的那些職場事，包含金字塔人才結構、面試心態、軟技能的重要性，以及生活重心的調整等。",
-      "date": "Jan 1, 2021",
+      "title": "多久沒好好看書了呢？要如何養成閱讀習慣？",
+      "subtitle": "參考《原子習慣》，用Notion打造專屬的雲端閱讀系統，以養成閱讀好習慣。",
+      "date": "Mar 18, 2021",
       "publication": "",
-      "category": "Personal growth",
-      "img": "2020_rookie.jpeg",
-      "link": "https://yuyuchinglin.medium.com/%E9%82%A3%E4%BA%9B%E6%96%B0%E9%AE%AE%E4%BA%BA%E4%B8%8D%E6%87%82%E7%9A%84%E8%81%B7%E5%A0%B4%E4%BA%8B-e6419ab8ae10"
+      "category": "Personal Growth",
+      "img": "2021_reading.jpeg",
+      "link": "https://yuyuchinglin.medium.com/%E5%A4%9A%E4%B9%85%E6%B2%92%E5%A5%BD%E5%A5%BD%E7%9C%8B%E6%9B%B8%E4%BA%86%E5%91%A2-%E8%A6%81%E5%A6%82%E4%BD%95%E9%A4%8A%E6%88%90%E9%96%B1%E8%AE%80%E7%BF%92%E6%85%A3-831eced5a856"
+    },
+    {
+      "title": "搜尋還是瀏覽？熟悉度如何影響我們的名稱及行為？",
+      "subtitle": "在認知心理學研究中，熟悉度會造成人們的使用名稱不同，這可能可以作為解釋搜尋或瀏覽行為的一個面向。",
+      "date": "Feb 25, 2021",
+      "publication": "@ AAPD — As A Product Designer",
+      "category": "User Experience",
+      "img": "2021_familiarity.jpeg",
+      "link": "https://yuyuchinglin.medium.com/%E6%90%9C%E5%B0%8B%E9%82%84%E6%98%AF%E7%80%8F%E8%A6%BD-%E7%86%9F%E6%82%89%E5%BA%A6%E5%A6%82%E4%BD%95%E5%BD%B1%E9%9F%BF%E6%88%91%E5%80%91%E7%9A%84%E4%BD%BF%E7%94%A8%E5%90%8D%E7%A8%B1%E5%8F%8A%E8%A1%8C%E7%82%BA-53bc0f09397a"
     },
     {
       "title": "對抗消費主義的極簡生活",

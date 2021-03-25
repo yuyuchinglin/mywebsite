@@ -6,15 +6,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- <meta http-equiv="Cache-control" content="public, max-age=3600"> -->
-	<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
-	<meta name="Description"
-		content="Hi! I’m Yu-Ching, a UX Designer. I enjoy applying my psychology knowledge to create user-centric, delightful, and human experiences.">
+
+	<meta name="Description" content="Hello, I'm Yu-Ching Lin. I'm a UX designer who enjoy applying my psychology knowledge to translates users' unmet needs into
+	user-centric, delightful, and human
+	experiences.">
 	<title>Yu-Ching Lin - UX Designer</title>
 
 	<link rel="shortcut icon" href="/img/logo/favicon.ico" />
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel='stylesheet' href='/css/style.css' type='text/css' />
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Patua+One:400" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
@@ -34,12 +34,12 @@
 			var cn_articles = request.response.cn_articles;
 
 			for (var i = 0; i < en_articles.length; i++) {
-				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-4' href=" + en_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/img/portfolio/articles/" + en_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + en_articles[i].title + "</b></h5><p class='card-text'>" + en_articles[i].subtitle + "</p><small class='text-muted'>" + en_articles[i].date + " " + en_articles[i].publication + "</small></div></div></a>";
+				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-6' href=" + en_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/articles/articles/" + en_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + en_articles[i].title + "</b></h5><p class='card-text'>" + en_articles[i].subtitle + "</p><small class='text-muted'>" + en_articles[i].date + " " + en_articles[i].publication + "</small></div></div></a>";
 				document.getElementById("en_articles").innerHTML += txt;
 			}
 
 			for (var i = 0; i < cn_articles.length; i++) {
-				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-4' href=" + cn_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/img/portfolio/articles/" + cn_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + cn_articles[i].title + "</b></h5><p class='card-text'>" + cn_articles[i].subtitle + "</p><small class='text-muted'>" + cn_articles[i].date + " " + cn_articles[i].publication + "</small></div></div></a>";
+				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-4' href=" + cn_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/articles/articles/" + cn_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + cn_articles[i].title + "</b></h5><p class='card-text'>" + cn_articles[i].subtitle + "</p><small class='text-muted'>" + cn_articles[i].date + " " + cn_articles[i].publication + "</small></div></div></a>";
 				document.getElementById("cn_articles").innerHTML += txt;
 
 			}
@@ -98,48 +98,81 @@
 
 		<div class="container mt-5">
 
-			<div class="pt-1 pt-sm-4 pt-lg-1 d-none d-md-flex pb-3" style="display: flex;align-items: center;">
+			<div class="article-box d-none d-sm-flex" style="display: flex;align-items: center;">
+
+				<div class="articles-img d-none d-lg-block">
+					<img src="/articles/articles/medium_photo.jpeg" alt="">
+				</div>
 
 
 
-				<img src="/img/portfolio/articles/medium_photo.jpeg" width="150px" alt="" style="display: inline-block;">
 
-				<div class="ml-4" style="display: inline-block;">
+				<div class="article-intro">
 
-					<small class="text-muted" style="letter-spacing:.5px">ABOUT</small><br>
+					<!-- <small class="text-muted" style="letter-spacing:.5px">ABOUT</small><br> -->
 
 					<h5 class="name d-inline-block">Yu-Ching Lin</h5> <a target="_blank"
 						href="https://yuyuchinglin.medium.com/">@Medium</a>
 					<br>
 					<span style="color:#555">
-						I am a UX thinker and practitioner.<br>
-						I provide insights on strategies, user experience, and personal growth.
+						A UX thinker and practitioner.
+						I like to apply my psychology knowledge to provide insights on strategies, user experience, and personal
+						growth. <b>
+							Subscribe for my new articles here. :) </b>
 					</span>
 
+					<form id="google-form" class="contact100-form validate-form">
+						<div class="form-row">
+							<div class="col-8 col-sm-9 my-2">
+								<input type="email" class="form-control mt-2" id="email" aria-describedby="emailHelp"
+									placeholder="Your Email Address">
+							</div>
 
+							<div class="col-4 col-sm-3 my-2">
+								<button type="submit" class="btn mt-2 btn-primary"
+									style="background-color:#9E6B57; border:0; letter-spacing: .5px; font-weight: 500;">SUBSCRIBE</button>
+							</div>
 
+						</div>
+					</form>
 
 				</div>
 
 			</div>
 
 
-			<p class=" row title pt-3 mb-3">English Articles</p>
+			<p class=" row title pt-lg-3 mb-3">English Articles</p>
 
 
 
-			<div class="row my-0 my-lg-3" id="en_articles"></div>
+			<div class="row my-0 my-lg-3" id="en_articles" style="margin-left: -11px; margin-right:-11px"></div>
 
 			<!-- <br> -->
 			<p class="row title mb-3">Chinese Articles / 中文文章</p>
 
-			<div class="row my-0 my-lg-3" id="cn_articles">
+			<div class="row my-0 my-lg-3" id="cn_articles" style="margin-left: -11px; margin-right:-11px">
 				<!-- <a target="_blank"
-					href="https://yuyuchinglin.medium.com/%E5%B0%8D%E6%8A%97%E6%B6%88%E8%B2%BB%E4%B8%BB%E7%BE%A9%E7%9A%84%E6%A5%B5%E7%B0%A1%E7%94%9F%E6%B4%BB-%E5%AF%A6%E7%8F%BE%E8%B2%A1%E5%8B%99%E7%9B%AE%E6%A8%99%E5%8F%8A%E7%90%86%E6%83%B3%E7%A9%BA%E9%96%93%E7%9A%84%E7%A7%98%E8%A8%A3-f85d5df93f7f"
-					class="articles-item col-12 col-md-4 col-lg-4">
+					href="https://medium.com/as-a-product-designer/%E7%B6%B2%E7%AB%99%E8%BF%B7%E6%80%9D-%E7%B6%B2%E7%AB%99%E7%89%B9%E6%95%88%E8%B6%8A%E9%85%B7%E7%82%AB%E8%B6%8A%E5%A5%BD-%E8%A6%96%E8%A6%BA%E5%82%B3%E9%81%94%E7%9A%84%E9%99%90%E5%88%B6-b984b882dbc3"
+					class="articles-item col-12 col-md-6 col-lg-6">
 					<div class="card" style="width:100%">
 						<div class="pic"
-							style="background: url('/img/portfolio/articles/2020_minimalism.jpeg') center 20% grey; background-size: cover"
+							style="background: url('/articles/articles/2020_cool.jpg') center center grey; background-size: cover"
+							alt="">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title"><b>網站特效越酷炫越好？視覺傳達的限制？</b></h5>
+							<p class="card-text">介紹兩個眼動研究，並討論視覺傳達的限制。</p>
+							<small class="text-muted">Sep 25, 2020 @ AAPD — As A Product Designer</small>
+						</div>
+					</div>
+				</a>
+
+				<a target="_blank"
+					href="https://yuyuchinglin.medium.com/%E5%B0%8D%E6%8A%97%E6%B6%88%E8%B2%BB%E4%B8%BB%E7%BE%A9%E7%9A%84%E6%A5%B5%E7%B0%A1%E7%94%9F%E6%B4%BB-%E5%AF%A6%E7%8F%BE%E8%B2%A1%E5%8B%99%E7%9B%AE%E6%A8%99%E5%8F%8A%E7%90%86%E6%83%B3%E7%A9%BA%E9%96%93%E7%9A%84%E7%A7%98%E8%A8%A3-f85d5df93f7f"
+					class=" articles-item col-12 col-md-6 col-lg-6">
+					<div class="card" style="width:100%">
+						<div class="pic"
+							style="background: url('/articles/articles/2020_minimalism.jpeg') center center grey; background-size: cover"
 							alt="">
 						</div>
 						<div class="card-body">
@@ -148,7 +181,6 @@
 							<small class="text-muted">Dec 10, 2020</small>
 						</div>
 					</div>
-
 				</a> -->
 
 
@@ -173,7 +205,7 @@
 
 			<div class="row">
 				<div class="col-lg-4 col-sm-12 text-lg-right p-0">
-					<a target="_blank" href="https://yuyuchinglin.medium.com/">
+					<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/">
 						<i class="fab fa-linkedin"></i>
 					</a>
 					<a target="_blank" href="https://medium.com/@yuyuchinglin">
@@ -210,6 +242,7 @@
 
 	<!-- js開始 -->
 	<script type='text/javascript' src='js/jquery-11.0.min.js'></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<!-- <script src="js/isotope.js"></script>  -->
 	<!-- filter: isotope-->
 	<script>
@@ -250,7 +283,6 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
 		gtag('config', 'UA-115360200-1');
 	</script>
 
@@ -274,15 +306,41 @@
 
 	<script>
 		window.addEventListener("load", function (event) {
-			var a = document.querySelectorAll('.port a');
+			var a = document.querySelectorAll('#article a, #footer a');
 			a.forEach(function (item) {
 				item.addEventListener("click", function () {
-					var desc = item.querySelector('h5').innerText;
-					//alert(desc);
-					mixpanel.track(desc);
+					if (item.querySelector('.card-title')) {
+						var desc = item.querySelector('.card-title').innerText;
+					} else {
+						var desc = item.href;
+					}
+					// alert(desc);
+					mixpanel.track("click " + desc);
 				})
 			})
 		})
+	</script>
+
+	<script>
+		$('#google-form').submit(function (e) {
+			e.preventDefault();
+			if ($('#email').val()) {
+				$.ajax({
+					url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_bLaa23ycM4xi6D2AstnXXgcHzQVMjdM5E_1rq-bA-im2ww/formResponse",
+					crossDomain: true,
+					data: {
+						"entry.1000806426": $('#email').val(),
+					},
+					type: "POST",
+					dataType: "JSONP",
+					complete: function () {
+						$('#email').val('')
+						alert('Thanks for your subscribing! :)')
+						// window.location.replace("/article/article.html");
+					}
+				});
+			}
+		});
 	</script>
 
 
